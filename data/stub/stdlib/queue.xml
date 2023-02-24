@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE summary-spec>
+<summary-spec>
+  <classloader name="PythonLoader">
+    <class name="queue" allocatable="true">
+      <method name="import" static="true" descriptor="()Lqueue;">
+        <new def="obj_typeshed_" class="Lqueue"/>
+<!--        <new def="Empty_typeshed_" class="Lqueue/class/Empty"/>-->
+<!--        <putfield class="LRoot" field="Empty" fieldType="LRoot" ref="obj_typeshed_" value="Empty_typeshed_"/>-->
+<!--        <new def="Full_typeshed_" class="Lqueue/class/Full"/>-->
+<!--        <putfield class="LRoot" field="Full" fieldType="LRoot" ref="obj_typeshed_" value="Full_typeshed_"/>-->
+        <new def="Queue_typeshed_" class="Lqueue/class/Queue"/>
+        <putfield class="LRoot" field="Queue" fieldType="LRoot" ref="obj_typeshed_" value="Queue_typeshed_"/>
+<!--        <new def="PriorityQueue_typeshed_" class="Lqueue/class/PriorityQueue"/>-->
+<!--        <putfield class="LRoot" field="PriorityQueue" fieldType="LRoot" ref="obj_typeshed_" value="PriorityQueue_typeshed_"/>-->
+<!--        <new def="LifoQueue_typeshed_" class="Lqueue/class/LifoQueue"/>-->
+<!--        <putfield class="LRoot" field="LifoQueue" fieldType="LRoot" ref="obj_typeshed_" value="LifoQueue_typeshed_"/>-->
+<!--        <new def="SimpleQueue_typeshed_" class="Lqueue/class/SimpleQueue"/>-->
+<!--        <putfield class="LRoot" field="SimpleQueue" fieldType="LRoot" ref="obj_typeshed_" value="SimpleQueue_typeshed_"/>-->
+        <return value="obj_typeshed_"/>
+      </method>
+    </class>
+    <package name="queue/function"/>
+    <package name="queue/class">
+<!--      <class name="Empty" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;">-->
+<!--          <new def="Empty_typeshed_" class="Lqueue/class/Empty"/>-->
+<!--          <return value="Empty_typeshed_"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="Full" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;">-->
+<!--          <new def="Full_typeshed_" class="Lqueue/class/Full"/>-->
+<!--          <return value="Full_typeshed_"/>-->
+<!--        </method>-->
+<!--      </class>-->
+      <class name="Queue" allocatable="true">
+        <method name="do" descriptor="()LRoot;">
+          <new def="Queue_typeshed_" class="Lqueue/class/Queue"/>
+<!--          <new def="maxsize_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="maxsize" fieldType="LRoot" ref="Queue_typeshed_" value="maxsize_typeshed_"/>-->
+<!--          <new def="mutex_typeshed_" class="LLock"/>-->
+<!--          <putfield class="LRoot" field="mutex" fieldType="LRoot" ref="Queue_typeshed_" value="mutex_typeshed_"/>-->
+<!--          <new def="not_empty_typeshed_" class="LCondition"/>-->
+<!--          <putfield class="LRoot" field="not_empty" fieldType="LRoot" ref="Queue_typeshed_" value="not_empty_typeshed_"/>-->
+<!--          <new def="not_full_typeshed_" class="LCondition"/>-->
+<!--          <putfield class="LRoot" field="not_full" fieldType="LRoot" ref="Queue_typeshed_" value="not_full_typeshed_"/>-->
+<!--          <new def="all_tasks_done_typeshed_" class="LCondition"/>-->
+<!--          <putfield class="LRoot" field="all_tasks_done" fieldType="LRoot" ref="Queue_typeshed_" value="all_tasks_done_typeshed_"/>-->
+<!--          <new def="unfinished_tasks_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="unfinished_tasks" fieldType="LRoot" ref="Queue_typeshed_" value="unfinished_tasks_typeshed_"/>-->
+<!--          <new def="queue_typeshed_" class="Lobject"/>-->
+<!--          <putfield class="LRoot" field="queue" fieldType="LRoot" ref="Queue_typeshed_" value="queue_typeshed_"/>-->
+<!--          <new def="__init___typeshed_" class="Lqueue/Queue/__init__"/>-->
+<!--          <putfield class="LRoot" field="__init__" fieldType="LRoot" ref="Queue_typeshed_" value="__init___typeshed_"/>-->
+<!--          <new def="_init_typeshed_" class="Lqueue/Queue/_init"/>-->
+<!--          <putfield class="LRoot" field="_init" fieldType="LRoot" ref="Queue_typeshed_" value="_init_typeshed_"/>-->
+          <new def="empty_typeshed_" class="Lqueue/Queue/empty"/>
+          <putfield class="LRoot" field="empty" fieldType="LRoot" ref="Queue_typeshed_" value="empty_typeshed_"/>
+<!--          <new def="full_typeshed_" class="Lqueue/Queue/full"/>-->
+<!--          <putfield class="LRoot" field="full" fieldType="LRoot" ref="Queue_typeshed_" value="full_typeshed_"/>-->
+          <new def="get_typeshed_" class="Lqueue/Queue/get"/>
+          <putfield class="LRoot" field="get" fieldType="LRoot" ref="Queue_typeshed_" value="get_typeshed_"/>
+<!--          <new def="get_nowait_typeshed_" class="Lqueue/Queue/get_nowait"/>-->
+<!--          <putfield class="LRoot" field="get_nowait" fieldType="LRoot" ref="Queue_typeshed_" value="get_nowait_typeshed_"/>-->
+<!--          <new def="_get_typeshed_" class="Lqueue/Queue/_get"/>-->
+<!--          <putfield class="LRoot" field="_get" fieldType="LRoot" ref="Queue_typeshed_" value="_get_typeshed_"/>-->
+          <new def="put_typeshed_" class="Lqueue/Queue/put"/>
+          <putfield class="LRoot" field="put" fieldType="LRoot" ref="Queue_typeshed_" value="put_typeshed_"/>
+<!--          <new def="put_nowait_typeshed_" class="Lqueue/Queue/put_nowait"/>-->
+<!--          <putfield class="LRoot" field="put_nowait" fieldType="LRoot" ref="Queue_typeshed_" value="put_nowait_typeshed_"/>-->
+<!--          <new def="_put_typeshed_" class="Lqueue/Queue/_put"/>-->
+<!--          <putfield class="LRoot" field="_put" fieldType="LRoot" ref="Queue_typeshed_" value="_put_typeshed_"/>-->
+<!--          <new def="join_typeshed_" class="Lqueue/Queue/join"/>-->
+<!--          <putfield class="LRoot" field="join" fieldType="LRoot" ref="Queue_typeshed_" value="join_typeshed_"/>-->
+<!--          <new def="qsize_typeshed_" class="Lqueue/Queue/qsize"/>-->
+<!--          <putfield class="LRoot" field="qsize" fieldType="LRoot" ref="Queue_typeshed_" value="qsize_typeshed_"/>-->
+<!--          <new def="_qsize_typeshed_" class="Lqueue/Queue/_qsize"/>-->
+<!--          <putfield class="LRoot" field="_qsize" fieldType="LRoot" ref="Queue_typeshed_" value="_qsize_typeshed_"/>-->
+<!--          <new def="task_done_typeshed_" class="Lqueue/Queue/task_done"/>-->
+<!--          <putfield class="LRoot" field="task_done" fieldType="LRoot" ref="Queue_typeshed_" value="task_done_typeshed_"/>-->
+<!--          <new def="__class_getitem___typeshed_" class="Lqueue/Queue/__class_getitem__"/>-->
+<!--          <putfield class="LRoot" field="__class_getitem__" fieldType="LRoot" ref="Queue_typeshed_" value="__class_getitem___typeshed_"/>-->
+          <return value="Queue_typeshed_"/>
+        </method>
+      </class>
+<!--      <class name="PriorityQueue" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;">-->
+<!--          <new def="PriorityQueue_typeshed_" class="Lqueue/class/PriorityQueue"/>-->
+<!--          <return value="PriorityQueue_typeshed_"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="LifoQueue" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;">-->
+<!--          <new def="LifoQueue_typeshed_" class="Lqueue/class/LifoQueue"/>-->
+<!--          <return value="LifoQueue_typeshed_"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="SimpleQueue" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;">-->
+<!--          <new def="SimpleQueue_typeshed_" class="Lqueue/class/SimpleQueue"/>-->
+<!--          <new def="__init___typeshed_" class="Lqueue/SimpleQueue/__init__"/>-->
+<!--          <putfield class="LRoot" field="__init__" fieldType="LRoot" ref="SimpleQueue_typeshed_" value="__init___typeshed_"/>-->
+<!--          <new def="empty_typeshed_" class="Lqueue/SimpleQueue/empty"/>-->
+<!--          <putfield class="LRoot" field="empty" fieldType="LRoot" ref="SimpleQueue_typeshed_" value="empty_typeshed_"/>-->
+<!--          <new def="get_typeshed_" class="Lqueue/SimpleQueue/get"/>-->
+<!--          <putfield class="LRoot" field="get" fieldType="LRoot" ref="SimpleQueue_typeshed_" value="get_typeshed_"/>-->
+<!--          <new def="get_nowait_typeshed_" class="Lqueue/SimpleQueue/get_nowait"/>-->
+<!--          <putfield class="LRoot" field="get_nowait" fieldType="LRoot" ref="SimpleQueue_typeshed_" value="get_nowait_typeshed_"/>-->
+<!--          <new def="put_typeshed_" class="Lqueue/SimpleQueue/put"/>-->
+<!--          <putfield class="LRoot" field="put" fieldType="LRoot" ref="SimpleQueue_typeshed_" value="put_typeshed_"/>-->
+<!--          <new def="put_nowait_typeshed_" class="Lqueue/SimpleQueue/put_nowait"/>-->
+<!--          <putfield class="LRoot" field="put_nowait" fieldType="LRoot" ref="SimpleQueue_typeshed_" value="put_nowait_typeshed_"/>-->
+<!--          <new def="qsize_typeshed_" class="Lqueue/SimpleQueue/qsize"/>-->
+<!--          <putfield class="LRoot" field="qsize" fieldType="LRoot" ref="SimpleQueue_typeshed_" value="qsize_typeshed_"/>-->
+<!--          <new def="__class_getitem___typeshed_" class="Lqueue/SimpleQueue/__class_getitem__"/>-->
+<!--          <putfield class="LRoot" field="__class_getitem__" fieldType="LRoot" ref="SimpleQueue_typeshed_" value="__class_getitem___typeshed_"/>-->
+<!--          <return value="SimpleQueue_typeshed_"/>-->
+<!--        </method>-->
+<!--      </class>-->
+    </package>
+<!--    <package name="queue/Empty"/>-->
+<!--    <package name="queue/Full"/>-->
+    <package name="queue/Queue">
+<!--      <class name="__init__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self maxsize" static="false">-->
+<!--          <new def="_typeshed0" class="LNone"/>-->
+<!--          <return value="_typeshed0"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="_init" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self maxsize" static="false">-->
+<!--          <new def="_typeshed1" class="LNone"/>-->
+<!--          <return value="_typeshed1"/>-->
+<!--        </method>-->
+<!--      </class>-->
+      <class name="empty" allocatable="true">
+        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">
+          <new def="_typeshed2" class="Z"/>
+          <return value="_typeshed2"/>
+        </method>
+      </class>
+<!--      <class name="full" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed3" class="Z"/>-->
+<!--          <return value="_typeshed3"/>-->
+<!--        </method>-->
+<!--      </class>-->
+      <class name="get" allocatable="true">
+        <method name="do" descriptor="()LRoot;" numArgs="3" paramNames="self block timeout" static="false">
+          <new def="_typeshed4" class="L_T"/>
+          <return value="_typeshed4"/>
+        </method>
+      </class>
+<!--      <class name="get_nowait" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed5" class="L_T"/>-->
+<!--          <return value="_typeshed5"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="_get" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed6" class="L_T"/>-->
+<!--          <return value="_typeshed6"/>-->
+<!--        </method>-->
+<!--      </class>-->
+      <class name="put" allocatable="true">
+        <method name="do" descriptor="()LRoot;" numArgs="4" paramNames="self item block timeout" static="false">
+          <new def="_typeshed7" class="LNone"/>
+          <return value="_typeshed7"/>
+        </method>
+      </class>
+<!--      <class name="put_nowait" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self item" static="false">-->
+<!--          <new def="_typeshed8" class="LNone"/>-->
+<!--          <return value="_typeshed8"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="_put" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self item" static="false">-->
+<!--          <new def="_typeshed9" class="LNone"/>-->
+<!--          <return value="_typeshed9"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="join" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed10" class="LNone"/>-->
+<!--          <return value="_typeshed10"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="qsize" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed11" class="I"/>-->
+<!--          <return value="_typeshed11"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="_qsize" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed12" class="I"/>-->
+<!--          <return value="_typeshed12"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="task_done" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed13" class="LNone"/>-->
+<!--          <return value="_typeshed13"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__class_getitem__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="cls item" static="false">-->
+<!--          <new def="_typeshed14" class="LGenericAlias"/>-->
+<!--          <return value="_typeshed14"/>-->
+<!--        </method>-->
+<!--      </class>-->
+    </package>
+<!--    <package name="queue/PriorityQueue"/>-->
+<!--    <package name="queue/LifoQueue"/>-->
+<!--    <package name="queue/SimpleQueue">-->
+<!--      <class name="__init__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed15" class="LNone"/>-->
+<!--          <return value="_typeshed15"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="empty" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed16" class="Z"/>-->
+<!--          <return value="_typeshed16"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="get" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="3" paramNames="self block timeout" static="false">-->
+<!--          <new def="_typeshed17" class="L_T"/>-->
+<!--          <return value="_typeshed17"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="get_nowait" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed18" class="L_T"/>-->
+<!--          <return value="_typeshed18"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="put" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="4" paramNames="self item block timeout" static="false">-->
+<!--          <new def="_typeshed19" class="LNone"/>-->
+<!--          <return value="_typeshed19"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="put_nowait" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self item" static="false">-->
+<!--          <new def="_typeshed20" class="LNone"/>-->
+<!--          <return value="_typeshed20"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="qsize" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed21" class="I"/>-->
+<!--          <return value="_typeshed21"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__class_getitem__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="cls item" static="false">-->
+<!--          <new def="_typeshed22" class="LGenericAlias"/>-->
+<!--          <return value="_typeshed22"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--    </package>-->
+  </classloader>
+</summary-spec>

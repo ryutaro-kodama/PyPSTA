@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE summary-spec>
+<summary-spec>
+    <classloader name="PythonLoader">
+        <class name="typing" allocatable="true">
+            <method name="import" static="true" descriptor="()Ltyping;">
+                <new def="obj_typeshed_" class="Ltyping"/>
+                <new def="Any_typeshed_" class="Lobject"/>
+                <putfield class="LRoot" field="Any" fieldType="LRoot" ref="obj_typeshed_" value="Any_typeshed_"/>
+                <new def="Callable_typeshed_" class="Lobject"/>
+                <putfield class="LRoot" field="Callable" fieldType="LRoot" ref="obj_typeshed_" value="Callable_typeshed_"/>
+                <new def="Dict_typeshed_" class="Lobject"/>
+                <putfield class="LRoot" field="Dict" fieldType="LRoot" ref="obj_typeshed_" value="Dict_typeshed_"/>
+                <new def="KeysView_typeshed_" class="Lobject"/>
+                <putfield class="LRoot" field="KeysView" fieldType="LRoot" ref="obj_typeshed_" value="KeysView_typeshed_"/>
+                <new def="List_typeshed_" class="Lobject"/>
+                <putfield class="LRoot" field="List" fieldType="LRoot" ref="obj_typeshed_" value="List_typeshed_"/>
+                <new def="Optional_typeshed_" class="Lobject"/>
+                <putfield class="LRoot" field="Optional" fieldType="LRoot" ref="obj_typeshed_" value="Optional_typeshed_"/>
+                <new def="Type_typeshed_" class="Lobject"/>
+                <putfield class="LRoot" field="Type" fieldType="LRoot" ref="obj_typeshed_" value="Type_typeshed_"/>
+                <new def="TypeVar_typeshed_" class="Ltyping/function/TypeVar"/>
+                <putfield class="LRoot" field="TypeVar" fieldType="LRoot" ref="obj_typeshed_" value="TypeVar_typeshed_"/>
+                <new def="Union_typeshed_" class="Lobject"/>
+                <putfield class="LRoot" field="Union" fieldType="LRoot" ref="obj_typeshed_" value="Union_typeshed_"/>
+                <return value="obj_typeshed_"/>
+            </method>
+        </class>
+        <package name="typing/function">
+            <class name="TypeVar" allocatable="true">
+                <method name="do" descriptor="()LRoot;">
+                    <new def="object_typeshed_" class="Lobject"/>
+                    <return value="object_typeshed_"/>
+                </method>
+            </class>
+        </package>
+<!--        <package name="os/path">-->
+<!--            <class name="exists" allocatable="true">-->
+<!--                <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self filename" static="false">-->
+<!--                    <new def="_typeshed1" class="Z"/>-->
+<!--                    <return value="_typeshed1"/>-->
+<!--                </method>-->
+<!--            </class>-->
+<!--        </package>-->
+    </classloader>
+</summary-spec>

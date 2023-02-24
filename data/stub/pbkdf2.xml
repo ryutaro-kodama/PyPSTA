@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE summary-spec>
+<summary-spec>
+  <classloader name="PythonLoader">
+    <class name="pbkdf2" allocatable="true">
+      <method name="import" static="true" descriptor="()Lpbkdf2;">
+        <new def="obj_typeshed_" class="Lpbkdf2"/>
+        <new def="PBKDF2_typeshed_" class="Lpbkdf2/class/PBKDF2"/>
+        <putfield class="LRoot" field="PBKDF2" fieldType="LRoot" ref="obj_typeshed_" value="PBKDF2_typeshed_"/>
+        <return value="obj_typeshed_"/>
+      </method>
+    </class>
+    <package name="pbkdf2/class">
+      <class name="PBKDF2" allocatable="true">
+        <method name="do" descriptor="()LRoot;">
+          <new def="PBKDF2_typeshed_" class="Lpbkdf2/class/PBKDF2"/>
+          <new def="hexread_typeshed_" class="Lpbkdf2/PBKDF2/hexread"/>
+          <putfield class="LRoot" field="hexread" fieldType="LRoot" ref="PBKDF2_typeshed_" value="hexread_typeshed_"/>
+          <return value="PBKDF2_typeshed_"/>
+        </method>
+      </class>
+    </package>
+    <package name="pbkdf2/PBKDF2">
+      <class name="hexread" allocatable="true">
+        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self num" static="false">
+          <new def="_typeshed1" class="Lstring"/>
+          <return value="_typeshed1"/>
+        </method>
+      </class>
+    </package>
+  </classloader>
+</summary-spec>

@@ -1,0 +1,152 @@
+<?xml version="1.0" ?>
+<!DOCTYPE summary-spec>
+<!-- If you add summary in this file, you have to also add in 'otherImportNames' in 'PythonDriver' -->
+<summary-spec>
+    <classloader name="PythonLoader">
+        <class name="Exception" allocatable="true">
+            <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="msg" static="true">
+                <new def="result" class="LNone"/>
+                <return value="result"/>
+            </method>
+        </class>
+
+        <class name="abs" allocatable="true">
+            <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="arg" static="true">
+                <!-- The summary is defined in 'BuiltinFunctionSummaries'. -->
+                <new def="result" class="D"/>
+                <return value="result"/>
+            </method>
+        </class>
+        <class name="bool" allocatable="true">
+            <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="arg" static="true">
+                <new def="result" class="Z"/>
+                <return value="result"/>
+            </method>
+        </class>
+        <class name="float" allocatable="true">
+            <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="arg" static="true">
+                <new def="result" class="D"/>
+                <return value="result"/>
+            </method>
+        </class>
+        <class name="input" allocatable="true">
+            <!-- If static is true, the method don't have 'self' argument. -->
+            <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="true">
+                <new def="input_value" class="Lstring"/>
+                <return value="input_value"/>
+            </method>
+        </class>
+        <class name="isinstance" allocatable="true">
+            <method name="do" descriptor="()LRoot;" numArgs="3" paramNames="self object classinfo" static="true">
+                <new def="result" class="Z"/>  <!-- Direct the class from 'TypeReference' or 'PythonTypes' -->
+                <return value="result"/>
+            </method>
+        </class>
+        <class name="iter" allocatable="true">
+            <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self iterable" static="true">
+                <!-- The summary is defined in 'BuiltinFunctionSummaries'. -->
+                <new def="result" class="LNone"/>
+                <return value="result"/>
+            </method>
+        </class>
+        <class name="max" allocatable="true">
+            <method name="do" descriptor="()LRoot;" numArgs="3" paramNames="x y key" static="true">
+                <new def="result" class="I"/>
+                <return value="result"/>
+            </method>
+        </class>
+        <class name="min" allocatable="true">
+            <method name="do" descriptor="()LRoot;" numArgs="3" paramNames="x y key" static="true">
+                <new def="result" class="I"/>
+                <return value="result"/>
+            </method>
+        </class>
+        <class name="next" allocatable="true">
+            <method name="do" descriptor="()LRoot;" numArgs="3" paramNames="self iter default" static="true">
+                <!-- The summary is defined in 'BuiltinFunctionSummaries'. -->
+                <new def="result" class="LNone"/>
+                <return value="result"/>
+            </method>
+        </class>
+        <class name="object" allocatable="true">
+            <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="true">
+                <new def="new_obj" class="Lobject/instance"/>
+                <return value="new_obj"/>
+            </method>
+        </class>
+        <class name="open" allocatable="true">
+            <method name="do" static="true" descriptor="()LRoot;">
+                <new def="self" class="Lbuiltins/class/open"/>
+                <call type="virtual" name="do" class="Lbuiltins/class/open" descriptor="()LRoot;"
+                      numArgs="1" arg0="self" def="v"/>
+                <return value="v"/>
+            </method>
+        </class>
+        <class name="ord" allocatable="true">
+            <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self arg" static="true">
+                <new def="result" class="I"/>
+                <return value="result"/>
+            </method>
+        </class>
+        <class name="print" allocatable="true">
+            <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self value" static="true">
+                <return />
+            </method>
+        </class>
+        <class name="sorted" allocatable="true">
+            <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self value" static="true">
+                <return />
+            </method>
+        </class>
+        <class name="superfun" allocatable="true">
+            <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="true">
+                <new def="new_obj" class="Lobject"/>
+                <return value="new_obj"/>
+            </method>
+        </class>
+        <class name="type" allocatable="true">
+            <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self value" static="true">
+                <new def="new_obj" class="Lobject/instance"/>
+                <return value="new_obj"/>
+            </method>
+        </class>
+
+        <class name="ValueError" allocatable="true">
+            <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="msg" static="true">
+                <new def="result" class="ValueError"/>
+                <return value="result"/>
+            </method>
+        </class>
+
+        <package name="builtins/class">
+            <class name="open" allocatable="true">
+                <method name="do" descriptor="()LRoot;" numArgs="8" paramNames="file mode buffering encoding errors newline closefd opener" static="true">
+                    <new def="open_value" class="Lobject/instance"/>
+                    <new def="__begin___val" class="Lobject"/>
+                    <putfield class="LRoot" field="__begin__" fieldType="LRoot" ref="open_value" value="__begin___val"/>
+                    <new def="__end___val" class="Lobject"/>
+                    <putfield class="LRoot" field="__end__" fieldType="LRoot" ref="open_value" value="__end___val"/>
+                    <new def="write_val" class="Lbuiltins/class/open/write"/>
+                    <putfield class="LRoot" field="write" fieldType="LRoot" ref="open_value" value="write_val"/>
+                    <new def="read_val" class="Lbuiltins/class/open/read"/>
+                    <putfield class="LRoot" field="read" fieldType="LRoot" ref="open_value" value="read_val"/>
+                    <return value="open_value"/>
+                </method>
+            </class>
+        </package>
+        <package name="builtins/class/open">
+            <class name="write" allocatable="true">
+                <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="str" static="true">
+                    <new def="result" class="LNone"/>
+                    <return value="result"/>
+                </method>
+            </class>
+            <class name="read" allocatable="true">
+                <method name="do" descriptor="()LRoot;" numArgs="0" paramNames="" static="true">
+                    <new def="result" class="Lstring"/>
+                    <return value="result"/>
+                </method>
+            </class>
+        </package>
+    </classloader>
+</summary-spec>

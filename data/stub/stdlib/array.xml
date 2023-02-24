@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE summary-spec>
+<summary-spec>
+  <classloader name="PythonLoader">
+    <class name="array" allocatable="true">
+      <method name="import" static="true" descriptor="()Larray;">
+        <new def="obj_typeshed_" class="Larray"/>
+<!--        <new def="typecodes_typeshed_" class="Lstring"/>-->
+<!--        <putfield class="LRoot" field="typecodes" fieldType="LRoot" ref="obj_typeshed_" value="typecodes_typeshed_"/>-->
+        <new def="array_typeshed_" class="Larray/class/array"/>
+        <putfield class="LRoot" field="array" fieldType="LRoot" ref="obj_typeshed_" value="array_typeshed_"/>
+        <return value="obj_typeshed_"/>
+      </method>
+    </class>
+    <package name="array/function"/>
+    <package name="array/class">
+      <class name="array" allocatable="true">
+        <method name="do" descriptor="()LRoot;">
+          <new def="array_typeshed_" class="Larray/class/array"/>
+<!--          <new def="typecode_typeshed_" class="L_TypeCode"/>-->
+<!--          <putfield class="LRoot" field="typecode" fieldType="LRoot" ref="array_typeshed_" value="typecode_typeshed_"/>-->
+<!--          <new def="itemsize_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="itemsize" fieldType="LRoot" ref="array_typeshed_" value="itemsize_typeshed_"/>-->
+          <new def="__init___typeshed_" class="Larray/array/__init__"/>
+          <putfield class="LRoot" field="__init__" fieldType="LRoot" ref="array_typeshed_" value="__init___typeshed_"/>
+<!--          <new def="append_typeshed_" class="Larray/array/append"/>-->
+<!--          <putfield class="LRoot" field="append" fieldType="LRoot" ref="array_typeshed_" value="append_typeshed_"/>-->
+<!--          <new def="buffer_info_typeshed_" class="Larray/array/buffer_info"/>-->
+<!--          <putfield class="LRoot" field="buffer_info" fieldType="LRoot" ref="array_typeshed_" value="buffer_info_typeshed_"/>-->
+<!--          <new def="byteswap_typeshed_" class="Larray/array/byteswap"/>-->
+<!--          <putfield class="LRoot" field="byteswap" fieldType="LRoot" ref="array_typeshed_" value="byteswap_typeshed_"/>-->
+<!--          <new def="count_typeshed_" class="Larray/array/count"/>-->
+<!--          <putfield class="LRoot" field="count" fieldType="LRoot" ref="array_typeshed_" value="count_typeshed_"/>-->
+<!--          <new def="extend_typeshed_" class="Larray/array/extend"/>-->
+<!--          <putfield class="LRoot" field="extend" fieldType="LRoot" ref="array_typeshed_" value="extend_typeshed_"/>-->
+<!--          <new def="frombytes_typeshed_" class="Larray/array/frombytes"/>-->
+<!--          <putfield class="LRoot" field="frombytes" fieldType="LRoot" ref="array_typeshed_" value="frombytes_typeshed_"/>-->
+<!--          <new def="fromfile_typeshed_" class="Larray/array/fromfile"/>-->
+<!--          <putfield class="LRoot" field="fromfile" fieldType="LRoot" ref="array_typeshed_" value="fromfile_typeshed_"/>-->
+<!--          <new def="fromlist_typeshed_" class="Larray/array/fromlist"/>-->
+<!--          <putfield class="LRoot" field="fromlist" fieldType="LRoot" ref="array_typeshed_" value="fromlist_typeshed_"/>-->
+<!--          <new def="fromunicode_typeshed_" class="Larray/array/fromunicode"/>-->
+<!--          <putfield class="LRoot" field="fromunicode" fieldType="LRoot" ref="array_typeshed_" value="fromunicode_typeshed_"/>-->
+<!--          <new def="index_typeshed_" class="Larray/array/index"/>-->
+<!--          <putfield class="LRoot" field="index" fieldType="LRoot" ref="array_typeshed_" value="index_typeshed_"/>-->
+<!--          <new def="insert_typeshed_" class="Larray/array/insert"/>-->
+<!--          <putfield class="LRoot" field="insert" fieldType="LRoot" ref="array_typeshed_" value="insert_typeshed_"/>-->
+<!--          <new def="pop_typeshed_" class="Larray/array/pop"/>-->
+<!--          <putfield class="LRoot" field="pop" fieldType="LRoot" ref="array_typeshed_" value="pop_typeshed_"/>-->
+<!--          <new def="remove_typeshed_" class="Larray/array/remove"/>-->
+<!--          <putfield class="LRoot" field="remove" fieldType="LRoot" ref="array_typeshed_" value="remove_typeshed_"/>-->
+<!--          <new def="reverse_typeshed_" class="Larray/array/reverse"/>-->
+<!--          <putfield class="LRoot" field="reverse" fieldType="LRoot" ref="array_typeshed_" value="reverse_typeshed_"/>-->
+<!--          <new def="tobytes_typeshed_" class="Larray/array/tobytes"/>-->
+<!--          <putfield class="LRoot" field="tobytes" fieldType="LRoot" ref="array_typeshed_" value="tobytes_typeshed_"/>-->
+<!--          <new def="tofile_typeshed_" class="Larray/array/tofile"/>-->
+<!--          <putfield class="LRoot" field="tofile" fieldType="LRoot" ref="array_typeshed_" value="tofile_typeshed_"/>-->
+<!--          <new def="tolist_typeshed_" class="Larray/array/tolist"/>-->
+<!--          <putfield class="LRoot" field="tolist" fieldType="LRoot" ref="array_typeshed_" value="tolist_typeshed_"/>-->
+<!--          <new def="tounicode_typeshed_" class="Larray/array/tounicode"/>-->
+<!--          <putfield class="LRoot" field="tounicode" fieldType="LRoot" ref="array_typeshed_" value="tounicode_typeshed_"/>-->
+<!--          <new def="fromstring_typeshed_" class="Larray/array/fromstring"/>-->
+<!--          <putfield class="LRoot" field="fromstring" fieldType="LRoot" ref="array_typeshed_" value="fromstring_typeshed_"/>-->
+          <new def="tostring_typeshed_" class="Larray/array/tostring"/>
+          <putfield class="LRoot" field="tostring" fieldType="LRoot" ref="array_typeshed_" value="tostring_typeshed_"/>
+<!--          <new def="__len___typeshed_" class="Larray/array/__len__"/>-->
+<!--          <putfield class="LRoot" field="__len__" fieldType="LRoot" ref="array_typeshed_" value="__len___typeshed_"/>-->
+          <new def="__getitem___typeshed_" class="Larray/array/__getitem__"/>
+          <putfield class="LRoot" field="__getitem__" fieldType="LRoot" ref="array_typeshed_" value="__getitem___typeshed_"/>
+          <new def="__setitem___typeshed_" class="Larray/array/__setitem__"/>
+          <putfield class="LRoot" field="__setitem__" fieldType="LRoot" ref="array_typeshed_" value="__setitem___typeshed_"/>
+<!--          <new def="__delitem___typeshed_" class="Larray/array/__delitem__"/>-->
+<!--          <putfield class="LRoot" field="__delitem__" fieldType="LRoot" ref="array_typeshed_" value="__delitem___typeshed_"/>-->
+<!--          <new def="__add___typeshed_" class="Larray/array/__add__"/>-->
+<!--          <putfield class="LRoot" field="__add__" fieldType="LRoot" ref="array_typeshed_" value="__add___typeshed_"/>-->
+<!--          <new def="__ge___typeshed_" class="Larray/array/__ge__"/>-->
+<!--          <putfield class="LRoot" field="__ge__" fieldType="LRoot" ref="array_typeshed_" value="__ge___typeshed_"/>-->
+<!--          <new def="__gt___typeshed_" class="Larray/array/__gt__"/>-->
+<!--          <putfield class="LRoot" field="__gt__" fieldType="LRoot" ref="array_typeshed_" value="__gt___typeshed_"/>-->
+<!--          <new def="__iadd___typeshed_" class="Larray/array/__iadd__"/>-->
+<!--          <putfield class="LRoot" field="__iadd__" fieldType="LRoot" ref="array_typeshed_" value="__iadd___typeshed_"/>-->
+<!--          <new def="__imul___typeshed_" class="Larray/array/__imul__"/>-->
+<!--          <putfield class="LRoot" field="__imul__" fieldType="LRoot" ref="array_typeshed_" value="__imul___typeshed_"/>-->
+<!--          <new def="__le___typeshed_" class="Larray/array/__le__"/>-->
+<!--          <putfield class="LRoot" field="__le__" fieldType="LRoot" ref="array_typeshed_" value="__le___typeshed_"/>-->
+<!--          <new def="__lt___typeshed_" class="Larray/array/__lt__"/>-->
+<!--          <putfield class="LRoot" field="__lt__" fieldType="LRoot" ref="array_typeshed_" value="__lt___typeshed_"/>-->
+<!--          <new def="__mul___typeshed_" class="Larray/array/__mul__"/>-->
+<!--          <putfield class="LRoot" field="__mul__" fieldType="LRoot" ref="array_typeshed_" value="__mul___typeshed_"/>-->
+<!--          <new def="__rmul___typeshed_" class="Larray/array/__rmul__"/>-->
+<!--          <putfield class="LRoot" field="__rmul__" fieldType="LRoot" ref="array_typeshed_" value="__rmul___typeshed_"/>-->
+          <return value="array_typeshed_"/>
+        </method>
+      </class>
+    </package>
+    <package name="array/array">
+      <class name="__init__" allocatable="true">
+        <method name="do" descriptor="()LRoot;" numArgs="3" paramNames="self typecode __initializer" static="false">
+          <new def="_typeshed0" class="LNone"/>
+          <return value="_typeshed0"/>
+        </method>
+      </class>
+<!--      <class name="append" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self __v" static="false">-->
+<!--          <new def="_typeshed1" class="LNone"/>-->
+<!--          <return value="_typeshed1"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="buffer_info" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed2" class="Ltuple"/>-->
+<!--          <new def="_typeshed3" class="I"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed2" value="_typeshed3"/>-->
+<!--          <new def="_typeshed4" class="I"/>-->
+<!--          <putfield class="LRoot" field="1" fieldType="LRoot" ref="_typeshed2" value="_typeshed4"/>-->
+<!--          <return value="_typeshed2"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="byteswap" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed5" class="LNone"/>-->
+<!--          <return value="_typeshed5"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="count" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self __v" static="false">-->
+<!--          <new def="_typeshed6" class="I"/>-->
+<!--          <return value="_typeshed6"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="extend" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self __bb" static="false">-->
+<!--          <new def="_typeshed7" class="LNone"/>-->
+<!--          <return value="_typeshed7"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="frombytes" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self __buffer" static="false">-->
+<!--          <new def="_typeshed8" class="LNone"/>-->
+<!--          <return value="_typeshed8"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="fromfile" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="3" paramNames="self __f __n" static="false">-->
+<!--          <new def="_typeshed9" class="LNone"/>-->
+<!--          <return value="_typeshed9"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="fromlist" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self __list" static="false">-->
+<!--          <new def="_typeshed10" class="LNone"/>-->
+<!--          <return value="_typeshed10"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="fromunicode" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self __ustr" static="false">-->
+<!--          <new def="_typeshed11" class="LNone"/>-->
+<!--          <return value="_typeshed11"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="index" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="4" paramNames="self __v __start __stop" static="false">-->
+<!--          <new def="_typeshed12" class="I"/>-->
+<!--          <return value="_typeshed12"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="insert" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="3" paramNames="self __i __v" static="false">-->
+<!--          <new def="_typeshed13" class="LNone"/>-->
+<!--          <return value="_typeshed13"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="pop" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self __i" static="false">-->
+<!--          <new def="_typeshed14" class="L_T"/>-->
+<!--          <return value="_typeshed14"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="remove" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self __v" static="false">-->
+<!--          <new def="_typeshed15" class="LNone"/>-->
+<!--          <return value="_typeshed15"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="reverse" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed16" class="LNone"/>-->
+<!--          <return value="_typeshed16"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="tobytes" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed17" class="Lbytes"/>-->
+<!--          <return value="_typeshed17"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="tofile" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self __f" static="false">-->
+<!--          <new def="_typeshed18" class="LNone"/>-->
+<!--          <return value="_typeshed18"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="tolist" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed19" class="Llist"/>-->
+<!--          <new def="_typeshed20" class="L_T"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed19" value="_typeshed20"/>-->
+<!--          <return value="_typeshed19"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="tounicode" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed21" class="Lstring"/>-->
+<!--          <return value="_typeshed21"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="fromstring" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self __buffer" static="false">-->
+<!--          <new def="_typeshed22" class="LNone"/>-->
+<!--          <return value="_typeshed22"/>-->
+<!--        </method>-->
+<!--      </class>-->
+      <class name="tostring" allocatable="true">
+        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">
+          <new def="_typeshed23" class="Lbytes"/>
+          <return value="_typeshed23"/>
+        </method>
+      </class>
+<!--      <class name="__len__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed24" class="I"/>-->
+<!--          <return value="_typeshed24"/>-->
+<!--        </method>-->
+<!--      </class>-->
+      <class name="__getitem__" allocatable="true">
+        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self i" static="false">
+          <new def="_typeshed25" class="L_T"/>
+          <return value="_typeshed25"/>
+        </method>
+      </class>
+      <class name="__setitem__" allocatable="true">
+        <method name="do" descriptor="()LRoot;" numArgs="3" paramNames="self i o" static="false">
+          <new def="_typeshed26" class="LNone"/>
+          <return value="_typeshed26"/>
+        </method>
+      </class>
+<!--      <class name="__delitem__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self i" static="false">-->
+<!--          <new def="_typeshed27" class="LNone"/>-->
+<!--          <return value="_typeshed27"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__add__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self x" static="false">-->
+<!--          <new def="_typeshed28" class="Larray"/>-->
+<!--          <new def="_typeshed29" class="L_T"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed28" value="_typeshed29"/>-->
+<!--          <return value="_typeshed28"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__ge__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self other" static="false">-->
+<!--          <new def="_typeshed30" class="Z"/>-->
+<!--          <return value="_typeshed30"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__gt__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self other" static="false">-->
+<!--          <new def="_typeshed31" class="Z"/>-->
+<!--          <return value="_typeshed31"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__iadd__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self x" static="false">-->
+<!--          <new def="_typeshed32" class="Larray"/>-->
+<!--          <new def="_typeshed33" class="L_T"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed32" value="_typeshed33"/>-->
+<!--          <return value="_typeshed32"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__imul__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self n" static="false">-->
+<!--          <new def="_typeshed34" class="Larray"/>-->
+<!--          <new def="_typeshed35" class="L_T"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed34" value="_typeshed35"/>-->
+<!--          <return value="_typeshed34"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__le__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self other" static="false">-->
+<!--          <new def="_typeshed36" class="Z"/>-->
+<!--          <return value="_typeshed36"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__lt__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self other" static="false">-->
+<!--          <new def="_typeshed37" class="Z"/>-->
+<!--          <return value="_typeshed37"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__mul__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self n" static="false">-->
+<!--          <new def="_typeshed38" class="Larray"/>-->
+<!--          <new def="_typeshed39" class="L_T"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed38" value="_typeshed39"/>-->
+<!--          <return value="_typeshed38"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__rmul__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self n" static="false">-->
+<!--          <new def="_typeshed40" class="Larray"/>-->
+<!--          <new def="_typeshed41" class="L_T"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed40" value="_typeshed41"/>-->
+<!--          <return value="_typeshed40"/>-->
+<!--        </method>-->
+<!--      </class>-->
+    </package>
+  </classloader>
+</summary-spec>

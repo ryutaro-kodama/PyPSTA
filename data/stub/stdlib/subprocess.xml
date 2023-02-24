@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE summary-spec>
+<summary-spec>
+  <classloader name="PythonLoader">
+    <class name="subprocess" allocatable="true">
+      <method name="import" static="true" descriptor="()Lsubprocess;">
+        <new def="obj_typeshed_" class="Lsubprocess"/>
+<!--        <new def="CompletedProcess_typeshed_" class="Lsubprocess/class/CompletedProcess"/>-->
+<!--        <putfield class="LRoot" field="CompletedProcess" fieldType="LRoot" ref="obj_typeshed_" value="CompletedProcess_typeshed_"/>-->
+<!--        <new def="run_typeshed_" class="Lsubprocess/function/run"/>-->
+<!--        <putfield class="LRoot" field="run" fieldType="LRoot" ref="obj_typeshed_" value="run_typeshed_"/>-->
+<!--        <new def="call_typeshed_" class="Lsubprocess/function/call"/>-->
+<!--        <putfield class="LRoot" field="call" fieldType="LRoot" ref="obj_typeshed_" value="call_typeshed_"/>-->
+        <new def="check_call_typeshed_" class="Lsubprocess/function/check_call"/>
+        <putfield class="LRoot" field="check_call" fieldType="LRoot" ref="obj_typeshed_" value="check_call_typeshed_"/>
+        <new def="check_output_typeshed_" class="Lsubprocess/function/check_output"/>
+        <putfield class="LRoot" field="check_output" fieldType="LRoot" ref="obj_typeshed_" value="check_output_typeshed_"/>
+<!--        <new def="PIPE_typeshed_" class="I"/>-->
+<!--        <putfield class="LRoot" field="PIPE" fieldType="LRoot" ref="obj_typeshed_" value="PIPE_typeshed_"/>-->
+<!--        <new def="STDOUT_typeshed_" class="I"/>-->
+<!--        <putfield class="LRoot" field="STDOUT" fieldType="LRoot" ref="obj_typeshed_" value="STDOUT_typeshed_"/>-->
+<!--        <new def="DEVNULL_typeshed_" class="I"/>-->
+<!--        <putfield class="LRoot" field="DEVNULL" fieldType="LRoot" ref="obj_typeshed_" value="DEVNULL_typeshed_"/>-->
+<!--        <new def="SubprocessError_typeshed_" class="Lsubprocess/class/SubprocessError"/>-->
+<!--        <putfield class="LRoot" field="SubprocessError" fieldType="LRoot" ref="obj_typeshed_" value="SubprocessError_typeshed_"/>-->
+<!--        <new def="TimeoutExpired_typeshed_" class="Lsubprocess/class/TimeoutExpired"/>-->
+<!--        <putfield class="LRoot" field="TimeoutExpired" fieldType="LRoot" ref="obj_typeshed_" value="TimeoutExpired_typeshed_"/>-->
+<!--        <new def="CalledProcessError_typeshed_" class="Lsubprocess/class/CalledProcessError"/>-->
+<!--        <putfield class="LRoot" field="CalledProcessError" fieldType="LRoot" ref="obj_typeshed_" value="CalledProcessError_typeshed_"/>-->
+<!--        <new def="Popen_typeshed_" class="Lsubprocess/class/Popen"/>-->
+<!--        <putfield class="LRoot" field="Popen" fieldType="LRoot" ref="obj_typeshed_" value="Popen_typeshed_"/>-->
+<!--        <new def="getstatusoutput_typeshed_" class="Lsubprocess/function/getstatusoutput"/>-->
+<!--        <putfield class="LRoot" field="getstatusoutput" fieldType="LRoot" ref="obj_typeshed_" value="getstatusoutput_typeshed_"/>-->
+<!--        <new def="getoutput_typeshed_" class="Lsubprocess/function/getoutput"/>-->
+<!--        <putfield class="LRoot" field="getoutput" fieldType="LRoot" ref="obj_typeshed_" value="getoutput_typeshed_"/>-->
+<!--        <new def="list2cmdline_typeshed_" class="Lsubprocess/function/list2cmdline"/>-->
+<!--        <putfield class="LRoot" field="list2cmdline" fieldType="LRoot" ref="obj_typeshed_" value="list2cmdline_typeshed_"/>-->
+<!--        <new def="STARTUPINFO_typeshed_" class="Lsubprocess/class/STARTUPINFO"/>-->
+<!--        <putfield class="LRoot" field="STARTUPINFO" fieldType="LRoot" ref="obj_typeshed_" value="STARTUPINFO_typeshed_"/>-->
+<!--        <new def="STD_INPUT_HANDLE_typeshed_" class="Lobject"/>-->
+<!--        <putfield class="LRoot" field="STD_INPUT_HANDLE" fieldType="LRoot" ref="obj_typeshed_" value="STD_INPUT_HANDLE_typeshed_"/>-->
+<!--        <new def="STD_OUTPUT_HANDLE_typeshed_" class="Lobject"/>-->
+<!--        <putfield class="LRoot" field="STD_OUTPUT_HANDLE" fieldType="LRoot" ref="obj_typeshed_" value="STD_OUTPUT_HANDLE_typeshed_"/>-->
+<!--        <new def="STD_ERROR_HANDLE_typeshed_" class="Lobject"/>-->
+<!--        <putfield class="LRoot" field="STD_ERROR_HANDLE" fieldType="LRoot" ref="obj_typeshed_" value="STD_ERROR_HANDLE_typeshed_"/>-->
+<!--        <new def="SW_HIDE_typeshed_" class="I"/>-->
+<!--        <putfield class="LRoot" field="SW_HIDE" fieldType="LRoot" ref="obj_typeshed_" value="SW_HIDE_typeshed_"/>-->
+<!--        <new def="STARTF_USESTDHANDLES_typeshed_" class="I"/>-->
+<!--        <putfield class="LRoot" field="STARTF_USESTDHANDLES" fieldType="LRoot" ref="obj_typeshed_" value="STARTF_USESTDHANDLES_typeshed_"/>-->
+<!--        <new def="STARTF_USESHOWWINDOW_typeshed_" class="I"/>-->
+<!--        <putfield class="LRoot" field="STARTF_USESHOWWINDOW" fieldType="LRoot" ref="obj_typeshed_" value="STARTF_USESHOWWINDOW_typeshed_"/>-->
+<!--        <new def="CREATE_NEW_CONSOLE_typeshed_" class="I"/>-->
+<!--        <putfield class="LRoot" field="CREATE_NEW_CONSOLE" fieldType="LRoot" ref="obj_typeshed_" value="CREATE_NEW_CONSOLE_typeshed_"/>-->
+<!--        <new def="CREATE_NEW_PROCESS_GROUP_typeshed_" class="I"/>-->
+<!--        <putfield class="LRoot" field="CREATE_NEW_PROCESS_GROUP" fieldType="LRoot" ref="obj_typeshed_" value="CREATE_NEW_PROCESS_GROUP_typeshed_"/>-->
+<!--        <new def="ABOVE_NORMAL_PRIORITY_CLASS_typeshed_" class="I"/>-->
+<!--        <putfield class="LRoot" field="ABOVE_NORMAL_PRIORITY_CLASS" fieldType="LRoot" ref="obj_typeshed_" value="ABOVE_NORMAL_PRIORITY_CLASS_typeshed_"/>-->
+<!--        <new def="BELOW_NORMAL_PRIORITY_CLASS_typeshed_" class="I"/>-->
+<!--        <putfield class="LRoot" field="BELOW_NORMAL_PRIORITY_CLASS" fieldType="LRoot" ref="obj_typeshed_" value="BELOW_NORMAL_PRIORITY_CLASS_typeshed_"/>-->
+<!--        <new def="HIGH_PRIORITY_CLASS_typeshed_" class="I"/>-->
+<!--        <putfield class="LRoot" field="HIGH_PRIORITY_CLASS" fieldType="LRoot" ref="obj_typeshed_" value="HIGH_PRIORITY_CLASS_typeshed_"/>-->
+<!--        <new def="IDLE_PRIORITY_CLASS_typeshed_" class="I"/>-->
+<!--        <putfield class="LRoot" field="IDLE_PRIORITY_CLASS" fieldType="LRoot" ref="obj_typeshed_" value="IDLE_PRIORITY_CLASS_typeshed_"/>-->
+<!--        <new def="NORMAL_PRIORITY_CLASS_typeshed_" class="I"/>-->
+<!--        <putfield class="LRoot" field="NORMAL_PRIORITY_CLASS" fieldType="LRoot" ref="obj_typeshed_" value="NORMAL_PRIORITY_CLASS_typeshed_"/>-->
+<!--        <new def="REALTIME_PRIORITY_CLASS_typeshed_" class="I"/>-->
+<!--        <putfield class="LRoot" field="REALTIME_PRIORITY_CLASS" fieldType="LRoot" ref="obj_typeshed_" value="REALTIME_PRIORITY_CLASS_typeshed_"/>-->
+<!--        <new def="CREATE_NO_WINDOW_typeshed_" class="I"/>-->
+<!--        <putfield class="LRoot" field="CREATE_NO_WINDOW" fieldType="LRoot" ref="obj_typeshed_" value="CREATE_NO_WINDOW_typeshed_"/>-->
+<!--        <new def="DETACHED_PROCESS_typeshed_" class="I"/>-->
+<!--        <putfield class="LRoot" field="DETACHED_PROCESS" fieldType="LRoot" ref="obj_typeshed_" value="DETACHED_PROCESS_typeshed_"/>-->
+<!--        <new def="CREATE_DEFAULT_ERROR_MODE_typeshed_" class="I"/>-->
+<!--        <putfield class="LRoot" field="CREATE_DEFAULT_ERROR_MODE" fieldType="LRoot" ref="obj_typeshed_" value="CREATE_DEFAULT_ERROR_MODE_typeshed_"/>-->
+<!--        <new def="CREATE_BREAKAWAY_FROM_JOB_typeshed_" class="I"/>-->
+<!--        <putfield class="LRoot" field="CREATE_BREAKAWAY_FROM_JOB" fieldType="LRoot" ref="obj_typeshed_" value="CREATE_BREAKAWAY_FROM_JOB_typeshed_"/>-->
+        <return value="obj_typeshed_"/>
+      </method>
+    </class>
+    <package name="subprocess/function">
+<!--      <class name="run" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="24" paramNames="args bufsize executable stdin stdout stderr preexec_fn close_fds shell cwd env universal_newlines startupinfo creationflags restore_signals start_new_session pass_fds capture_output check encoding errors input text timeout" static="false">-->
+<!--          <new def="_typeshed3" class="LCompletedProcess"/>-->
+<!--          <new def="_typeshed4" class="Lstring"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed3" value="_typeshed4"/>-->
+<!--          <return value="_typeshed3"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="call" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="18" paramNames="args bufsize executable stdin stdout stderr preexec_fn close_fds shell cwd env universal_newlines startupinfo creationflags restore_signals start_new_session pass_fds timeout" static="false">-->
+<!--          <new def="_typeshed5" class="I"/>-->
+<!--          <return value="_typeshed5"/>-->
+<!--        </method>-->
+<!--      </class>-->
+      <class name="check_call" allocatable="true">
+        <method name="do" descriptor="()LRoot;" numArgs="18" paramNames="args bufsize executable stdin stdout stderr preexec_fn close_fds shell cwd env universal_newlines startupinfo creationflags restore_signals start_new_session pass_fds timeout" static="false">
+          <new def="_typeshed6" class="I"/>
+          <return value="_typeshed6"/>
+        </method>
+      </class>
+      <class name="check_output" allocatable="true">
+        <method name="do" descriptor="()LRoot;" numArgs="21" paramNames="args bufsize executable stdin stderr preexec_fn close_fds shell cwd env universal_newlines startupinfo creationflags restore_signals start_new_session pass_fds timeout input encoding errors text" static="false">
+          <new def="_typeshed7" class="Lstring"/>
+          <return value="_typeshed7"/>
+        </method>
+      </class>
+<!--      <class name="getstatusoutput" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="cmd" static="false">-->
+<!--          <new def="_typeshed23" class="Ltuple"/>-->
+<!--          <new def="_typeshed24" class="I"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed23" value="_typeshed24"/>-->
+<!--          <new def="_typeshed25" class="Lstring"/>-->
+<!--          <putfield class="LRoot" field="1" fieldType="LRoot" ref="_typeshed23" value="_typeshed25"/>-->
+<!--          <return value="_typeshed23"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="getoutput" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="cmd" static="false">-->
+<!--          <new def="_typeshed26" class="Lstring"/>-->
+<!--          <return value="_typeshed26"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="list2cmdline" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="seq" static="false">-->
+<!--          <new def="_typeshed27" class="Lstring"/>-->
+<!--          <return value="_typeshed27"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--    </package>-->
+<!--    <package name="subprocess/class">-->
+<!--      <class name="CompletedProcess" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;">-->
+<!--          <new def="CompletedProcess_typeshed_" class="Lsubprocess/class/CompletedProcess"/>-->
+<!--          <new def="args_typeshed_" class="Lobject"/>-->
+<!--          <putfield class="LRoot" field="args" fieldType="LRoot" ref="CompletedProcess_typeshed_" value="args_typeshed_"/>-->
+<!--          <new def="returncode_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="returncode" fieldType="LRoot" ref="CompletedProcess_typeshed_" value="returncode_typeshed_"/>-->
+<!--          <new def="stdout_typeshed_" class="L_T"/>-->
+<!--          <putfield class="LRoot" field="stdout" fieldType="LRoot" ref="CompletedProcess_typeshed_" value="stdout_typeshed_"/>-->
+<!--          <new def="stderr_typeshed_" class="L_T"/>-->
+<!--          <putfield class="LRoot" field="stderr" fieldType="LRoot" ref="CompletedProcess_typeshed_" value="stderr_typeshed_"/>-->
+<!--          <new def="__init___typeshed_" class="Lsubprocess/CompletedProcess/__init__"/>-->
+<!--          <putfield class="LRoot" field="__init__" fieldType="LRoot" ref="CompletedProcess_typeshed_" value="__init___typeshed_"/>-->
+<!--          <new def="check_returncode_typeshed_" class="Lsubprocess/CompletedProcess/check_returncode"/>-->
+<!--          <putfield class="LRoot" field="check_returncode" fieldType="LRoot" ref="CompletedProcess_typeshed_" value="check_returncode_typeshed_"/>-->
+<!--          <new def="__class_getitem___typeshed_" class="Lsubprocess/CompletedProcess/__class_getitem__"/>-->
+<!--          <putfield class="LRoot" field="__class_getitem__" fieldType="LRoot" ref="CompletedProcess_typeshed_" value="__class_getitem___typeshed_"/>-->
+<!--          <return value="CompletedProcess_typeshed_"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="SubprocessError" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;">-->
+<!--          <new def="SubprocessError_typeshed_" class="Lsubprocess/class/SubprocessError"/>-->
+<!--          <return value="SubprocessError_typeshed_"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="TimeoutExpired" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;">-->
+<!--          <new def="TimeoutExpired_typeshed_" class="Lsubprocess/class/TimeoutExpired"/>-->
+<!--          <new def="__init___typeshed_" class="Lsubprocess/TimeoutExpired/__init__"/>-->
+<!--          <putfield class="LRoot" field="__init__" fieldType="LRoot" ref="TimeoutExpired_typeshed_" value="__init___typeshed_"/>-->
+<!--          <new def="cmd_typeshed_" class="Lobject"/>-->
+<!--          <putfield class="LRoot" field="cmd" fieldType="LRoot" ref="TimeoutExpired_typeshed_" value="cmd_typeshed_"/>-->
+<!--          <new def="timeout_typeshed_" class="D"/>-->
+<!--          <putfield class="LRoot" field="timeout" fieldType="LRoot" ref="TimeoutExpired_typeshed_" value="timeout_typeshed_"/>-->
+<!--          <new def="output_typeshed_" class="Lobject"/>-->
+<!--          <putfield class="LRoot" field="output" fieldType="LRoot" ref="TimeoutExpired_typeshed_" value="output_typeshed_"/>-->
+<!--          <new def="stdout_typeshed_" class="Lobject"/>-->
+<!--          <putfield class="LRoot" field="stdout" fieldType="LRoot" ref="TimeoutExpired_typeshed_" value="stdout_typeshed_"/>-->
+<!--          <new def="stderr_typeshed_" class="Lobject"/>-->
+<!--          <putfield class="LRoot" field="stderr" fieldType="LRoot" ref="TimeoutExpired_typeshed_" value="stderr_typeshed_"/>-->
+<!--          <return value="TimeoutExpired_typeshed_"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="CalledProcessError" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;">-->
+<!--          <new def="CalledProcessError_typeshed_" class="Lsubprocess/class/CalledProcessError"/>-->
+<!--          <new def="returncode_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="returncode" fieldType="LRoot" ref="CalledProcessError_typeshed_" value="returncode_typeshed_"/>-->
+<!--          <new def="cmd_typeshed_" class="Lobject"/>-->
+<!--          <putfield class="LRoot" field="cmd" fieldType="LRoot" ref="CalledProcessError_typeshed_" value="cmd_typeshed_"/>-->
+<!--          <new def="output_typeshed_" class="Lobject"/>-->
+<!--          <putfield class="LRoot" field="output" fieldType="LRoot" ref="CalledProcessError_typeshed_" value="output_typeshed_"/>-->
+<!--          <new def="stdout_typeshed_" class="Lobject"/>-->
+<!--          <putfield class="LRoot" field="stdout" fieldType="LRoot" ref="CalledProcessError_typeshed_" value="stdout_typeshed_"/>-->
+<!--          <new def="stderr_typeshed_" class="Lobject"/>-->
+<!--          <putfield class="LRoot" field="stderr" fieldType="LRoot" ref="CalledProcessError_typeshed_" value="stderr_typeshed_"/>-->
+<!--          <new def="__init___typeshed_" class="Lsubprocess/CalledProcessError/__init__"/>-->
+<!--          <putfield class="LRoot" field="__init__" fieldType="LRoot" ref="CalledProcessError_typeshed_" value="__init___typeshed_"/>-->
+<!--          <return value="CalledProcessError_typeshed_"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="Popen" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;">-->
+<!--          <new def="Popen_typeshed_" class="Lsubprocess/class/Popen"/>-->
+<!--          <new def="args_typeshed_" class="L_CMD"/>-->
+<!--          <putfield class="LRoot" field="args" fieldType="LRoot" ref="Popen_typeshed_" value="args_typeshed_"/>-->
+<!--          <new def="stdin_typeshed_" class="LIO LNone"/>-->
+<!--          <putfield class="LRoot" field="stdin" fieldType="LRoot" ref="Popen_typeshed_" value="stdin_typeshed_"/>-->
+<!--          <new def="stdout_typeshed_" class="LIO LNone"/>-->
+<!--          <putfield class="LRoot" field="stdout" fieldType="LRoot" ref="Popen_typeshed_" value="stdout_typeshed_"/>-->
+<!--          <new def="stderr_typeshed_" class="LIO LNone"/>-->
+<!--          <putfield class="LRoot" field="stderr" fieldType="LRoot" ref="Popen_typeshed_" value="stderr_typeshed_"/>-->
+<!--          <new def="pid_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="pid" fieldType="LRoot" ref="Popen_typeshed_" value="pid_typeshed_"/>-->
+<!--          <new def="returncode_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="returncode" fieldType="LRoot" ref="Popen_typeshed_" value="returncode_typeshed_"/>-->
+<!--          <new def="universal_newlines_typeshed_" class="Z"/>-->
+<!--          <putfield class="LRoot" field="universal_newlines" fieldType="LRoot" ref="Popen_typeshed_" value="universal_newlines_typeshed_"/>-->
+<!--          <new def="__new___typeshed_" class="Lsubprocess/Popen/__new__"/>-->
+<!--          <putfield class="LRoot" field="__new__" fieldType="LRoot" ref="Popen_typeshed_" value="__new___typeshed_"/>-->
+<!--          <new def="poll_typeshed_" class="Lsubprocess/Popen/poll"/>-->
+<!--          <putfield class="LRoot" field="poll" fieldType="LRoot" ref="Popen_typeshed_" value="poll_typeshed_"/>-->
+<!--          <new def="wait_typeshed_" class="Lsubprocess/Popen/wait"/>-->
+<!--          <putfield class="LRoot" field="wait" fieldType="LRoot" ref="Popen_typeshed_" value="wait_typeshed_"/>-->
+<!--          <new def="communicate_typeshed_" class="Lsubprocess/Popen/communicate"/>-->
+<!--          <putfield class="LRoot" field="communicate" fieldType="LRoot" ref="Popen_typeshed_" value="communicate_typeshed_"/>-->
+<!--          <new def="send_signal_typeshed_" class="Lsubprocess/Popen/send_signal"/>-->
+<!--          <putfield class="LRoot" field="send_signal" fieldType="LRoot" ref="Popen_typeshed_" value="send_signal_typeshed_"/>-->
+<!--          <new def="terminate_typeshed_" class="Lsubprocess/Popen/terminate"/>-->
+<!--          <putfield class="LRoot" field="terminate" fieldType="LRoot" ref="Popen_typeshed_" value="terminate_typeshed_"/>-->
+<!--          <new def="kill_typeshed_" class="Lsubprocess/Popen/kill"/>-->
+<!--          <putfield class="LRoot" field="kill" fieldType="LRoot" ref="Popen_typeshed_" value="kill_typeshed_"/>-->
+<!--          <new def="__enter___typeshed_" class="Lsubprocess/Popen/__enter__"/>-->
+<!--          <putfield class="LRoot" field="__enter__" fieldType="LRoot" ref="Popen_typeshed_" value="__enter___typeshed_"/>-->
+<!--          <new def="__exit___typeshed_" class="Lsubprocess/Popen/__exit__"/>-->
+<!--          <putfield class="LRoot" field="__exit__" fieldType="LRoot" ref="Popen_typeshed_" value="__exit___typeshed_"/>-->
+<!--          <new def="__class_getitem___typeshed_" class="Lsubprocess/Popen/__class_getitem__"/>-->
+<!--          <putfield class="LRoot" field="__class_getitem__" fieldType="LRoot" ref="Popen_typeshed_" value="__class_getitem___typeshed_"/>-->
+<!--          <return value="Popen_typeshed_"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="STARTUPINFO" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;">-->
+<!--          <new def="STARTUPINFO_typeshed_" class="Lsubprocess/class/STARTUPINFO"/>-->
+<!--          <new def="__init___typeshed_" class="Lsubprocess/STARTUPINFO/__init__"/>-->
+<!--          <putfield class="LRoot" field="__init__" fieldType="LRoot" ref="STARTUPINFO_typeshed_" value="__init___typeshed_"/>-->
+<!--          <new def="dwFlags_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="dwFlags" fieldType="LRoot" ref="STARTUPINFO_typeshed_" value="dwFlags_typeshed_"/>-->
+<!--          <new def="hStdInput_typeshed_" class="Lobject LNone"/>-->
+<!--          <putfield class="LRoot" field="hStdInput" fieldType="LRoot" ref="STARTUPINFO_typeshed_" value="hStdInput_typeshed_"/>-->
+<!--          <new def="hStdOutput_typeshed_" class="Lobject LNone"/>-->
+<!--          <putfield class="LRoot" field="hStdOutput" fieldType="LRoot" ref="STARTUPINFO_typeshed_" value="hStdOutput_typeshed_"/>-->
+<!--          <new def="hStdError_typeshed_" class="Lobject LNone"/>-->
+<!--          <putfield class="LRoot" field="hStdError" fieldType="LRoot" ref="STARTUPINFO_typeshed_" value="hStdError_typeshed_"/>-->
+<!--          <new def="wShowWindow_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="wShowWindow" fieldType="LRoot" ref="STARTUPINFO_typeshed_" value="wShowWindow_typeshed_"/>-->
+<!--          <new def="lpAttributeList_typeshed_" class="LMapping"/>-->
+<!--          <putfield class="LRoot" field="lpAttributeList" fieldType="LRoot" ref="STARTUPINFO_typeshed_" value="lpAttributeList_typeshed_"/>-->
+<!--          <return value="STARTUPINFO_typeshed_"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--    </package>-->
+<!--    <package name="subprocess/CompletedProcess">-->
+<!--      <class name="__init__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="5" paramNames="self args returncode stdout stderr" static="false">-->
+<!--          <new def="_typeshed0" class="LNone"/>-->
+<!--          <return value="_typeshed0"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="check_returncode" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed1" class="LNone"/>-->
+<!--          <return value="_typeshed1"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__class_getitem__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="cls item" static="false">-->
+<!--          <new def="_typeshed2" class="LGenericAlias"/>-->
+<!--          <return value="_typeshed2"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--    </package>-->
+<!--    <package name="subprocess/SubprocessError"/>-->
+<!--    <package name="subprocess/TimeoutExpired">-->
+<!--      <class name="__init__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="5" paramNames="self cmd timeout output stderr" static="false">-->
+<!--          <new def="_typeshed8" class="LNone"/>-->
+<!--          <return value="_typeshed8"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--    </package>-->
+<!--    <package name="subprocess/CalledProcessError">-->
+<!--      <class name="__init__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="5" paramNames="self returncode cmd output stderr" static="false">-->
+<!--          <new def="_typeshed9" class="LNone"/>-->
+<!--          <return value="_typeshed9"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--    </package>-->
+<!--    <package name="subprocess/Popen">-->
+<!--      <class name="__new__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="21" paramNames="cls args bufsize executable stdin stdout stderr preexec_fn close_fds shell cwd env universal_newlines startupinfo creationflags restore_signals start_new_session pass_fds text encoding errors" static="false">-->
+<!--          <new def="_typeshed10" class="LPopen"/>-->
+<!--          <new def="_typeshed11" class="Lstring"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed10" value="_typeshed11"/>-->
+<!--          <return value="_typeshed10"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="poll" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed12" class="I LNone"/>-->
+<!--          <return value="_typeshed12"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="wait" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self timeout" static="false">-->
+<!--          <new def="_typeshed13" class="I"/>-->
+<!--          <return value="_typeshed13"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="communicate" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="3" paramNames="self input timeout" static="false">-->
+<!--          <new def="_typeshed14" class="Ltuple"/>-->
+<!--          <new def="_typeshed15" class="LAnyStr"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed14" value="_typeshed15"/>-->
+<!--          <new def="_typeshed16" class="LAnyStr"/>-->
+<!--          <putfield class="LRoot" field="1" fieldType="LRoot" ref="_typeshed14" value="_typeshed16"/>-->
+<!--          <return value="_typeshed14"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="send_signal" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self sig" static="false">-->
+<!--          <new def="_typeshed17" class="LNone"/>-->
+<!--          <return value="_typeshed17"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="terminate" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed18" class="LNone"/>-->
+<!--          <return value="_typeshed18"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="kill" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed19" class="LNone"/>-->
+<!--          <return value="_typeshed19"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__enter__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed20" class="LSelf"/>-->
+<!--          <return value="_typeshed20"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__exit__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="4" paramNames="self type value traceback" static="false">-->
+<!--          <new def="_typeshed21" class="LNone"/>-->
+<!--          <return value="_typeshed21"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__class_getitem__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="cls item" static="false">-->
+<!--          <new def="_typeshed22" class="LGenericAlias"/>-->
+<!--          <return value="_typeshed22"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--    </package>-->
+<!--    <package name="subprocess/STARTUPINFO">-->
+<!--      <class name="__init__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="7" paramNames="self dwFlags hStdInput hStdOutput hStdError wShowWindow lpAttributeList" static="false">-->
+<!--          <new def="_typeshed28" class="LNone"/>-->
+<!--          <return value="_typeshed28"/>-->
+<!--        </method>-->
+<!--      </class>-->
+    </package>
+  </classloader>
+</summary-spec>

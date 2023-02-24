@@ -1,0 +1,741 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE summary-spec>
+<summary-spec>
+  <classloader name="PythonLoader">
+    <class name="itertools" allocatable="true">
+      <method name="import" static="true" descriptor="()Litertools;">
+        <new def="obj_typeshed_" class="Litertools"/>
+<!--        <new def="count_typeshed_" class="Litertools/class/count"/>-->
+<!--        <putfield class="LRoot" field="count" fieldType="LRoot" ref="obj_typeshed_" value="count_typeshed_"/>-->
+<!--        <new def="cycle_typeshed_" class="Litertools/class/cycle"/>-->
+<!--        <putfield class="LRoot" field="cycle" fieldType="LRoot" ref="obj_typeshed_" value="cycle_typeshed_"/>-->
+<!--        <new def="repeat_typeshed_" class="Litertools/class/repeat"/>-->
+<!--        <putfield class="LRoot" field="repeat" fieldType="LRoot" ref="obj_typeshed_" value="repeat_typeshed_"/>-->
+<!--        <new def="accumulate_typeshed_" class="Litertools/class/accumulate"/>-->
+<!--        <putfield class="LRoot" field="accumulate" fieldType="LRoot" ref="obj_typeshed_" value="accumulate_typeshed_"/>-->
+        <new def="chain_typeshed_" class="Litertools/class/chain"/>
+        <new def="chain_from_iterable_typeshed_" class="Litertools/chain/from_iterable"/>
+        <putfield class="LRoot" field="from_iterable" fieldType="LRoot" ref="chain_typeshed_" value="chain_from_iterable_typeshed_"/>
+        <putfield class="LRoot" field="chain" fieldType="LRoot" ref="obj_typeshed_" value="chain_typeshed_"/>
+<!--        <new def="compress_typeshed_" class="Litertools/class/compress"/>-->
+<!--        <putfield class="LRoot" field="compress" fieldType="LRoot" ref="obj_typeshed_" value="compress_typeshed_"/>-->
+<!--        <new def="dropwhile_typeshed_" class="Litertools/class/dropwhile"/>-->
+<!--        <putfield class="LRoot" field="dropwhile" fieldType="LRoot" ref="obj_typeshed_" value="dropwhile_typeshed_"/>-->
+<!--        <new def="filterfalse_typeshed_" class="Litertools/class/filterfalse"/>-->
+<!--        <putfield class="LRoot" field="filterfalse" fieldType="LRoot" ref="obj_typeshed_" value="filterfalse_typeshed_"/>-->
+<!--        <new def="groupby_typeshed_" class="Litertools/class/groupby"/>-->
+<!--        <putfield class="LRoot" field="groupby" fieldType="LRoot" ref="obj_typeshed_" value="groupby_typeshed_"/>-->
+<!--        <new def="islice_typeshed_" class="Litertools/class/islice"/>-->
+<!--        <putfield class="LRoot" field="islice" fieldType="LRoot" ref="obj_typeshed_" value="islice_typeshed_"/>-->
+<!--        <new def="starmap_typeshed_" class="Litertools/class/starmap"/>-->
+<!--        <putfield class="LRoot" field="starmap" fieldType="LRoot" ref="obj_typeshed_" value="starmap_typeshed_"/>-->
+<!--        <new def="takewhile_typeshed_" class="Litertools/class/takewhile"/>-->
+<!--        <putfield class="LRoot" field="takewhile" fieldType="LRoot" ref="obj_typeshed_" value="takewhile_typeshed_"/>-->
+<!--        <new def="tee_typeshed_" class="Litertools/function/tee"/>-->
+<!--        <putfield class="LRoot" field="tee" fieldType="LRoot" ref="obj_typeshed_" value="tee_typeshed_"/>-->
+<!--        <new def="zip_longest_typeshed_" class="Litertools/class/zip_longest"/>-->
+<!--        <putfield class="LRoot" field="zip_longest" fieldType="LRoot" ref="obj_typeshed_" value="zip_longest_typeshed_"/>-->
+<!--        <new def="product_typeshed_" class="Litertools/class/product"/>-->
+<!--        <putfield class="LRoot" field="product" fieldType="LRoot" ref="obj_typeshed_" value="product_typeshed_"/>-->
+<!--        <new def="permutations_typeshed_" class="Litertools/class/permutations"/>-->
+<!--        <putfield class="LRoot" field="permutations" fieldType="LRoot" ref="obj_typeshed_" value="permutations_typeshed_"/>-->
+<!--        <new def="combinations_typeshed_" class="Litertools/class/combinations"/>-->
+<!--        <putfield class="LRoot" field="combinations" fieldType="LRoot" ref="obj_typeshed_" value="combinations_typeshed_"/>-->
+<!--        <new def="combinations_with_replacement_typeshed_" class="Litertools/class/combinations_with_replacement"/>-->
+<!--        <putfield class="LRoot" field="combinations_with_replacement" fieldType="LRoot" ref="obj_typeshed_" value="combinations_with_replacement_typeshed_"/>-->
+<!--        <new def="pairwise_typeshed_" class="Litertools/class/pairwise"/>-->
+<!--        <putfield class="LRoot" field="pairwise" fieldType="LRoot" ref="obj_typeshed_" value="pairwise_typeshed_"/>-->
+        <return value="obj_typeshed_"/>
+      </method>
+    </class>
+<!--    <package name="itertools/function">-->
+<!--      <class name="tee" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="__iterable __n" static="false">-->
+<!--          <new def="_typeshed59" class="LTuple"/>-->
+<!--          <new def="_typeshed60" class="LIterator"/>-->
+<!--          <new def="_typeshed61" class="L_T"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed60" value="_typeshed61"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed59" value="_typeshed60"/>-->
+<!--          <new def="_typeshed62" class="LEllipsis"/>-->
+<!--          <putfield class="LRoot" field="1" fieldType="LRoot" ref="_typeshed59" value="_typeshed62"/>-->
+<!--          <return value="_typeshed59"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--    </package>-->
+    <package name="itertools/class">
+<!--      <class name="count" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;">-->
+<!--          <new def="count_typeshed_" class="Litertools/class/count"/>-->
+<!--          <new def="__new___typeshed_" class="Litertools/count/__new__"/>-->
+<!--          <putfield class="LRoot" field="__new__" fieldType="LRoot" ref="count_typeshed_" value="__new___typeshed_"/>-->
+<!--          <new def="__next___typeshed_" class="Litertools/count/__next__"/>-->
+<!--          <putfield class="LRoot" field="__next__" fieldType="LRoot" ref="count_typeshed_" value="__next___typeshed_"/>-->
+<!--          <new def="__iter___typeshed_" class="Litertools/count/__iter__"/>-->
+<!--          <putfield class="LRoot" field="__iter__" fieldType="LRoot" ref="count_typeshed_" value="__iter___typeshed_"/>-->
+<!--          <return value="count_typeshed_"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="cycle" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;">-->
+<!--          <new def="cycle_typeshed_" class="Litertools/class/cycle"/>-->
+<!--          <new def="__init___typeshed_" class="Litertools/cycle/__init__"/>-->
+<!--          <putfield class="LRoot" field="__init__" fieldType="LRoot" ref="cycle_typeshed_" value="__init___typeshed_"/>-->
+<!--          <new def="__next___typeshed_" class="Litertools/cycle/__next__"/>-->
+<!--          <putfield class="LRoot" field="__next__" fieldType="LRoot" ref="cycle_typeshed_" value="__next___typeshed_"/>-->
+<!--          <new def="__iter___typeshed_" class="Litertools/cycle/__iter__"/>-->
+<!--          <putfield class="LRoot" field="__iter__" fieldType="LRoot" ref="cycle_typeshed_" value="__iter___typeshed_"/>-->
+<!--          <return value="cycle_typeshed_"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="repeat" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;">-->
+<!--          <new def="repeat_typeshed_" class="Litertools/class/repeat"/>-->
+<!--          <new def="__init___typeshed_" class="Litertools/repeat/__init__"/>-->
+<!--          <putfield class="LRoot" field="__init__" fieldType="LRoot" ref="repeat_typeshed_" value="__init___typeshed_"/>-->
+<!--          <new def="__next___typeshed_" class="Litertools/repeat/__next__"/>-->
+<!--          <putfield class="LRoot" field="__next__" fieldType="LRoot" ref="repeat_typeshed_" value="__next___typeshed_"/>-->
+<!--          <new def="__iter___typeshed_" class="Litertools/repeat/__iter__"/>-->
+<!--          <putfield class="LRoot" field="__iter__" fieldType="LRoot" ref="repeat_typeshed_" value="__iter___typeshed_"/>-->
+<!--          <return value="repeat_typeshed_"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="accumulate" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;">-->
+<!--          <new def="accumulate_typeshed_" class="Litertools/class/accumulate"/>-->
+<!--          <new def="__init___typeshed_" class="Litertools/accumulate/__init__"/>-->
+<!--          <putfield class="LRoot" field="__init__" fieldType="LRoot" ref="accumulate_typeshed_" value="__init___typeshed_"/>-->
+<!--          <new def="__iter___typeshed_" class="Litertools/accumulate/__iter__"/>-->
+<!--          <putfield class="LRoot" field="__iter__" fieldType="LRoot" ref="accumulate_typeshed_" value="__iter___typeshed_"/>-->
+<!--          <new def="__next___typeshed_" class="Litertools/accumulate/__next__"/>-->
+<!--          <putfield class="LRoot" field="__next__" fieldType="LRoot" ref="accumulate_typeshed_" value="__next___typeshed_"/>-->
+<!--          <return value="accumulate_typeshed_"/>-->
+<!--        </method>-->
+<!--      </class>-->
+      <class name="chain" allocatable="true">
+        <method name="do" descriptor="()LRoot;">
+          <new def="chain_typeshed_" class="Litertools/class/chain"/>
+<!--          <new def="__init___typeshed_" class="Litertools/chain/__init__"/>-->
+<!--          <putfield class="LRoot" field="__init__" fieldType="LRoot" ref="chain_typeshed_" value="__init___typeshed_"/>-->
+<!--          <new def="__next___typeshed_" class="Litertools/chain/__next__"/>-->
+<!--          <putfield class="LRoot" field="__next__" fieldType="LRoot" ref="chain_typeshed_" value="__next___typeshed_"/>-->
+<!--          <new def="__iter___typeshed_" class="Litertools/chain/__iter__"/>-->
+<!--          <putfield class="LRoot" field="__iter__" fieldType="LRoot" ref="chain_typeshed_" value="__iter___typeshed_"/>-->
+          <new def="from_iterable_typeshed_" class="Litertools/chain/from_iterable"/>
+          <putfield class="LRoot" field="from_iterable" fieldType="LRoot" ref="chain_typeshed_" value="from_iterable_typeshed_"/>
+          <return value="chain_typeshed_"/>
+        </method>
+      </class>
+<!--      <class name="compress" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;">-->
+<!--          <new def="compress_typeshed_" class="Litertools/class/compress"/>-->
+<!--          <new def="__init___typeshed_" class="Litertools/compress/__init__"/>-->
+<!--          <putfield class="LRoot" field="__init__" fieldType="LRoot" ref="compress_typeshed_" value="__init___typeshed_"/>-->
+<!--          <new def="__iter___typeshed_" class="Litertools/compress/__iter__"/>-->
+<!--          <putfield class="LRoot" field="__iter__" fieldType="LRoot" ref="compress_typeshed_" value="__iter___typeshed_"/>-->
+<!--          <new def="__next___typeshed_" class="Litertools/compress/__next__"/>-->
+<!--          <putfield class="LRoot" field="__next__" fieldType="LRoot" ref="compress_typeshed_" value="__next___typeshed_"/>-->
+<!--          <return value="compress_typeshed_"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="dropwhile" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;">-->
+<!--          <new def="dropwhile_typeshed_" class="Litertools/class/dropwhile"/>-->
+<!--          <new def="__init___typeshed_" class="Litertools/dropwhile/__init__"/>-->
+<!--          <putfield class="LRoot" field="__init__" fieldType="LRoot" ref="dropwhile_typeshed_" value="__init___typeshed_"/>-->
+<!--          <new def="__iter___typeshed_" class="Litertools/dropwhile/__iter__"/>-->
+<!--          <putfield class="LRoot" field="__iter__" fieldType="LRoot" ref="dropwhile_typeshed_" value="__iter___typeshed_"/>-->
+<!--          <new def="__next___typeshed_" class="Litertools/dropwhile/__next__"/>-->
+<!--          <putfield class="LRoot" field="__next__" fieldType="LRoot" ref="dropwhile_typeshed_" value="__next___typeshed_"/>-->
+<!--          <return value="dropwhile_typeshed_"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="filterfalse" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;">-->
+<!--          <new def="filterfalse_typeshed_" class="Litertools/class/filterfalse"/>-->
+<!--          <new def="__init___typeshed_" class="Litertools/filterfalse/__init__"/>-->
+<!--          <putfield class="LRoot" field="__init__" fieldType="LRoot" ref="filterfalse_typeshed_" value="__init___typeshed_"/>-->
+<!--          <new def="__iter___typeshed_" class="Litertools/filterfalse/__iter__"/>-->
+<!--          <putfield class="LRoot" field="__iter__" fieldType="LRoot" ref="filterfalse_typeshed_" value="__iter___typeshed_"/>-->
+<!--          <new def="__next___typeshed_" class="Litertools/filterfalse/__next__"/>-->
+<!--          <putfield class="LRoot" field="__next__" fieldType="LRoot" ref="filterfalse_typeshed_" value="__next___typeshed_"/>-->
+<!--          <return value="filterfalse_typeshed_"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="groupby" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;">-->
+<!--          <new def="groupby_typeshed_" class="Litertools/class/groupby"/>-->
+<!--          <new def="__new___typeshed_" class="Litertools/groupby/__new__"/>-->
+<!--          <putfield class="LRoot" field="__new__" fieldType="LRoot" ref="groupby_typeshed_" value="__new___typeshed_"/>-->
+<!--          <new def="__iter___typeshed_" class="Litertools/groupby/__iter__"/>-->
+<!--          <putfield class="LRoot" field="__iter__" fieldType="LRoot" ref="groupby_typeshed_" value="__iter___typeshed_"/>-->
+<!--          <new def="__next___typeshed_" class="Litertools/groupby/__next__"/>-->
+<!--          <putfield class="LRoot" field="__next__" fieldType="LRoot" ref="groupby_typeshed_" value="__next___typeshed_"/>-->
+<!--          <return value="groupby_typeshed_"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="islice" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;">-->
+<!--          <new def="islice_typeshed_" class="Litertools/class/islice"/>-->
+<!--          <new def="__init___typeshed_" class="Litertools/islice/__init__"/>-->
+<!--          <putfield class="LRoot" field="__init__" fieldType="LRoot" ref="islice_typeshed_" value="__init___typeshed_"/>-->
+<!--          <new def="__iter___typeshed_" class="Litertools/islice/__iter__"/>-->
+<!--          <putfield class="LRoot" field="__iter__" fieldType="LRoot" ref="islice_typeshed_" value="__iter___typeshed_"/>-->
+<!--          <new def="__next___typeshed_" class="Litertools/islice/__next__"/>-->
+<!--          <putfield class="LRoot" field="__next__" fieldType="LRoot" ref="islice_typeshed_" value="__next___typeshed_"/>-->
+<!--          <return value="islice_typeshed_"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="starmap" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;">-->
+<!--          <new def="starmap_typeshed_" class="Litertools/class/starmap"/>-->
+<!--          <new def="__init___typeshed_" class="Litertools/starmap/__init__"/>-->
+<!--          <putfield class="LRoot" field="__init__" fieldType="LRoot" ref="starmap_typeshed_" value="__init___typeshed_"/>-->
+<!--          <new def="__iter___typeshed_" class="Litertools/starmap/__iter__"/>-->
+<!--          <putfield class="LRoot" field="__iter__" fieldType="LRoot" ref="starmap_typeshed_" value="__iter___typeshed_"/>-->
+<!--          <new def="__next___typeshed_" class="Litertools/starmap/__next__"/>-->
+<!--          <putfield class="LRoot" field="__next__" fieldType="LRoot" ref="starmap_typeshed_" value="__next___typeshed_"/>-->
+<!--          <return value="starmap_typeshed_"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="takewhile" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;">-->
+<!--          <new def="takewhile_typeshed_" class="Litertools/class/takewhile"/>-->
+<!--          <new def="__init___typeshed_" class="Litertools/takewhile/__init__"/>-->
+<!--          <putfield class="LRoot" field="__init__" fieldType="LRoot" ref="takewhile_typeshed_" value="__init___typeshed_"/>-->
+<!--          <new def="__iter___typeshed_" class="Litertools/takewhile/__iter__"/>-->
+<!--          <putfield class="LRoot" field="__iter__" fieldType="LRoot" ref="takewhile_typeshed_" value="__iter___typeshed_"/>-->
+<!--          <new def="__next___typeshed_" class="Litertools/takewhile/__next__"/>-->
+<!--          <putfield class="LRoot" field="__next__" fieldType="LRoot" ref="takewhile_typeshed_" value="__next___typeshed_"/>-->
+<!--          <return value="takewhile_typeshed_"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="zip_longest" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;">-->
+<!--          <new def="zip_longest_typeshed_" class="Litertools/class/zip_longest"/>-->
+<!--          <new def="__init___typeshed_" class="Litertools/zip_longest/__init__"/>-->
+<!--          <putfield class="LRoot" field="__init__" fieldType="LRoot" ref="zip_longest_typeshed_" value="__init___typeshed_"/>-->
+<!--          <new def="__iter___typeshed_" class="Litertools/zip_longest/__iter__"/>-->
+<!--          <putfield class="LRoot" field="__iter__" fieldType="LRoot" ref="zip_longest_typeshed_" value="__iter___typeshed_"/>-->
+<!--          <new def="__next___typeshed_" class="Litertools/zip_longest/__next__"/>-->
+<!--          <putfield class="LRoot" field="__next__" fieldType="LRoot" ref="zip_longest_typeshed_" value="__next___typeshed_"/>-->
+<!--          <return value="zip_longest_typeshed_"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="product" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;">-->
+<!--          <new def="product_typeshed_" class="Litertools/class/product"/>-->
+<!--          <new def="__new___typeshed_" class="Litertools/product/__new__"/>-->
+<!--          <putfield class="LRoot" field="__new__" fieldType="LRoot" ref="product_typeshed_" value="__new___typeshed_"/>-->
+<!--          <new def="__iter___typeshed_" class="Litertools/product/__iter__"/>-->
+<!--          <putfield class="LRoot" field="__iter__" fieldType="LRoot" ref="product_typeshed_" value="__iter___typeshed_"/>-->
+<!--          <new def="__next___typeshed_" class="Litertools/product/__next__"/>-->
+<!--          <putfield class="LRoot" field="__next__" fieldType="LRoot" ref="product_typeshed_" value="__next___typeshed_"/>-->
+<!--          <return value="product_typeshed_"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="permutations" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;">-->
+<!--          <new def="permutations_typeshed_" class="Litertools/class/permutations"/>-->
+<!--          <new def="__init___typeshed_" class="Litertools/permutations/__init__"/>-->
+<!--          <putfield class="LRoot" field="__init__" fieldType="LRoot" ref="permutations_typeshed_" value="__init___typeshed_"/>-->
+<!--          <new def="__iter___typeshed_" class="Litertools/permutations/__iter__"/>-->
+<!--          <putfield class="LRoot" field="__iter__" fieldType="LRoot" ref="permutations_typeshed_" value="__iter___typeshed_"/>-->
+<!--          <new def="__next___typeshed_" class="Litertools/permutations/__next__"/>-->
+<!--          <putfield class="LRoot" field="__next__" fieldType="LRoot" ref="permutations_typeshed_" value="__next___typeshed_"/>-->
+<!--          <return value="permutations_typeshed_"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="combinations" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;">-->
+<!--          <new def="combinations_typeshed_" class="Litertools/class/combinations"/>-->
+<!--          <new def="__new___typeshed_" class="Litertools/combinations/__new__"/>-->
+<!--          <putfield class="LRoot" field="__new__" fieldType="LRoot" ref="combinations_typeshed_" value="__new___typeshed_"/>-->
+<!--          <new def="__iter___typeshed_" class="Litertools/combinations/__iter__"/>-->
+<!--          <putfield class="LRoot" field="__iter__" fieldType="LRoot" ref="combinations_typeshed_" value="__iter___typeshed_"/>-->
+<!--          <new def="__next___typeshed_" class="Litertools/combinations/__next__"/>-->
+<!--          <putfield class="LRoot" field="__next__" fieldType="LRoot" ref="combinations_typeshed_" value="__next___typeshed_"/>-->
+<!--          <return value="combinations_typeshed_"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="combinations_with_replacement" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;">-->
+<!--          <new def="combinations_with_replacement_typeshed_" class="Litertools/class/combinations_with_replacement"/>-->
+<!--          <new def="__init___typeshed_" class="Litertools/combinations_with_replacement/__init__"/>-->
+<!--          <putfield class="LRoot" field="__init__" fieldType="LRoot" ref="combinations_with_replacement_typeshed_" value="__init___typeshed_"/>-->
+<!--          <new def="__iter___typeshed_" class="Litertools/combinations_with_replacement/__iter__"/>-->
+<!--          <putfield class="LRoot" field="__iter__" fieldType="LRoot" ref="combinations_with_replacement_typeshed_" value="__iter___typeshed_"/>-->
+<!--          <new def="__next___typeshed_" class="Litertools/combinations_with_replacement/__next__"/>-->
+<!--          <putfield class="LRoot" field="__next__" fieldType="LRoot" ref="combinations_with_replacement_typeshed_" value="__next___typeshed_"/>-->
+<!--          <return value="combinations_with_replacement_typeshed_"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="pairwise" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;">-->
+<!--          <new def="pairwise_typeshed_" class="Litertools/class/pairwise"/>-->
+<!--          <new def="__new___typeshed_" class="Litertools/pairwise/__new__"/>-->
+<!--          <putfield class="LRoot" field="__new__" fieldType="LRoot" ref="pairwise_typeshed_" value="__new___typeshed_"/>-->
+<!--          <new def="__iter___typeshed_" class="Litertools/pairwise/__iter__"/>-->
+<!--          <putfield class="LRoot" field="__iter__" fieldType="LRoot" ref="pairwise_typeshed_" value="__iter___typeshed_"/>-->
+<!--          <new def="__next___typeshed_" class="Litertools/pairwise/__next__"/>-->
+<!--          <putfield class="LRoot" field="__next__" fieldType="LRoot" ref="pairwise_typeshed_" value="__next___typeshed_"/>-->
+<!--          <return value="pairwise_typeshed_"/>-->
+<!--        </method>-->
+<!--      </class>-->
+    </package>
+<!--    <package name="itertools/count">-->
+<!--      <class name="__new__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="cls" static="false">-->
+<!--          <new def="_typeshed0" class="Lcount"/>-->
+<!--          <new def="_typeshed1" class="I"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed0" value="_typeshed1"/>-->
+<!--          <return value="_typeshed0"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__next__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed2" class="L_N"/>-->
+<!--          <return value="_typeshed2"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__iter__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed3" class="LIterator"/>-->
+<!--          <new def="_typeshed4" class="L_N"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed3" value="_typeshed4"/>-->
+<!--          <return value="_typeshed3"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--    </package>-->
+<!--    <package name="itertools/cycle">-->
+<!--      <class name="__init__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self __iterable" static="false">-->
+<!--          <new def="_typeshed5" class="LNone"/>-->
+<!--          <return value="_typeshed5"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__next__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed6" class="L_T"/>-->
+<!--          <return value="_typeshed6"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__iter__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed7" class="LIterator"/>-->
+<!--          <new def="_typeshed8" class="L_T"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed7" value="_typeshed8"/>-->
+<!--          <return value="_typeshed7"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--    </package>-->
+<!--    <package name="itertools/repeat">-->
+<!--      <class name="__init__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self object" static="false">-->
+<!--          <new def="_typeshed9" class="LNone"/>-->
+<!--          <return value="_typeshed9"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__next__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed10" class="L_T"/>-->
+<!--          <return value="_typeshed10"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__iter__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed11" class="LIterator"/>-->
+<!--          <new def="_typeshed12" class="L_T"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed11" value="_typeshed12"/>-->
+<!--          <return value="_typeshed11"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--    </package>-->
+<!--    <package name="itertools/accumulate">-->
+<!--      <class name="__init__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="4" paramNames="self iterable func initial" static="false">-->
+<!--          <new def="_typeshed13" class="LNone"/>-->
+<!--          <return value="_typeshed13"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__iter__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed14" class="LIterator"/>-->
+<!--          <new def="_typeshed15" class="L_T"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed14" value="_typeshed15"/>-->
+<!--          <return value="_typeshed14"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__next__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed16" class="L_T"/>-->
+<!--          <return value="_typeshed16"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--    </package>-->
+    <package name="itertools/chain">
+<!--      <class name="__init__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed17" class="LNone"/>-->
+<!--          <return value="_typeshed17"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__next__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed18" class="L_T"/>-->
+<!--          <return value="_typeshed18"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__iter__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed19" class="LIterator"/>-->
+<!--          <new def="_typeshed20" class="L_T"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed19" value="_typeshed20"/>-->
+<!--          <return value="_typeshed19"/>-->
+<!--        </method>-->
+<!--      </class>-->
+      <class name="from_iterable" allocatable="true">
+        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="cls __iterable" static="false">
+          <new def="_typeshed21" class="Llist"/>
+            <!-- TODO: -->
+          <new def="_typeshed22" class="LAny"/>
+          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed21" value="_typeshed22"/>
+          <return value="_typeshed21"/>
+        </method>
+      </class>
+    </package>
+<!--    <package name="itertools/compress">-->
+<!--      <class name="__init__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="3" paramNames="self data selectors" static="false">-->
+<!--          <new def="_typeshed23" class="LNone"/>-->
+<!--          <return value="_typeshed23"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__iter__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed24" class="LIterator"/>-->
+<!--          <new def="_typeshed25" class="L_T"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed24" value="_typeshed25"/>-->
+<!--          <return value="_typeshed24"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__next__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed26" class="L_T"/>-->
+<!--          <return value="_typeshed26"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--    </package>-->
+<!--    <package name="itertools/dropwhile">-->
+<!--      <class name="__init__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="3" paramNames="self __predicate __iterable" static="false">-->
+<!--          <new def="_typeshed27" class="LNone"/>-->
+<!--          <return value="_typeshed27"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__iter__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed28" class="LIterator"/>-->
+<!--          <new def="_typeshed29" class="L_T"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed28" value="_typeshed29"/>-->
+<!--          <return value="_typeshed28"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__next__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed30" class="L_T"/>-->
+<!--          <return value="_typeshed30"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--    </package>-->
+<!--    <package name="itertools/filterfalse">-->
+<!--      <class name="__init__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="3" paramNames="self __predicate __iterable" static="false">-->
+<!--          <new def="_typeshed31" class="LNone"/>-->
+<!--          <return value="_typeshed31"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__iter__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed32" class="LIterator"/>-->
+<!--          <new def="_typeshed33" class="L_T"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed32" value="_typeshed33"/>-->
+<!--          <return value="_typeshed32"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__next__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed34" class="L_T"/>-->
+<!--          <return value="_typeshed34"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--    </package>-->
+<!--    <package name="itertools/groupby">-->
+<!--      <class name="__new__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="3" paramNames="cls iterable key" static="false">-->
+<!--          <new def="_typeshed35" class="Lgroupby"/>-->
+<!--          <new def="_typeshed36" class="L_T1"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed35" value="_typeshed36"/>-->
+<!--          <new def="_typeshed37" class="L_T1"/>-->
+<!--          <putfield class="LRoot" field="1" fieldType="LRoot" ref="_typeshed35" value="_typeshed37"/>-->
+<!--          <return value="_typeshed35"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__iter__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed38" class="LIterator"/>-->
+<!--          <new def="_typeshed39" class="Ltuple"/>-->
+<!--          <new def="_typeshed40" class="L_T"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed39" value="_typeshed40"/>-->
+<!--          <new def="_typeshed41" class="LIterator"/>-->
+<!--          <new def="_typeshed42" class="L_S"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed41" value="_typeshed42"/>-->
+<!--          <putfield class="LRoot" field="1" fieldType="LRoot" ref="_typeshed39" value="_typeshed41"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed38" value="_typeshed39"/>-->
+<!--          <return value="_typeshed38"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__next__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed43" class="Ltuple"/>-->
+<!--          <new def="_typeshed44" class="L_T"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed43" value="_typeshed44"/>-->
+<!--          <new def="_typeshed45" class="LIterator"/>-->
+<!--          <new def="_typeshed46" class="L_S"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed45" value="_typeshed46"/>-->
+<!--          <putfield class="LRoot" field="1" fieldType="LRoot" ref="_typeshed43" value="_typeshed45"/>-->
+<!--          <return value="_typeshed43"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--    </package>-->
+<!--    <package name="itertools/islice">-->
+<!--      <class name="__init__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="3" paramNames="self __iterable __stop" static="false">-->
+<!--          <new def="_typeshed47" class="LNone"/>-->
+<!--          <return value="_typeshed47"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__iter__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed48" class="LIterator"/>-->
+<!--          <new def="_typeshed49" class="L_T"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed48" value="_typeshed49"/>-->
+<!--          <return value="_typeshed48"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__next__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed50" class="L_T"/>-->
+<!--          <return value="_typeshed50"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--    </package>-->
+<!--    <package name="itertools/starmap">-->
+<!--      <class name="__init__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="3" paramNames="self __function __iterable" static="false">-->
+<!--          <new def="_typeshed51" class="LNone"/>-->
+<!--          <return value="_typeshed51"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__iter__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed52" class="LIterator"/>-->
+<!--          <new def="_typeshed53" class="L_T"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed52" value="_typeshed53"/>-->
+<!--          <return value="_typeshed52"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__next__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed54" class="L_T"/>-->
+<!--          <return value="_typeshed54"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--    </package>-->
+<!--    <package name="itertools/takewhile">-->
+<!--      <class name="__init__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="3" paramNames="self __predicate __iterable" static="false">-->
+<!--          <new def="_typeshed55" class="LNone"/>-->
+<!--          <return value="_typeshed55"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__iter__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed56" class="LIterator"/>-->
+<!--          <new def="_typeshed57" class="L_T"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed56" value="_typeshed57"/>-->
+<!--          <return value="_typeshed56"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__next__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed58" class="L_T"/>-->
+<!--          <return value="_typeshed58"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--    </package>-->
+<!--    <package name="itertools/zip_longest">-->
+<!--      <class name="__init__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self fillvalue" static="false">-->
+<!--          <new def="_typeshed63" class="LNone"/>-->
+<!--          <return value="_typeshed63"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__iter__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed64" class="LIterator"/>-->
+<!--          <new def="_typeshed65" class="Lobject"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed64" value="_typeshed65"/>-->
+<!--          <return value="_typeshed64"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__next__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed66" class="Lobject"/>-->
+<!--          <return value="_typeshed66"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--    </package>-->
+<!--    <package name="itertools/product">-->
+<!--      <class name="__new__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="cls __iter1" static="false">-->
+<!--          <new def="_typeshed67" class="Lproduct"/>-->
+<!--          <new def="_typeshed68" class="Ltuple"/>-->
+<!--          <new def="_typeshed69" class="L_T1"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed68" value="_typeshed69"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed67" value="_typeshed68"/>-->
+<!--          <return value="_typeshed67"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__iter__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed70" class="LIterator"/>-->
+<!--          <new def="_typeshed71" class="L_T_co"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed70" value="_typeshed71"/>-->
+<!--          <return value="_typeshed70"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__next__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed72" class="L_T_co"/>-->
+<!--          <return value="_typeshed72"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--    </package>-->
+<!--    <package name="itertools/permutations">-->
+<!--      <class name="__init__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="3" paramNames="self iterable r" static="false">-->
+<!--          <new def="_typeshed73" class="LNone"/>-->
+<!--          <return value="_typeshed73"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__iter__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed74" class="LIterator"/>-->
+<!--          <new def="_typeshed75" class="LTuple"/>-->
+<!--          <new def="_typeshed76" class="L_T"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed75" value="_typeshed76"/>-->
+<!--          <new def="_typeshed77" class="LEllipsis"/>-->
+<!--          <putfield class="LRoot" field="1" fieldType="LRoot" ref="_typeshed75" value="_typeshed77"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed74" value="_typeshed75"/>-->
+<!--          <return value="_typeshed74"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__next__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed78" class="LTuple"/>-->
+<!--          <new def="_typeshed79" class="L_T"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed78" value="_typeshed79"/>-->
+<!--          <new def="_typeshed80" class="LEllipsis"/>-->
+<!--          <putfield class="LRoot" field="1" fieldType="LRoot" ref="_typeshed78" value="_typeshed80"/>-->
+<!--          <return value="_typeshed78"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--    </package>-->
+<!--    <package name="itertools/combinations">-->
+<!--      <class name="__new__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="3" paramNames="cls iterable r" static="false">-->
+<!--          <new def="_typeshed81" class="Lcombinations"/>-->
+<!--          <new def="_typeshed82" class="Ltuple"/>-->
+<!--          <new def="_typeshed83" class="L_T"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed82" value="_typeshed83"/>-->
+<!--          <new def="_typeshed84" class="L_T"/>-->
+<!--          <putfield class="LRoot" field="1" fieldType="LRoot" ref="_typeshed82" value="_typeshed84"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed81" value="_typeshed82"/>-->
+<!--          <return value="_typeshed81"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__iter__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed85" class="LIterator"/>-->
+<!--          <new def="_typeshed86" class="L_T_co"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed85" value="_typeshed86"/>-->
+<!--          <return value="_typeshed85"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__next__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed87" class="L_T_co"/>-->
+<!--          <return value="_typeshed87"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--    </package>-->
+<!--    <package name="itertools/combinations_with_replacement">-->
+<!--      <class name="__init__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="3" paramNames="self iterable r" static="false">-->
+<!--          <new def="_typeshed88" class="LNone"/>-->
+<!--          <return value="_typeshed88"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__iter__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed89" class="LIterator"/>-->
+<!--          <new def="_typeshed90" class="LTuple"/>-->
+<!--          <new def="_typeshed91" class="L_T"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed90" value="_typeshed91"/>-->
+<!--          <new def="_typeshed92" class="LEllipsis"/>-->
+<!--          <putfield class="LRoot" field="1" fieldType="LRoot" ref="_typeshed90" value="_typeshed92"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed89" value="_typeshed90"/>-->
+<!--          <return value="_typeshed89"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__next__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed93" class="LTuple"/>-->
+<!--          <new def="_typeshed94" class="L_T"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed93" value="_typeshed94"/>-->
+<!--          <new def="_typeshed95" class="LEllipsis"/>-->
+<!--          <putfield class="LRoot" field="1" fieldType="LRoot" ref="_typeshed93" value="_typeshed95"/>-->
+<!--          <return value="_typeshed93"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--    </package>-->
+<!--    <package name="itertools/pairwise">-->
+<!--      <class name="__new__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="cls __iterable" static="false">-->
+<!--          <new def="_typeshed96" class="Lpairwise"/>-->
+<!--          <new def="_typeshed97" class="Ltuple"/>-->
+<!--          <new def="_typeshed98" class="L_T"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed97" value="_typeshed98"/>-->
+<!--          <new def="_typeshed99" class="L_T"/>-->
+<!--          <putfield class="LRoot" field="1" fieldType="LRoot" ref="_typeshed97" value="_typeshed99"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed96" value="_typeshed97"/>-->
+<!--          <return value="_typeshed96"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__iter__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed100" class="LIterator"/>-->
+<!--          <new def="_typeshed101" class="L_T_co"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed100" value="_typeshed101"/>-->
+<!--          <return value="_typeshed100"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__next__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed102" class="L_T_co"/>-->
+<!--          <return value="_typeshed102"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--    </package>-->
+  </classloader>
+</summary-spec>

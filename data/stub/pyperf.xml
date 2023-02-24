@@ -1,0 +1,95 @@
+<?xml version="1.0" ?>
+<!DOCTYPE summary-spec>
+<!-- If you add summary in this file, you have to also add in 'otherImportNames' in 'PythonDriver' -->
+<summary-spec>
+    <classloader name="PythonLoader">
+        <class name="pyperf" allocatable="true">
+            <method name="import" static="true" descriptor="()Lpyperf;">
+                <new def="x" class="Lpyperf"/>
+
+                <new def="Runner_" class="Lpyperf/class/Runner"/>
+                <putfield class="LRoot" field="Runner" fieldType="LRoot" ref="x" value="Runner_"/>
+
+                <new def="perf_counter_" class="Lpyperf/function/perf_counter"/>
+                <putfield class="LRoot" field="perf_counter" fieldType="LRoot" ref="x" value="perf_counter_"/>
+
+                <new def="python_has_jit_" class="Lpyperf/function/python_has_jit"/>
+                <putfield class="LRoot" field="python_has_jit" fieldType="LRoot" ref="x" value="python_has_jit_"/>
+
+                <return value="x"/>
+            </method>
+        </class>
+        <package name="pyperf/function">
+            <class name="perf_counter" allocatable="true">
+                <method name="do" descriptor="()LRoot;" numArgs="0">
+                    <new def="v" class="D"/>
+                    <return value="v"/>
+                </method>
+            </class>
+            <class name="python_has_jit" allocatable="true">
+                <method name="do" descriptor="()LRoot;" numArgs="0">
+                    <new def="v" class="Z"/>
+                    <return value="v"/>
+                </method>
+            </class>
+        </package>
+        <package name="pyperf/class">
+            <class name="Runner" allocatable="true">
+                <method name="do" descriptor="()LRoot;">
+                    <new def="runner_" class="Lpyperf/class/Runner"/>
+
+                    <new def="metadata_" class="Ldict"/>
+                    <putfield class="LRoot" field="metadata" fieldType="LRoot" ref="runner_" value="metadata_"/>
+
+                    <new def="bench_func_" class="Lpyperf/Runner/bench_func"/>
+                    <putfield class="LRoot" field="bench_func" fieldType="LRoot" ref="runner_" value="bench_func_"/>
+
+                    <new def="bench_time_func_" class="Lpyperf/Runner/bench_time_func"/>
+                    <putfield class="LRoot" field="bench_time_func" fieldType="LRoot" ref="runner_" value="bench_time_func_"/>
+
+                    <new def="loops_" class="I"/>
+                    <putfield class="LRoot" field="loops" fieldType="I" ref="runner_" value="loops_"/>
+
+                    <!-- Create the instance of `_ActionsContainer` -->
+                    <call type="static" class="Largparse" name="import" descriptor="()Largparse;" numArgs="0" def="argparse_"/>
+                    <getfield class="LRoot" field="_ActionsContainer" fieldType="Largparse/class/_ActionsContainer" ref="argparse_" def="ActionContainerClass_"/>
+                    <call type="virtual" class="LRoot" name="do" descriptor="()LRoot;" numArgs="1" arg0="ActionContainerClass_" def="ActionContainerInstance_"/>
+
+                    <putfield class="LRoot" field="argparser" fieldType="LRoot" ref="runner_" value="ActionContainerInstance_"/>
+
+                    <new def="parse_args_" class="Lpyperf/Runner/parse_args"/>
+                    <putfield class="LRoot" field="parse_args" fieldType="LRoot" ref="runner_" value="parse_args_"/>
+                    <putfield class="LRoot" field="__ActionContainerInstance" fieldType="LRoot" ref="parse_args_" value="ActionContainerInstance_"/>
+
+                    <return value="runner_"/>
+                </method>
+            </class>
+        </package>
+        <package name="pyperf/Runner">
+            <class name="bench_func" allocatable="true">
+                <method name="do" descriptor="()LRoot;" numArgs="4"
+                        paramNames="self name func arg1 arg2 arg3 arg4 arg5 arg6">
+                    <call type="virtual" class="LRoot" name="do" descriptor="()LRoot;"
+                        numArgs="7" arg0="func" arg1="arg1" arg2="arg2" arg3="arg3" arg4="arg4" arg5="arg5" arg6="arg6"
+                        def="v"/>
+                    <return value="v"/>
+                </method>
+            </class>
+            <class name="bench_time_func" allocatable="true">
+                <method name="do" descriptor="()LRoot;" numArgs="6" paramNames="self name func arg1 arg2 arg3">
+                    <new def="loops_" class="I"/>  <!-- This definition isn't correct. -->
+                    <call type="virtual" name="do" class="LRoot" descriptor="()LRoot;"
+                        numArgs="5" arg0="func" arg1="loops_" arg2="arg1" arg3="arg2" arg4="arg3" def="v"/>
+                    <return value="v"/>
+                </method>
+            </class>
+            <class name="parse_args" allocatable="true">
+                <method name="do" descriptor="()LRoot;" numArgs="0">
+                    <!-- The detail is defined in `BuiltinFunctionSummaries` -->
+                    <new def="v" class="LNone"/>
+                    <return value="v"/>
+                </method>
+            </class>
+        </package>
+    </classloader>
+</summary-spec>
