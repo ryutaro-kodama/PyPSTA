@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE summary-spec>
+<summary-spec>
+  <classloader name="PythonLoader">
+    <class name="textwrap" allocatable="true">
+      <method name="import" static="true" descriptor="()Ltextwrap;">
+        <new def="obj_typeshed_" class="Ltextwrap"/>
+<!--        <new def="TextWrapper_typeshed_" class="Ltextwrap/class/TextWrapper"/>-->
+<!--        <putfield class="LRoot" field="TextWrapper" fieldType="LRoot" ref="obj_typeshed_" value="TextWrapper_typeshed_"/>-->
+<!--        <new def="wrap_typeshed_" class="Ltextwrap/function/wrap"/>-->
+<!--        <putfield class="LRoot" field="wrap" fieldType="LRoot" ref="obj_typeshed_" value="wrap_typeshed_"/>-->
+<!--        <new def="fill_typeshed_" class="Ltextwrap/function/fill"/>-->
+<!--        <putfield class="LRoot" field="fill" fieldType="LRoot" ref="obj_typeshed_" value="fill_typeshed_"/>-->
+<!--        <new def="shorten_typeshed_" class="Ltextwrap/function/shorten"/>-->
+<!--        <putfield class="LRoot" field="shorten" fieldType="LRoot" ref="obj_typeshed_" value="shorten_typeshed_"/>-->
+        <new def="dedent_typeshed_" class="Ltextwrap/function/dedent"/>
+        <putfield class="LRoot" field="dedent" fieldType="LRoot" ref="obj_typeshed_" value="dedent_typeshed_"/>
+<!--        <new def="indent_typeshed_" class="Ltextwrap/function/indent"/>-->
+<!--        <putfield class="LRoot" field="indent" fieldType="LRoot" ref="obj_typeshed_" value="indent_typeshed_"/>-->
+        <return value="obj_typeshed_"/>
+      </method>
+    </class>
+    <package name="textwrap/function">
+<!--      <class name="wrap" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="13" paramNames="text width initial_indent subsequent_indent expand_tabs tabsize replace_whitespace fix_sentence_endings break_long_words break_on_hyphens drop_whitespace max_lines placeholder" static="false">-->
+<!--          <new def="_typeshed13" class="Llist"/>-->
+<!--          <new def="_typeshed14" class="Lstring"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed13" value="_typeshed14"/>-->
+<!--          <return value="_typeshed13"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="fill" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="13" paramNames="text width initial_indent subsequent_indent expand_tabs tabsize replace_whitespace fix_sentence_endings break_long_words break_on_hyphens drop_whitespace max_lines placeholder" static="false">-->
+<!--          <new def="_typeshed15" class="Lstring"/>-->
+<!--          <return value="_typeshed15"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="shorten" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="12" paramNames="text width initial_indent subsequent_indent expand_tabs tabsize replace_whitespace fix_sentence_endings break_long_words break_on_hyphens drop_whitespace placeholder" static="false">-->
+<!--          <new def="_typeshed16" class="Lstring"/>-->
+<!--          <return value="_typeshed16"/>-->
+<!--        </method>-->
+<!--      </class>-->
+      <class name="dedent" allocatable="true">
+        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="text" static="false">
+          <new def="_typeshed17" class="Lstring"/>
+          <return value="_typeshed17"/>
+        </method>
+      </class>
+<!--      <class name="indent" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="3" paramNames="text prefix predicate" static="false">-->
+<!--          <new def="_typeshed18" class="Lstring"/>-->
+<!--          <return value="_typeshed18"/>-->
+<!--        </method>-->
+<!--      </class>-->
+    </package>
+    <package name="textwrap/class">
+<!--      <class name="TextWrapper" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;">-->
+<!--          <new def="TextWrapper_typeshed_" class="Ltextwrap/class/TextWrapper"/>-->
+<!--          <new def="width_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="width" fieldType="LRoot" ref="TextWrapper_typeshed_" value="width_typeshed_"/>-->
+<!--          <new def="initial_indent_typeshed_" class="Lstring"/>-->
+<!--          <putfield class="LRoot" field="initial_indent" fieldType="LRoot" ref="TextWrapper_typeshed_" value="initial_indent_typeshed_"/>-->
+<!--          <new def="subsequent_indent_typeshed_" class="Lstring"/>-->
+<!--          <putfield class="LRoot" field="subsequent_indent" fieldType="LRoot" ref="TextWrapper_typeshed_" value="subsequent_indent_typeshed_"/>-->
+<!--          <new def="expand_tabs_typeshed_" class="Z"/>-->
+<!--          <putfield class="LRoot" field="expand_tabs" fieldType="LRoot" ref="TextWrapper_typeshed_" value="expand_tabs_typeshed_"/>-->
+<!--          <new def="replace_whitespace_typeshed_" class="Z"/>-->
+<!--          <putfield class="LRoot" field="replace_whitespace" fieldType="LRoot" ref="TextWrapper_typeshed_" value="replace_whitespace_typeshed_"/>-->
+<!--          <new def="fix_sentence_endings_typeshed_" class="Z"/>-->
+<!--          <putfield class="LRoot" field="fix_sentence_endings" fieldType="LRoot" ref="TextWrapper_typeshed_" value="fix_sentence_endings_typeshed_"/>-->
+<!--          <new def="drop_whitespace_typeshed_" class="Z"/>-->
+<!--          <putfield class="LRoot" field="drop_whitespace" fieldType="LRoot" ref="TextWrapper_typeshed_" value="drop_whitespace_typeshed_"/>-->
+<!--          <new def="break_long_words_typeshed_" class="Z"/>-->
+<!--          <putfield class="LRoot" field="break_long_words" fieldType="LRoot" ref="TextWrapper_typeshed_" value="break_long_words_typeshed_"/>-->
+<!--          <new def="break_on_hyphens_typeshed_" class="Z"/>-->
+<!--          <putfield class="LRoot" field="break_on_hyphens" fieldType="LRoot" ref="TextWrapper_typeshed_" value="break_on_hyphens_typeshed_"/>-->
+<!--          <new def="tabsize_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="tabsize" fieldType="LRoot" ref="TextWrapper_typeshed_" value="tabsize_typeshed_"/>-->
+<!--          <new def="max_lines_typeshed_" class="I LNone"/>-->
+<!--          <putfield class="LRoot" field="max_lines" fieldType="LRoot" ref="TextWrapper_typeshed_" value="max_lines_typeshed_"/>-->
+<!--          <new def="placeholder_typeshed_" class="Lstring"/>-->
+<!--          <putfield class="LRoot" field="placeholder" fieldType="LRoot" ref="TextWrapper_typeshed_" value="placeholder_typeshed_"/>-->
+<!--          <new def="sentence_end_re_typeshed_" class="LPattern"/>-->
+<!--          <putfield class="LRoot" field="sentence_end_re" fieldType="LRoot" ref="TextWrapper_typeshed_" value="sentence_end_re_typeshed_"/>-->
+<!--          <new def="wordsep_re_typeshed_" class="LPattern"/>-->
+<!--          <putfield class="LRoot" field="wordsep_re" fieldType="LRoot" ref="TextWrapper_typeshed_" value="wordsep_re_typeshed_"/>-->
+<!--          <new def="wordsep_simple_re_typeshed_" class="LPattern"/>-->
+<!--          <putfield class="LRoot" field="wordsep_simple_re" fieldType="LRoot" ref="TextWrapper_typeshed_" value="wordsep_simple_re_typeshed_"/>-->
+<!--          <new def="whitespace_trans_typeshed_" class="Lstring"/>-->
+<!--          <putfield class="LRoot" field="whitespace_trans" fieldType="LRoot" ref="TextWrapper_typeshed_" value="whitespace_trans_typeshed_"/>-->
+<!--          <new def="unicode_whitespace_trans_typeshed_" class="Ldict"/>-->
+<!--          <putfield class="LRoot" field="unicode_whitespace_trans" fieldType="LRoot" ref="TextWrapper_typeshed_" value="unicode_whitespace_trans_typeshed_"/>-->
+<!--          <new def="uspace_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="uspace" fieldType="LRoot" ref="TextWrapper_typeshed_" value="uspace_typeshed_"/>-->
+<!--          <new def="x_typeshed_" class="Lstring"/>-->
+<!--          <putfield class="LRoot" field="x" fieldType="LRoot" ref="TextWrapper_typeshed_" value="x_typeshed_"/>-->
+<!--          <new def="__init___typeshed_" class="Ltextwrap/TextWrapper/__init__"/>-->
+<!--          <putfield class="LRoot" field="__init__" fieldType="LRoot" ref="TextWrapper_typeshed_" value="__init___typeshed_"/>-->
+<!--          <new def="_munge_whitespace_typeshed_" class="Ltextwrap/TextWrapper/_munge_whitespace"/>-->
+<!--          <putfield class="LRoot" field="_munge_whitespace" fieldType="LRoot" ref="TextWrapper_typeshed_" value="_munge_whitespace_typeshed_"/>-->
+<!--          <new def="_split_typeshed_" class="Ltextwrap/TextWrapper/_split"/>-->
+<!--          <putfield class="LRoot" field="_split" fieldType="LRoot" ref="TextWrapper_typeshed_" value="_split_typeshed_"/>-->
+<!--          <new def="_fix_sentence_endings_typeshed_" class="Ltextwrap/TextWrapper/_fix_sentence_endings"/>-->
+<!--          <putfield class="LRoot" field="_fix_sentence_endings" fieldType="LRoot" ref="TextWrapper_typeshed_" value="_fix_sentence_endings_typeshed_"/>-->
+<!--          <new def="_handle_long_word_typeshed_" class="Ltextwrap/TextWrapper/_handle_long_word"/>-->
+<!--          <putfield class="LRoot" field="_handle_long_word" fieldType="LRoot" ref="TextWrapper_typeshed_" value="_handle_long_word_typeshed_"/>-->
+<!--          <new def="_wrap_chunks_typeshed_" class="Ltextwrap/TextWrapper/_wrap_chunks"/>-->
+<!--          <putfield class="LRoot" field="_wrap_chunks" fieldType="LRoot" ref="TextWrapper_typeshed_" value="_wrap_chunks_typeshed_"/>-->
+<!--          <new def="_split_chunks_typeshed_" class="Ltextwrap/TextWrapper/_split_chunks"/>-->
+<!--          <putfield class="LRoot" field="_split_chunks" fieldType="LRoot" ref="TextWrapper_typeshed_" value="_split_chunks_typeshed_"/>-->
+<!--          <new def="wrap_typeshed_" class="Ltextwrap/TextWrapper/wrap"/>-->
+<!--          <putfield class="LRoot" field="wrap" fieldType="LRoot" ref="TextWrapper_typeshed_" value="wrap_typeshed_"/>-->
+<!--          <new def="fill_typeshed_" class="Ltextwrap/TextWrapper/fill"/>-->
+<!--          <putfield class="LRoot" field="fill" fieldType="LRoot" ref="TextWrapper_typeshed_" value="fill_typeshed_"/>-->
+<!--          <return value="TextWrapper_typeshed_"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--    </package>-->
+<!--    <package name="textwrap/TextWrapper">-->
+<!--      <class name="__init__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="13" paramNames="self width initial_indent subsequent_indent expand_tabs replace_whitespace fix_sentence_endings break_long_words drop_whitespace break_on_hyphens tabsize max_lines placeholder" static="false">-->
+<!--          <new def="_typeshed0" class="LNone"/>-->
+<!--          <return value="_typeshed0"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="_munge_whitespace" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self text" static="false">-->
+<!--          <new def="_typeshed1" class="Lstring"/>-->
+<!--          <return value="_typeshed1"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="_split" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self text" static="false">-->
+<!--          <new def="_typeshed2" class="Llist"/>-->
+<!--          <new def="_typeshed3" class="Lstring"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed2" value="_typeshed3"/>-->
+<!--          <return value="_typeshed2"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="_fix_sentence_endings" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self chunks" static="false">-->
+<!--          <new def="_typeshed4" class="LNone"/>-->
+<!--          <return value="_typeshed4"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="_handle_long_word" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="5" paramNames="self reversed_chunks cur_line cur_len width" static="false">-->
+<!--          <new def="_typeshed5" class="LNone"/>-->
+<!--          <return value="_typeshed5"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="_wrap_chunks" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self chunks" static="false">-->
+<!--          <new def="_typeshed6" class="Llist"/>-->
+<!--          <new def="_typeshed7" class="Lstring"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed6" value="_typeshed7"/>-->
+<!--          <return value="_typeshed6"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="_split_chunks" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self text" static="false">-->
+<!--          <new def="_typeshed8" class="Llist"/>-->
+<!--          <new def="_typeshed9" class="Lstring"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed8" value="_typeshed9"/>-->
+<!--          <return value="_typeshed8"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="wrap" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self text" static="false">-->
+<!--          <new def="_typeshed10" class="Llist"/>-->
+<!--          <new def="_typeshed11" class="Lstring"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed10" value="_typeshed11"/>-->
+<!--          <return value="_typeshed10"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="fill" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self text" static="false">-->
+<!--          <new def="_typeshed12" class="Lstring"/>-->
+<!--          <return value="_typeshed12"/>-->
+<!--        </method>-->
+<!--      </class>-->
+    </package>
+  </classloader>
+</summary-spec>

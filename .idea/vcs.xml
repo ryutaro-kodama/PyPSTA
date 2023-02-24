@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/lib/thresher" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/lib/typeshed" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/lib/z3-ori" vcs="Git" />
+  </component>
+</project>

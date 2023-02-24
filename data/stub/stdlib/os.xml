@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE summary-spec>
+<summary-spec>
+  <classloader name="PythonLoader">
+    <class name="os" allocatable="true">
+      <method name="import" static="true" descriptor="()Los;">
+        <new def="obj_typeshed_" class="Los"/>
+        <new def="path_typeshed_" class="Los/class/path"/>
+        <new def="path_exists_typeshed_" class="Los/path/exists"/>
+        <putfield class="LRoot" field="exists" fieldType="LRoot" ref="path_typeshed_" value="path_exists_typeshed_"/>
+        <putfield class="LRoot" field="path" fieldType="LRoot" ref="obj_typeshed_" value="path_typeshed_"/>
+        <new def="envison_typeshed_" class="Ldict"/>
+        <putfield class="LRoot" field="envison" fieldType="LRoot" ref="obj_typeshed_" value="envison_typeshed_"/>
+        <return value="obj_typeshed_"/>
+      </method>
+    </class>
+    <package name="os/class">
+      <class name="path" allocatable="true">
+        <method name="do" descriptor="()LRoot;">
+          <new def="path_typeshed_" class="Los/class/path"/>
+          <new def="exists_typeshed_" class="Los/path/exists"/>
+          <putfield class="LRoot" field="exists" fieldType="LRoot" ref="path_typeshed_" value="exists_typeshed_"/>
+          <return value="path_typeshed_"/>
+        </method>
+      </class>
+    </package>
+    <package name="os/path">
+      <class name="exists" allocatable="true">
+        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self filename" static="false">
+          <new def="_typeshed1" class="Z"/>
+          <return value="_typeshed1"/>
+        </method>
+      </class>
+    </package>
+  </classloader>
+</summary-spec>

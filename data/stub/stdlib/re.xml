@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE summary-spec>
+<summary-spec>
+  <classloader name="PythonLoader">
+    <class name="re" allocatable="true">
+      <method name="import" static="true" descriptor="()Lre;">
+        <new def="obj_typeshed_" class="Lre"/>
+<!--        <new def="RegexFlag_typeshed_" class="Lre/class/RegexFlag"/>-->
+<!--        <putfield class="LRoot" field="RegexFlag" fieldType="LRoot" ref="obj_typeshed_" value="RegexFlag_typeshed_"/>-->
+<!--        <new def="_pattern_type_typeshed_" class="Ltype"/>-->
+<!--        <putfield class="LRoot" field="_pattern_type" fieldType="LRoot" ref="obj_typeshed_" value="_pattern_type_typeshed_"/>-->
+        <new def="compile_typeshed_" class="Lre/function/compile"/>
+        <putfield class="LRoot" field="compile" fieldType="LRoot" ref="obj_typeshed_" value="compile_typeshed_"/>
+<!--        <new def="search_typeshed_" class="Lre/function/search"/>-->
+<!--        <putfield class="LRoot" field="search" fieldType="LRoot" ref="obj_typeshed_" value="search_typeshed_"/>-->
+<!--        <new def="match_typeshed_" class="Lre/function/match"/>-->
+<!--        <putfield class="LRoot" field="match" fieldType="LRoot" ref="obj_typeshed_" value="match_typeshed_"/>-->
+<!--        <new def="fullmatch_typeshed_" class="Lre/function/fullmatch"/>-->
+<!--        <putfield class="LRoot" field="fullmatch" fieldType="LRoot" ref="obj_typeshed_" value="fullmatch_typeshed_"/>-->
+<!--        <new def="split_typeshed_" class="Lre/function/split"/>-->
+<!--        <putfield class="LRoot" field="split" fieldType="LRoot" ref="obj_typeshed_" value="split_typeshed_"/>-->
+<!--        <new def="findall_typeshed_" class="Lre/function/findall"/>-->
+<!--        <putfield class="LRoot" field="findall" fieldType="LRoot" ref="obj_typeshed_" value="findall_typeshed_"/>-->
+<!--        <new def="finditer_typeshed_" class="Lre/function/finditer"/>-->
+<!--        <putfield class="LRoot" field="finditer" fieldType="LRoot" ref="obj_typeshed_" value="finditer_typeshed_"/>-->
+        <new def="sub_typeshed_" class="Lre/function/sub"/>
+        <putfield class="LRoot" field="sub" fieldType="LRoot" ref="obj_typeshed_" value="sub_typeshed_"/>
+<!--        <new def="subn_typeshed_" class="Lre/function/subn"/>-->
+<!--        <putfield class="LRoot" field="subn" fieldType="LRoot" ref="obj_typeshed_" value="subn_typeshed_"/>-->
+<!--        <new def="escape_typeshed_" class="Lre/function/escape"/>-->
+<!--        <putfield class="LRoot" field="escape" fieldType="LRoot" ref="obj_typeshed_" value="escape_typeshed_"/>-->
+<!--        <new def="purge_typeshed_" class="Lre/function/purge"/>-->
+<!--        <putfield class="LRoot" field="purge" fieldType="LRoot" ref="obj_typeshed_" value="purge_typeshed_"/>-->
+<!--        <new def="template_typeshed_" class="Lre/function/template"/>-->
+<!--        <putfield class="LRoot" field="template" fieldType="LRoot" ref="obj_typeshed_" value="template_typeshed_"/>-->
+        <return value="obj_typeshed_"/>
+      </method>
+    </class>
+    <package name="re/function">
+      <class name="compile" allocatable="true">
+        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="pattern flags" static="false">
+          <new def="PatternClass_" class="Lre/class/Pattern"/>
+          <call type="virtual" class="LRoot" name="do" descriptor="()LRoot;" numArgs="1" arg0="PatternClass_" def="PatternInstance_"/>
+<!--          <new def="_typeshed1" class="LAnyStr"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed0" value="_typeshed1"/>-->
+          <return value="PatternInstance_"/>
+        </method>
+      </class>
+<!--      <class name="search" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="3" paramNames="pattern string flags" static="false">-->
+<!--          <new def="_typeshed2" class="LMatch LNone"/>-->
+<!--          <return value="_typeshed2"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="match" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="3" paramNames="pattern string flags" static="false">-->
+<!--          <new def="_typeshed3" class="LMatch LNone"/>-->
+<!--          <return value="_typeshed3"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="fullmatch" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="3" paramNames="pattern string flags" static="false">-->
+<!--          <new def="_typeshed4" class="LMatch LNone"/>-->
+<!--          <return value="_typeshed4"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="split" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="4" paramNames="pattern string maxsplit flags" static="false">-->
+<!--          <new def="_typeshed5" class="Llist"/>-->
+<!--          <new def="_typeshed6" class="LAnyStr Lobject"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed5" value="_typeshed6"/>-->
+<!--          <return value="_typeshed5"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="findall" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="3" paramNames="pattern string flags" static="false">-->
+<!--          <new def="_typeshed7" class="Llist"/>-->
+<!--          <new def="_typeshed8" class="Lobject"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed7" value="_typeshed8"/>-->
+<!--          <return value="_typeshed7"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="finditer" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="3" paramNames="pattern string flags" static="false">-->
+<!--          <new def="_typeshed9" class="LIterator"/>-->
+<!--          <new def="_typeshed10" class="LMatch"/>-->
+<!--          <new def="_typeshed11" class="LAnyStr"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed10" value="_typeshed11"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed9" value="_typeshed10"/>-->
+<!--          <return value="_typeshed9"/>-->
+<!--        </method>-->
+<!--      </class>-->
+      <class name="sub" allocatable="true">
+        <method name="do" descriptor="()LRoot;" numArgs="5" paramNames="pattern repl string count flags" static="false">
+          <new def="_typeshed12" class="Lstring"/>
+          <return value="_typeshed12"/>
+        </method>
+      </class>
+<!--      <class name="subn" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="5" paramNames="pattern repl string count flags" static="false">-->
+<!--          <new def="_typeshed13" class="Ltuple"/>-->
+<!--          <new def="_typeshed14" class="LAnyStr"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed13" value="_typeshed14"/>-->
+<!--          <new def="_typeshed15" class="I"/>-->
+<!--          <putfield class="LRoot" field="1" fieldType="LRoot" ref="_typeshed13" value="_typeshed15"/>-->
+<!--          <return value="_typeshed13"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="escape" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="pattern" static="false">-->
+<!--          <new def="_typeshed16" class="LAnyStr"/>-->
+<!--          <return value="_typeshed16"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="purge" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="0" paramNames="" static="false">-->
+<!--          <new def="_typeshed17" class="LNone"/>-->
+<!--          <return value="_typeshed17"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="template" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="pattern flags" static="false">-->
+<!--          <new def="_typeshed18" class="LPattern"/>-->
+<!--          <new def="_typeshed19" class="LAnyStr"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed18" value="_typeshed19"/>-->
+<!--          <return value="_typeshed18"/>-->
+<!--        </method>-->
+<!--      </class>-->
+    </package>
+    <package name="re/class">
+      <!-- TODO: import typing -->
+      <class name="Pattern" allocatable="true">
+        <method name="do" descriptor="()LRoot;">
+          <new def="Pattern_typeshed_" class="Lre/class/Pattern"/>
+          <new def="match_typeshed_" class="Lre/Pattern/match"/>
+          <putfield class="LRoot" field="match" fieldType="LRoot" ref="Pattern_typeshed_" value="match_typeshed_"/>
+          <new def="search_typeshed_" class="Lre/Pattern/search"/>
+          <putfield class="LRoot" field="search" fieldType="LRoot" ref="Pattern_typeshed_" value="search_typeshed_"/>
+          <new def="split_typeshed_" class="Lre/Pattern/split"/>
+          <putfield class="LRoot" field="split" fieldType="LRoot" ref="Pattern_typeshed_" value="split_typeshed_"/>
+          <return value="Pattern_typeshed_"/>
+        </method>
+      </class>
+      <class name="Match" allocatable="true">
+        <method name="do" descriptor="()LRoot;">
+          <new def="Match_typeshed_" class="Lre/class/Match"/>
+          <new def="group_typeshed_" class="Lre/Match/group"/>
+          <putfield class="LRoot" field="group" fieldType="LRoot" ref="Match_typeshed_" value="group_typeshed_"/>
+          <new def="groups_typeshed_" class="Lre/Match/groups"/>
+          <putfield class="LRoot" field="groups" fieldType="LRoot" ref="Match_typeshed_" value="groups_typeshed_"/>
+          <new def="groupdict_typeshed_" class="Lre/Match/groupdict"/>
+          <putfield class="LRoot" field="groupdict" fieldType="LRoot" ref="Match_typeshed_" value="groupdict_typeshed_"/>
+          <return value="Match_typeshed_"/>
+        </method>
+      </class>
+<!--      <class name="RegexFlag" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;">-->
+<!--          <new def="RegexFlag_typeshed_" class="Lre/class/RegexFlag"/>-->
+<!--          <new def="A_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="A" fieldType="LRoot" ref="RegexFlag_typeshed_" value="A_typeshed_"/>-->
+<!--          <new def="ASCII_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="ASCII" fieldType="LRoot" ref="RegexFlag_typeshed_" value="ASCII_typeshed_"/>-->
+<!--          <new def="DEBUG_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="DEBUG" fieldType="LRoot" ref="RegexFlag_typeshed_" value="DEBUG_typeshed_"/>-->
+<!--          <new def="I_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="I" fieldType="LRoot" ref="RegexFlag_typeshed_" value="I_typeshed_"/>-->
+<!--          <new def="IGNORECASE_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="IGNORECASE" fieldType="LRoot" ref="RegexFlag_typeshed_" value="IGNORECASE_typeshed_"/>-->
+<!--          <new def="L_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="L" fieldType="LRoot" ref="RegexFlag_typeshed_" value="L_typeshed_"/>-->
+<!--          <new def="LOCALE_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="LOCALE" fieldType="LRoot" ref="RegexFlag_typeshed_" value="LOCALE_typeshed_"/>-->
+<!--          <new def="M_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="M" fieldType="LRoot" ref="RegexFlag_typeshed_" value="M_typeshed_"/>-->
+<!--          <new def="MULTILINE_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="MULTILINE" fieldType="LRoot" ref="RegexFlag_typeshed_" value="MULTILINE_typeshed_"/>-->
+<!--          <new def="S_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="S" fieldType="LRoot" ref="RegexFlag_typeshed_" value="S_typeshed_"/>-->
+<!--          <new def="DOTALL_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="DOTALL" fieldType="LRoot" ref="RegexFlag_typeshed_" value="DOTALL_typeshed_"/>-->
+<!--          <new def="X_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="X" fieldType="LRoot" ref="RegexFlag_typeshed_" value="X_typeshed_"/>-->
+<!--          <new def="VERBOSE_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="VERBOSE" fieldType="LRoot" ref="RegexFlag_typeshed_" value="VERBOSE_typeshed_"/>-->
+<!--          <new def="U_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="U" fieldType="LRoot" ref="RegexFlag_typeshed_" value="U_typeshed_"/>-->
+<!--          <new def="UNICODE_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="UNICODE" fieldType="LRoot" ref="RegexFlag_typeshed_" value="UNICODE_typeshed_"/>-->
+<!--          <new def="T_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="T" fieldType="LRoot" ref="RegexFlag_typeshed_" value="T_typeshed_"/>-->
+<!--          <new def="TEMPLATE_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="TEMPLATE" fieldType="LRoot" ref="RegexFlag_typeshed_" value="TEMPLATE_typeshed_"/>-->
+<!--          <return value="RegexFlag_typeshed_"/>-->
+<!--        </method>-->
+<!--      </class>-->
+    </package>
+    <package name="re/RegexFlag"/>
+    <package name="re/Pattern">
+      <class name="match" allocatable="true">
+        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="func" static="false">
+          <new def="MatchClass_" class="Lre/class/Match"/>
+          <call type="virtual" class="LRoot" name="do" descriptor="()LRoot;" numArgs="1" arg0="MatchClass_" def="MatchInstance_"/>
+          <return value="MatchInstance_"/>
+        </method>
+      </class>
+      <class name="search" allocatable="true">
+        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="func str" static="false">
+          <new def="MatchClass_" class="Lre/class/Match"/>
+          <call type="virtual" class="LRoot" name="do" descriptor="()LRoot;" numArgs="1" arg0="MatchClass_" def="MatchInstance_"/>
+          <return value="MatchInstance_"/>
+        </method>
+      </class>
+      <class name="split" allocatable="true">
+        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="func" static="false">
+          <!-- Defined in BuiltinFunctionsSummary -->
+          <new def="result" class="LNone"/>
+          <return value="result"/>
+        </method>
+      </class>
+    </package>
+    <package name="re/Match">
+      <class name="group" allocatable="true">
+        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="func" static="false">
+          <!-- Defined in BuiltinFunctionsSummary -->
+          <new def="result" class="Lstring"/>
+          <return value="result"/>
+        </method>
+      </class>
+      <class name="groups" allocatable="true">
+        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="func" static="false">
+          <!-- Defined in BuiltinFunctionsSummary -->
+          <new def="result" class="LNone"/>
+          <return value="result"/>
+        </method>
+      </class>
+      <class name="groupdict" allocatable="true">
+        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="func" static="false">
+          <!-- Defined in BuiltinFunctionsSummary -->
+          <new def="result" class="LNone"/>
+          <return value="result"/>
+        </method>
+      </class>
+    </package>
+  </classloader>
+</summary-spec>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE summary-spec>
+<summary-spec>
+  <classloader name="PythonLoader">
+    <class name="abc" allocatable="true">
+      <method name="import" static="true" descriptor="()Labc;">
+        <new def="obj_typeshed_" class="Labc"/>
+<!--        <new def="ABCMeta_typeshed_" class="Labc/class/ABCMeta"/>-->
+<!--        <putfield class="LRoot" field="ABCMeta" fieldType="LRoot" ref="obj_typeshed_" value="ABCMeta_typeshed_"/>-->
+        <new def="abstractmethod_typeshed_" class="Labc/function/abstractmethod"/>
+        <putfield class="LRoot" field="abstractmethod" fieldType="LRoot" ref="obj_typeshed_" value="abstractmethod_typeshed_"/>
+<!--        <new def="abstractproperty_typeshed_" class="Labc/class/abstractproperty"/>-->
+<!--        <putfield class="LRoot" field="abstractproperty" fieldType="LRoot" ref="obj_typeshed_" value="abstractproperty_typeshed_"/>-->
+<!--        <new def="abstractstaticmethod_typeshed_" class="Labc/function/abstractstaticmethod"/>-->
+<!--        <putfield class="LRoot" field="abstractstaticmethod" fieldType="LRoot" ref="obj_typeshed_" value="abstractstaticmethod_typeshed_"/>-->
+<!--        <new def="abstractclassmethod_typeshed_" class="Labc/function/abstractclassmethod"/>-->
+<!--        <putfield class="LRoot" field="abstractclassmethod" fieldType="LRoot" ref="obj_typeshed_" value="abstractclassmethod_typeshed_"/>-->
+        <new def="ABC_typeshed_" class="Labc/class/ABC"/>
+        <putfield class="LRoot" field="ABC" fieldType="LRoot" ref="obj_typeshed_" value="ABC_typeshed_"/>
+<!--        <new def="get_cache_token_typeshed_" class="Labc/function/get_cache_token"/>-->
+<!--        <putfield class="LRoot" field="get_cache_token" fieldType="LRoot" ref="obj_typeshed_" value="get_cache_token_typeshed_"/>-->
+        <return value="obj_typeshed_"/>
+      </method>
+    </class>
+    <package name="abc/function">
+      <class name="abstractmethod" allocatable="true">
+        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="funcobj" static="false">
+          <new def="_typeshed6" class="L_FuncT"/>
+          <return value="_typeshed6"/>
+        </method>
+      </class>
+<!--      <class name="abstractstaticmethod" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="callable" static="false">-->
+<!--          <new def="_typeshed7" class="L_FuncT"/>-->
+<!--          <return value="_typeshed7"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="abstractclassmethod" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="callable" static="false">-->
+<!--          <new def="_typeshed8" class="L_FuncT"/>-->
+<!--          <return value="_typeshed8"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="get_cache_token" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="0" paramNames="" static="false">-->
+<!--          <new def="_typeshed9" class="Lobject"/>-->
+<!--          <return value="_typeshed9"/>-->
+<!--        </method>-->
+<!--      </class>-->
+    </package>
+    <package name="abc/class">
+<!--      <class name="ABCMeta" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;">-->
+<!--          <new def="ABCMeta_typeshed_" class="Labc/class/ABCMeta"/>-->
+<!--          <new def="__abstractmethods___typeshed_" class="Lfrozenset"/>-->
+<!--          <putfield class="LRoot" field="__abstractmethods__" fieldType="LRoot" ref="ABCMeta_typeshed_" value="__abstractmethods___typeshed_"/>-->
+<!--          <new def="__init___typeshed_" class="Labc/ABCMeta/__init__"/>-->
+<!--          <putfield class="LRoot" field="__init__" fieldType="LRoot" ref="ABCMeta_typeshed_" value="__init___typeshed_"/>-->
+<!--          <new def="__instancecheck___typeshed_" class="Labc/ABCMeta/__instancecheck__"/>-->
+<!--          <putfield class="LRoot" field="__instancecheck__" fieldType="LRoot" ref="ABCMeta_typeshed_" value="__instancecheck___typeshed_"/>-->
+<!--          <new def="__subclasscheck___typeshed_" class="Labc/ABCMeta/__subclasscheck__"/>-->
+<!--          <putfield class="LRoot" field="__subclasscheck__" fieldType="LRoot" ref="ABCMeta_typeshed_" value="__subclasscheck___typeshed_"/>-->
+<!--          <new def="_dump_registry_typeshed_" class="Labc/ABCMeta/_dump_registry"/>-->
+<!--          <putfield class="LRoot" field="_dump_registry" fieldType="LRoot" ref="ABCMeta_typeshed_" value="_dump_registry_typeshed_"/>-->
+<!--          <new def="register_typeshed_" class="Labc/ABCMeta/register"/>-->
+<!--          <putfield class="LRoot" field="register" fieldType="LRoot" ref="ABCMeta_typeshed_" value="register_typeshed_"/>-->
+<!--          <return value="ABCMeta_typeshed_"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="abstractproperty" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;">-->
+<!--          <new def="abstractproperty_typeshed_" class="Labc/class/abstractproperty"/>-->
+<!--          <return value="abstractproperty_typeshed_"/>-->
+<!--        </method>-->
+<!--      </class>-->
+      <class name="ABC" allocatable="true">
+        <method name="do" descriptor="()LRoot;">
+          <new def="ABC_typeshed_" class="Labc/class/ABC"/>
+          <return value="ABC_typeshed_"/>
+        </method>
+      </class>
+    </package>
+<!--    <package name="abc/ABCMeta">-->
+    <!--      <class name="__init__" allocatable="true">-->
+    <!--        <method name="do" descriptor="()LRoot;" numArgs="4" paramNames="self name bases namespace" static="false">-->
+    <!--          <new def="_typeshed0" class="LNone"/>-->
+    <!--          <return value="_typeshed0"/>-->
+    <!--        </method>-->
+    <!--      </class>-->
+    <!--      <class name="__instancecheck__" allocatable="true">-->
+    <!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="cls instance" static="false">-->
+    <!--          <new def="_typeshed1" class="Lobject"/>-->
+    <!--          <return value="_typeshed1"/>-->
+    <!--        </method>-->
+    <!--      </class>-->
+    <!--      <class name="__subclasscheck__" allocatable="true">-->
+    <!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="cls subclass" static="false">-->
+    <!--          <new def="_typeshed2" class="Lobject"/>-->
+    <!--          <return value="_typeshed2"/>-->
+    <!--        </method>-->
+    <!--      </class>-->
+    <!--      <class name="_dump_registry" allocatable="true">-->
+    <!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="cls file" static="false">-->
+    <!--          <new def="_typeshed3" class="LNone"/>-->
+    <!--          <return value="_typeshed3"/>-->
+    <!--        </method>-->
+    <!--      </class>-->
+    <!--      <class name="register" allocatable="true">-->
+    <!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="cls subclass" static="false">-->
+    <!--          <new def="_typeshed4" class="LType"/>-->
+    <!--          <new def="_typeshed5" class="L_T"/>-->
+    <!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed4" value="_typeshed5"/>-->
+    <!--          <return value="_typeshed4"/>-->
+    <!--        </method>-->
+    <!--      </class>-->
+    <!--    </package>-->
+    <!--    <package name="abc/abstractproperty"/>-->
+    <package name="abc/ABC"/>
+  </classloader>
+</summary-spec>

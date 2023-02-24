@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE summary-spec>
+<summary-spec>
+  <classloader name="PythonLoader">
+    <class name="sys" allocatable="true">
+      <method name="import" static="true" descriptor="()Lsys;">
+        <new def="obj_typeshed_" class="Lsys"/>
+<!--        <new def="_MetaPathFinder_typeshed_" class="Lsys/class/_MetaPathFinder"/>-->
+<!--        <putfield class="LRoot" field="_MetaPathFinder" fieldType="LRoot" ref="obj_typeshed_" value="_MetaPathFinder_typeshed_"/>-->
+<!--        <new def="abiflags_typeshed_" class="Lstring"/>-->
+<!--        <putfield class="LRoot" field="abiflags" fieldType="LRoot" ref="obj_typeshed_" value="abiflags_typeshed_"/>-->
+        <new def="argv_typeshed_" class="Llist"/>
+        <putfield class="LRoot" field="argv" fieldType="LRoot" ref="obj_typeshed_" value="argv_typeshed_"/>
+<!--        <new def="base_exec_prefix_typeshed_" class="Lstring"/>-->
+<!--        <putfield class="LRoot" field="base_exec_prefix" fieldType="LRoot" ref="obj_typeshed_" value="base_exec_prefix_typeshed_"/>-->
+<!--        <new def="base_prefix_typeshed_" class="Lstring"/>-->
+<!--        <putfield class="LRoot" field="base_prefix" fieldType="LRoot" ref="obj_typeshed_" value="base_prefix_typeshed_"/>-->
+<!--        <new def="byteorder_typeshed_" class="LLiteral"/>-->
+<!--        <putfield class="LRoot" field="byteorder" fieldType="LRoot" ref="obj_typeshed_" value="byteorder_typeshed_"/>-->
+<!--        <new def="builtin_module_names_typeshed_" class="LSequence"/>-->
+<!--        <putfield class="LRoot" field="builtin_module_names" fieldType="LRoot" ref="obj_typeshed_" value="builtin_module_names_typeshed_"/>-->
+<!--        <new def="copyright_typeshed_" class="Lstring"/>-->
+<!--        <putfield class="LRoot" field="copyright" fieldType="LRoot" ref="obj_typeshed_" value="copyright_typeshed_"/>-->
+<!--        <new def="dllhandle_typeshed_" class="I"/>-->
+<!--        <putfield class="LRoot" field="dllhandle" fieldType="LRoot" ref="obj_typeshed_" value="dllhandle_typeshed_"/>-->
+<!--        <new def="dont_write_bytecode_typeshed_" class="Z"/>-->
+<!--        <putfield class="LRoot" field="dont_write_bytecode" fieldType="LRoot" ref="obj_typeshed_" value="dont_write_bytecode_typeshed_"/>-->
+<!--        <new def="displayhook_typeshed_" class="LCallable"/>-->
+<!--        <putfield class="LRoot" field="displayhook" fieldType="LRoot" ref="obj_typeshed_" value="displayhook_typeshed_"/>-->
+<!--        <new def="excepthook_typeshed_" class="LCallable"/>-->
+<!--        <putfield class="LRoot" field="excepthook" fieldType="LRoot" ref="obj_typeshed_" value="excepthook_typeshed_"/>-->
+<!--        <new def="exec_prefix_typeshed_" class="Lstring"/>-->
+<!--        <putfield class="LRoot" field="exec_prefix" fieldType="LRoot" ref="obj_typeshed_" value="exec_prefix_typeshed_"/>-->
+<!--        <new def="executable_typeshed_" class="Lstring"/>-->
+<!--        <putfield class="LRoot" field="executable" fieldType="LRoot" ref="obj_typeshed_" value="executable_typeshed_"/>-->
+<!--        <new def="float_repr_style_typeshed_" class="Lstring"/>-->
+<!--        <putfield class="LRoot" field="float_repr_style" fieldType="LRoot" ref="obj_typeshed_" value="float_repr_style_typeshed_"/>-->
+<!--        <new def="hexversion_typeshed_" class="I"/>-->
+<!--        <putfield class="LRoot" field="hexversion" fieldType="LRoot" ref="obj_typeshed_" value="hexversion_typeshed_"/>-->
+<!--        <new def="last_type_typeshed_" class="LType LNone"/>-->
+<!--        <putfield class="LRoot" field="last_type" fieldType="LRoot" ref="obj_typeshed_" value="last_type_typeshed_"/>-->
+<!--        <new def="last_value_typeshed_" class="LBaseException LNone"/>-->
+<!--        <putfield class="LRoot" field="last_value" fieldType="LRoot" ref="obj_typeshed_" value="last_value_typeshed_"/>-->
+<!--        <new def="last_traceback_typeshed_" class="LTracebackType LNone"/>-->
+<!--        <putfield class="LRoot" field="last_traceback" fieldType="LRoot" ref="obj_typeshed_" value="last_traceback_typeshed_"/>-->
+<!--        <new def="maxsize_typeshed_" class="I"/>-->
+<!--        <putfield class="LRoot" field="maxsize" fieldType="LRoot" ref="obj_typeshed_" value="maxsize_typeshed_"/>-->
+<!--        <new def="maxunicode_typeshed_" class="I"/>-->
+<!--        <putfield class="LRoot" field="maxunicode" fieldType="LRoot" ref="obj_typeshed_" value="maxunicode_typeshed_"/>-->
+<!--        <new def="meta_path_typeshed_" class="Llist"/>-->
+<!--        <putfield class="LRoot" field="meta_path" fieldType="LRoot" ref="obj_typeshed_" value="meta_path_typeshed_"/>-->
+<!--        <new def="modules_typeshed_" class="Ldict"/>-->
+<!--        <putfield class="LRoot" field="modules" fieldType="LRoot" ref="obj_typeshed_" value="modules_typeshed_"/>-->
+<!--        <new def="orig_argv_typeshed_" class="Llist"/>-->
+<!--        <putfield class="LRoot" field="orig_argv" fieldType="LRoot" ref="obj_typeshed_" value="orig_argv_typeshed_"/>-->
+<!--        <new def="path_typeshed_" class="Llist"/>-->
+<!--        <putfield class="LRoot" field="path" fieldType="LRoot" ref="obj_typeshed_" value="path_typeshed_"/>-->
+<!--        <new def="path_hooks_typeshed_" class="Llist"/>-->
+<!--        <putfield class="LRoot" field="path_hooks" fieldType="LRoot" ref="obj_typeshed_" value="path_hooks_typeshed_"/>-->
+<!--        <new def="path_importer_cache_typeshed_" class="Ldict"/>-->
+<!--        <putfield class="LRoot" field="path_importer_cache" fieldType="LRoot" ref="obj_typeshed_" value="path_importer_cache_typeshed_"/>-->
+<!--        <new def="platform_typeshed_" class="Lstring"/>-->
+<!--        <putfield class="LRoot" field="platform" fieldType="LRoot" ref="obj_typeshed_" value="platform_typeshed_"/>-->
+<!--        <new def="platlibdir_typeshed_" class="Lstring"/>-->
+<!--        <putfield class="LRoot" field="platlibdir" fieldType="LRoot" ref="obj_typeshed_" value="platlibdir_typeshed_"/>-->
+<!--        <new def="prefix_typeshed_" class="Lstring"/>-->
+<!--        <putfield class="LRoot" field="prefix" fieldType="LRoot" ref="obj_typeshed_" value="prefix_typeshed_"/>-->
+<!--        <new def="pycache_prefix_typeshed_" class="Lstring LNone"/>-->
+<!--        <putfield class="LRoot" field="pycache_prefix" fieldType="LRoot" ref="obj_typeshed_" value="pycache_prefix_typeshed_"/>-->
+<!--        <new def="ps1_typeshed_" class="Lobject"/>-->
+<!--        <putfield class="LRoot" field="ps1" fieldType="LRoot" ref="obj_typeshed_" value="ps1_typeshed_"/>-->
+<!--        <new def="ps2_typeshed_" class="Lobject"/>-->
+<!--        <putfield class="LRoot" field="ps2" fieldType="LRoot" ref="obj_typeshed_" value="ps2_typeshed_"/>-->
+<!--        <new def="stdin_typeshed_" class="LTextIO"/>-->
+<!--        <putfield class="LRoot" field="stdin" fieldType="LRoot" ref="obj_typeshed_" value="stdin_typeshed_"/>-->
+        <new def="stdout_typeshed_" class="LTextIO"/>
+        <putfield class="LRoot" field="stdout" fieldType="LRoot" ref="obj_typeshed_" value="stdout_typeshed_"/>
+        <new def="stderr_typeshed_" class="Lsys/class/stderr"/>
+        <new def="stderr_write_typeshed_" class="Lsys/stderr/write"/>
+        <putfield class="LRoot" field="write" fieldType="LRoot" ref="stderr_typeshed_" value="stderr_write_typeshed_"/>
+        <putfield class="LRoot" field="stderr" fieldType="LRoot" ref="obj_typeshed_" value="stderr_typeshed_"/>
+<!--        <new def="stdlib_module_names_typeshed_" class="LFrozenSet"/>-->
+<!--        <putfield class="LRoot" field="stdlib_module_names" fieldType="LRoot" ref="obj_typeshed_" value="stdlib_module_names_typeshed_"/>-->
+<!--        <new def="__stdin___typeshed_" class="LTextIOWrapper"/>-->
+<!--        <putfield class="LRoot" field="__stdin__" fieldType="LRoot" ref="obj_typeshed_" value="__stdin___typeshed_"/>-->
+<!--        <new def="__stdout___typeshed_" class="LTextIOWrapper"/>-->
+<!--        <putfield class="LRoot" field="__stdout__" fieldType="LRoot" ref="obj_typeshed_" value="__stdout___typeshed_"/>-->
+<!--        <new def="__stderr___typeshed_" class="LTextIOWrapper"/>-->
+<!--        <putfield class="LRoot" field="__stderr__" fieldType="LRoot" ref="obj_typeshed_" value="__stderr___typeshed_"/>-->
+<!--        <new def="tracebacklimit_typeshed_" class="I"/>-->
+<!--        <putfield class="LRoot" field="tracebacklimit" fieldType="LRoot" ref="obj_typeshed_" value="tracebacklimit_typeshed_"/>-->
+        <new def="version_typeshed_" class="Lstring"/>
+        <putfield class="LRoot" field="version" fieldType="LRoot" ref="obj_typeshed_" value="version_typeshed_"/>
+<!--        <new def="api_version_typeshed_" class="I"/>-->
+<!--        <putfield class="LRoot" field="api_version" fieldType="LRoot" ref="obj_typeshed_" value="api_version_typeshed_"/>-->
+<!--        <new def="warnoptions_typeshed_" class="Lobject"/>-->
+<!--        <putfield class="LRoot" field="warnoptions" fieldType="LRoot" ref="obj_typeshed_" value="warnoptions_typeshed_"/>-->
+<!--        <new def="winver_typeshed_" class="Lstring"/>-->
+<!--        <putfield class="LRoot" field="winver" fieldType="LRoot" ref="obj_typeshed_" value="winver_typeshed_"/>-->
+<!--        <new def="_xoptions_typeshed_" class="Ldict"/>-->
+<!--        <putfield class="LRoot" field="_xoptions" fieldType="LRoot" ref="obj_typeshed_" value="_xoptions_typeshed_"/>-->
+<!--        <new def="flags_typeshed_" class="L_flags"/>-->
+<!--        <putfield class="LRoot" field="flags" fieldType="LRoot" ref="obj_typeshed_" value="flags_typeshed_"/>-->
+<!--        <new def="_flags_typeshed_" class="Lsys/class/_flags"/>-->
+<!--        <putfield class="LRoot" field="_flags" fieldType="LRoot" ref="obj_typeshed_" value="_flags_typeshed_"/>-->
+<!--        <new def="float_info_typeshed_" class="L_float_info"/>-->
+<!--        <putfield class="LRoot" field="float_info" fieldType="LRoot" ref="obj_typeshed_" value="float_info_typeshed_"/>-->
+<!--        <new def="_float_info_typeshed_" class="Lsys/class/_float_info"/>-->
+<!--        <putfield class="LRoot" field="_float_info" fieldType="LRoot" ref="obj_typeshed_" value="_float_info_typeshed_"/>-->
+<!--        <new def="hash_info_typeshed_" class="L_hash_info"/>-->
+<!--        <putfield class="LRoot" field="hash_info" fieldType="LRoot" ref="obj_typeshed_" value="hash_info_typeshed_"/>-->
+<!--        <new def="_hash_info_typeshed_" class="Lsys/class/_hash_info"/>-->
+<!--        <putfield class="LRoot" field="_hash_info" fieldType="LRoot" ref="obj_typeshed_" value="_hash_info_typeshed_"/>-->
+<!--        <new def="implementation_typeshed_" class="L_implementation"/>-->
+<!--        <putfield class="LRoot" field="implementation" fieldType="LRoot" ref="obj_typeshed_" value="implementation_typeshed_"/>-->
+<!--        <new def="_implementation_typeshed_" class="Lsys/class/_implementation"/>-->
+<!--        <putfield class="LRoot" field="_implementation" fieldType="LRoot" ref="obj_typeshed_" value="_implementation_typeshed_"/>-->
+<!--        <new def="int_info_typeshed_" class="L_int_info"/>-->
+<!--        <putfield class="LRoot" field="int_info" fieldType="LRoot" ref="obj_typeshed_" value="int_info_typeshed_"/>-->
+<!--        <new def="_int_info_typeshed_" class="Lsys/class/_int_info"/>-->
+<!--        <putfield class="LRoot" field="_int_info" fieldType="LRoot" ref="obj_typeshed_" value="_int_info_typeshed_"/>-->
+<!--        <new def="_version_info_typeshed_" class="Lsys/class/_version_info"/>-->
+<!--        <putfield class="LRoot" field="_version_info" fieldType="LRoot" ref="obj_typeshed_" value="_version_info_typeshed_"/>-->
+<!--        <new def="version_info_typeshed_" class="L_version_info"/>-->
+<!--        <putfield class="LRoot" field="version_info" fieldType="LRoot" ref="obj_typeshed_" value="version_info_typeshed_"/>-->
+<!--        <new def="call_tracing_typeshed_" class="Lsys/function/call_tracing"/>-->
+<!--        <putfield class="LRoot" field="call_tracing" fieldType="LRoot" ref="obj_typeshed_" value="call_tracing_typeshed_"/>-->
+<!--        <new def="_clear_type_cache_typeshed_" class="Lsys/function/_clear_type_cache"/>-->
+<!--        <putfield class="LRoot" field="_clear_type_cache" fieldType="LRoot" ref="obj_typeshed_" value="_clear_type_cache_typeshed_"/>-->
+<!--        <new def="_current_frames_typeshed_" class="Lsys/function/_current_frames"/>-->
+<!--        <putfield class="LRoot" field="_current_frames" fieldType="LRoot" ref="obj_typeshed_" value="_current_frames_typeshed_"/>-->
+<!--        <new def="_getframe_typeshed_" class="Lsys/function/_getframe"/>-->
+<!--        <putfield class="LRoot" field="_getframe" fieldType="LRoot" ref="obj_typeshed_" value="_getframe_typeshed_"/>-->
+<!--        <new def="_debugmallocstats_typeshed_" class="Lsys/function/_debugmallocstats"/>-->
+<!--        <putfield class="LRoot" field="_debugmallocstats" fieldType="LRoot" ref="obj_typeshed_" value="_debugmallocstats_typeshed_"/>-->
+<!--        <new def="__displayhook___typeshed_" class="Lsys/function/__displayhook__"/>-->
+<!--        <putfield class="LRoot" field="__displayhook__" fieldType="LRoot" ref="obj_typeshed_" value="__displayhook___typeshed_"/>-->
+<!--        <new def="__excepthook___typeshed_" class="Lsys/function/__excepthook__"/>-->
+<!--        <putfield class="LRoot" field="__excepthook__" fieldType="LRoot" ref="obj_typeshed_" value="__excepthook___typeshed_"/>-->
+<!--        <new def="exc_info_typeshed_" class="Lsys/function/exc_info"/>-->
+<!--        <putfield class="LRoot" field="exc_info" fieldType="LRoot" ref="obj_typeshed_" value="exc_info_typeshed_"/>-->
+        <new def="exit_typeshed_" class="Lsys/function/exit"/>
+        <putfield class="LRoot" field="exit" fieldType="LRoot" ref="obj_typeshed_" value="exit_typeshed_"/>
+<!--        <new def="getallocatedblocks_typeshed_" class="Lsys/function/getallocatedblocks"/>-->
+<!--        <putfield class="LRoot" field="getallocatedblocks" fieldType="LRoot" ref="obj_typeshed_" value="getallocatedblocks_typeshed_"/>-->
+<!--        <new def="getdefaultencoding_typeshed_" class="Lsys/function/getdefaultencoding"/>-->
+<!--        <putfield class="LRoot" field="getdefaultencoding" fieldType="LRoot" ref="obj_typeshed_" value="getdefaultencoding_typeshed_"/>-->
+<!--        <new def="getdlopenflags_typeshed_" class="Lsys/function/getdlopenflags"/>-->
+<!--        <putfield class="LRoot" field="getdlopenflags" fieldType="LRoot" ref="obj_typeshed_" value="getdlopenflags_typeshed_"/>-->
+<!--        <new def="getfilesystemencoding_typeshed_" class="Lsys/function/getfilesystemencoding"/>-->
+<!--        <putfield class="LRoot" field="getfilesystemencoding" fieldType="LRoot" ref="obj_typeshed_" value="getfilesystemencoding_typeshed_"/>-->
+<!--        <new def="getfilesystemencodeerrors_typeshed_" class="Lsys/function/getfilesystemencodeerrors"/>-->
+<!--        <putfield class="LRoot" field="getfilesystemencodeerrors" fieldType="LRoot" ref="obj_typeshed_" value="getfilesystemencodeerrors_typeshed_"/>-->
+<!--        <new def="getrefcount_typeshed_" class="Lsys/function/getrefcount"/>-->
+<!--        <putfield class="LRoot" field="getrefcount" fieldType="LRoot" ref="obj_typeshed_" value="getrefcount_typeshed_"/>-->
+<!--        <new def="getrecursionlimit_typeshed_" class="Lsys/function/getrecursionlimit"/>-->
+<!--        <putfield class="LRoot" field="getrecursionlimit" fieldType="LRoot" ref="obj_typeshed_" value="getrecursionlimit_typeshed_"/>-->
+<!--        <new def="getsizeof_typeshed_" class="Lsys/function/getsizeof"/>-->
+<!--        <putfield class="LRoot" field="getsizeof" fieldType="LRoot" ref="obj_typeshed_" value="getsizeof_typeshed_"/>-->
+<!--        <new def="getswitchinterval_typeshed_" class="Lsys/function/getswitchinterval"/>-->
+<!--        <putfield class="LRoot" field="getswitchinterval" fieldType="LRoot" ref="obj_typeshed_" value="getswitchinterval_typeshed_"/>-->
+<!--        <new def="getprofile_typeshed_" class="Lsys/function/getprofile"/>-->
+<!--        <putfield class="LRoot" field="getprofile" fieldType="LRoot" ref="obj_typeshed_" value="getprofile_typeshed_"/>-->
+<!--        <new def="setprofile_typeshed_" class="Lsys/function/setprofile"/>-->
+<!--        <putfield class="LRoot" field="setprofile" fieldType="LRoot" ref="obj_typeshed_" value="setprofile_typeshed_"/>-->
+<!--        <new def="gettrace_typeshed_" class="Lsys/function/gettrace"/>-->
+<!--        <putfield class="LRoot" field="gettrace" fieldType="LRoot" ref="obj_typeshed_" value="gettrace_typeshed_"/>-->
+<!--        <new def="settrace_typeshed_" class="Lsys/function/settrace"/>-->
+<!--        <putfield class="LRoot" field="settrace" fieldType="LRoot" ref="obj_typeshed_" value="settrace_typeshed_"/>-->
+<!--        <new def="_WinVersion_typeshed_" class="Lsys/class/_WinVersion"/>-->
+<!--        <putfield class="LRoot" field="_WinVersion" fieldType="LRoot" ref="obj_typeshed_" value="_WinVersion_typeshed_"/>-->
+<!--        <new def="getwindowsversion_typeshed_" class="Lsys/function/getwindowsversion"/>-->
+<!--        <putfield class="LRoot" field="getwindowsversion" fieldType="LRoot" ref="obj_typeshed_" value="getwindowsversion_typeshed_"/>-->
+<!--        <new def="intern_typeshed_" class="Lsys/function/intern"/>-->
+<!--        <putfield class="LRoot" field="intern" fieldType="LRoot" ref="obj_typeshed_" value="intern_typeshed_"/>-->
+<!--        <new def="is_finalizing_typeshed_" class="Lsys/function/is_finalizing"/>-->
+<!--        <putfield class="LRoot" field="is_finalizing" fieldType="LRoot" ref="obj_typeshed_" value="is_finalizing_typeshed_"/>-->
+<!--        <new def="__breakpointhook___typeshed_" class="Lobject"/>-->
+<!--        <putfield class="LRoot" field="__breakpointhook__" fieldType="LRoot" ref="obj_typeshed_" value="__breakpointhook___typeshed_"/>-->
+<!--        <new def="breakpointhook_typeshed_" class="Lsys/function/breakpointhook"/>-->
+<!--        <putfield class="LRoot" field="breakpointhook" fieldType="LRoot" ref="obj_typeshed_" value="breakpointhook_typeshed_"/>-->
+<!--        <new def="setdlopenflags_typeshed_" class="Lsys/function/setdlopenflags"/>-->
+<!--        <putfield class="LRoot" field="setdlopenflags" fieldType="LRoot" ref="obj_typeshed_" value="setdlopenflags_typeshed_"/>-->
+<!--        <new def="setrecursionlimit_typeshed_" class="Lsys/function/setrecursionlimit"/>-->
+<!--        <putfield class="LRoot" field="setrecursionlimit" fieldType="LRoot" ref="obj_typeshed_" value="setrecursionlimit_typeshed_"/>-->
+<!--        <new def="setswitchinterval_typeshed_" class="Lsys/function/setswitchinterval"/>-->
+<!--        <putfield class="LRoot" field="setswitchinterval" fieldType="LRoot" ref="obj_typeshed_" value="setswitchinterval_typeshed_"/>-->
+<!--        <new def="gettotalrefcount_typeshed_" class="Lsys/function/gettotalrefcount"/>-->
+<!--        <putfield class="LRoot" field="gettotalrefcount" fieldType="LRoot" ref="obj_typeshed_" value="gettotalrefcount_typeshed_"/>-->
+<!--        <new def="getcheckinterval_typeshed_" class="Lsys/function/getcheckinterval"/>-->
+<!--        <putfield class="LRoot" field="getcheckinterval" fieldType="LRoot" ref="obj_typeshed_" value="getcheckinterval_typeshed_"/>-->
+<!--        <new def="setcheckinterval_typeshed_" class="Lsys/function/setcheckinterval"/>-->
+<!--        <putfield class="LRoot" field="setcheckinterval" fieldType="LRoot" ref="obj_typeshed_" value="setcheckinterval_typeshed_"/>-->
+<!--        <new def="UnraisableHookArgs_typeshed_" class="Lsys/class/UnraisableHookArgs"/>-->
+<!--        <putfield class="LRoot" field="UnraisableHookArgs" fieldType="LRoot" ref="obj_typeshed_" value="UnraisableHookArgs_typeshed_"/>-->
+<!--        <new def="unraisablehook_typeshed_" class="LCallable"/>-->
+<!--        <putfield class="LRoot" field="unraisablehook" fieldType="LRoot" ref="obj_typeshed_" value="unraisablehook_typeshed_"/>-->
+<!--        <new def="addaudithook_typeshed_" class="Lsys/function/addaudithook"/>-->
+<!--        <putfield class="LRoot" field="addaudithook" fieldType="LRoot" ref="obj_typeshed_" value="addaudithook_typeshed_"/>-->
+<!--        <new def="audit_typeshed_" class="Lsys/function/audit"/>-->
+<!--        <putfield class="LRoot" field="audit" fieldType="LRoot" ref="obj_typeshed_" value="audit_typeshed_"/>-->
+<!--        <new def="_asyncgen_hooks_typeshed_" class="Lsys/class/_asyncgen_hooks"/>-->
+<!--        <putfield class="LRoot" field="_asyncgen_hooks" fieldType="LRoot" ref="obj_typeshed_" value="_asyncgen_hooks_typeshed_"/>-->
+<!--        <new def="get_asyncgen_hooks_typeshed_" class="Lsys/function/get_asyncgen_hooks"/>-->
+<!--        <putfield class="LRoot" field="get_asyncgen_hooks" fieldType="LRoot" ref="obj_typeshed_" value="get_asyncgen_hooks_typeshed_"/>-->
+<!--        <new def="set_asyncgen_hooks_typeshed_" class="Lsys/function/set_asyncgen_hooks"/>-->
+<!--        <putfield class="LRoot" field="set_asyncgen_hooks" fieldType="LRoot" ref="obj_typeshed_" value="set_asyncgen_hooks_typeshed_"/>-->
+<!--        <new def="get_coroutine_origin_tracking_depth_typeshed_" class="Lsys/function/get_coroutine_origin_tracking_depth"/>-->
+<!--        <putfield class="LRoot" field="get_coroutine_origin_tracking_depth" fieldType="LRoot" ref="obj_typeshed_" value="get_coroutine_origin_tracking_depth_typeshed_"/>-->
+<!--        <new def="set_coroutine_origin_tracking_depth_typeshed_" class="Lsys/function/set_coroutine_origin_tracking_depth"/>-->
+<!--        <putfield class="LRoot" field="set_coroutine_origin_tracking_depth" fieldType="LRoot" ref="obj_typeshed_" value="set_coroutine_origin_tracking_depth_typeshed_"/>-->
+        <return value="obj_typeshed_"/>
+      </method>
+    </class>
+    <package name="sys/function">
+<!--      <class name="call_tracing" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="__func __args" static="false">-->
+<!--          <new def="_typeshed2" class="L_T"/>-->
+<!--          <return value="_typeshed2"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="_clear_type_cache" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="0" paramNames="" static="false">-->
+<!--          <new def="_typeshed3" class="LNone"/>-->
+<!--          <return value="_typeshed3"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="_current_frames" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="0" paramNames="" static="false">-->
+<!--          <new def="_typeshed4" class="Ldict"/>-->
+<!--          <new def="_typeshed5" class="I"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed4" value="_typeshed5"/>-->
+<!--          <new def="_typeshed6" class="LFrameType"/>-->
+<!--          <putfield class="LRoot" field="1" fieldType="LRoot" ref="_typeshed4" value="_typeshed6"/>-->
+<!--          <return value="_typeshed4"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="_getframe" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="__depth" static="false">-->
+<!--          <new def="_typeshed7" class="LFrameType"/>-->
+<!--          <return value="_typeshed7"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="_debugmallocstats" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="0" paramNames="" static="false">-->
+<!--          <new def="_typeshed8" class="LNone"/>-->
+<!--          <return value="_typeshed8"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__displayhook__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="value" static="false">-->
+<!--          <new def="_typeshed9" class="LNone"/>-->
+<!--          <return value="_typeshed9"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__excepthook__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="3" paramNames="type_ value traceback" static="false">-->
+<!--          <new def="_typeshed10" class="LNone"/>-->
+<!--          <return value="_typeshed10"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="exc_info" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="0" paramNames="" static="false">-->
+<!--          <new def="_typeshed11" class="L_OptExcInfo"/>-->
+<!--          <return value="_typeshed11"/>-->
+<!--        </method>-->
+<!--      </class>-->
+      <class name="exit" allocatable="true">
+        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="__status" static="false">
+          <new def="_typeshed12" class="LNone"/>
+          <return value="_typeshed12"/>
+        </method>
+      </class>
+<!--      <class name="getallocatedblocks" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="0" paramNames="" static="false">-->
+<!--          <new def="_typeshed13" class="I"/>-->
+<!--          <return value="_typeshed13"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="getdefaultencoding" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="0" paramNames="" static="false">-->
+<!--          <new def="_typeshed14" class="Lstring"/>-->
+<!--          <return value="_typeshed14"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="getdlopenflags" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="0" paramNames="" static="false">-->
+<!--          <new def="_typeshed15" class="I"/>-->
+<!--          <return value="_typeshed15"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="getfilesystemencoding" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="0" paramNames="" static="false">-->
+<!--          <new def="_typeshed16" class="Lstring"/>-->
+<!--          <return value="_typeshed16"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="getfilesystemencodeerrors" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="0" paramNames="" static="false">-->
+<!--          <new def="_typeshed17" class="Lstring"/>-->
+<!--          <return value="_typeshed17"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="getrefcount" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="__object" static="false">-->
+<!--          <new def="_typeshed18" class="I"/>-->
+<!--          <return value="_typeshed18"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="getrecursionlimit" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="0" paramNames="" static="false">-->
+<!--          <new def="_typeshed19" class="I"/>-->
+<!--          <return value="_typeshed19"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="getsizeof" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="obj" static="false">-->
+<!--          <new def="_typeshed20" class="I"/>-->
+<!--          <return value="_typeshed20"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="getswitchinterval" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="0" paramNames="" static="false">-->
+<!--          <new def="_typeshed21" class="D"/>-->
+<!--          <return value="_typeshed21"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="getprofile" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="0" paramNames="" static="false">-->
+<!--          <new def="_typeshed22" class="L_ProfileFunc LNone"/>-->
+<!--          <return value="_typeshed22"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="setprofile" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="profilefunc" static="false">-->
+<!--          <new def="_typeshed23" class="LNone"/>-->
+<!--          <return value="_typeshed23"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="gettrace" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="0" paramNames="" static="false">-->
+<!--          <new def="_typeshed24" class="L_TraceFunc LNone"/>-->
+<!--          <return value="_typeshed24"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="settrace" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="tracefunc" static="false">-->
+<!--          <new def="_typeshed25" class="LNone"/>-->
+<!--          <return value="_typeshed25"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="getwindowsversion" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="0" paramNames="" static="false">-->
+<!--          <new def="_typeshed26" class="L_WinVersion"/>-->
+<!--          <return value="_typeshed26"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="intern" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="__string" static="false">-->
+<!--          <new def="_typeshed27" class="Lstring"/>-->
+<!--          <return value="_typeshed27"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="is_finalizing" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="0" paramNames="" static="false">-->
+<!--          <new def="_typeshed28" class="Z"/>-->
+<!--          <return value="_typeshed28"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="breakpointhook" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="0" paramNames="" static="false">-->
+<!--          <new def="_typeshed29" class="Lobject"/>-->
+<!--          <return value="_typeshed29"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="setdlopenflags" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="__flags" static="false">-->
+<!--          <new def="_typeshed30" class="LNone"/>-->
+<!--          <return value="_typeshed30"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="setrecursionlimit" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="__limit" static="false">-->
+<!--          <new def="_typeshed31" class="LNone"/>-->
+<!--          <return value="_typeshed31"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="setswitchinterval" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="__interval" static="false">-->
+<!--          <new def="_typeshed32" class="LNone"/>-->
+<!--          <return value="_typeshed32"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="gettotalrefcount" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="0" paramNames="" static="false">-->
+<!--          <new def="_typeshed33" class="I"/>-->
+<!--          <return value="_typeshed33"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="getcheckinterval" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="0" paramNames="" static="false">-->
+<!--          <new def="_typeshed34" class="I"/>-->
+<!--          <return value="_typeshed34"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="setcheckinterval" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="__n" static="false">-->
+<!--          <new def="_typeshed35" class="LNone"/>-->
+<!--          <return value="_typeshed35"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="addaudithook" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="hook" static="false">-->
+<!--          <new def="_typeshed36" class="LNone"/>-->
+<!--          <return value="_typeshed36"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="audit" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="__event" static="false">-->
+<!--          <new def="_typeshed37" class="LNone"/>-->
+<!--          <return value="_typeshed37"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="get_asyncgen_hooks" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="0" paramNames="" static="false">-->
+<!--          <new def="_typeshed38" class="L_asyncgen_hooks"/>-->
+<!--          <return value="_typeshed38"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="set_asyncgen_hooks" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="firstiter finalizer" static="false">-->
+<!--          <new def="_typeshed39" class="LNone"/>-->
+<!--          <return value="_typeshed39"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="get_coroutine_origin_tracking_depth" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="0" paramNames="" static="false">-->
+<!--          <new def="_typeshed40" class="I"/>-->
+<!--          <return value="_typeshed40"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="set_coroutine_origin_tracking_depth" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="depth" static="false">-->
+<!--          <new def="_typeshed41" class="LNone"/>-->
+<!--          <return value="_typeshed41"/>-->
+<!--        </method>-->
+<!--      </class>-->
+    </package>
+    <package name="sys/class">
+      <class name="stderr" allocatable="true">
+        <method name="do" descriptor="()LRoot;">
+          <new def="stderr_typeshed_" class="Lsys/class/stderr"/>
+          <new def="write_typeshed_" class="Lsys/stderr/write"/>
+          <putfield class="LRoot" field="write" fieldType="LRoot" ref="stderr_typeshed_" value="write_typeshed_"/>
+          <return value="stderr_typeshed_"/>
+        </method>
+      </class>
+<!--      <class name="_MetaPathFinder" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;">-->
+<!--          <new def="_MetaPathFinder_typeshed_" class="Lsys/class/_MetaPathFinder"/>-->
+<!--          <new def="find_module_typeshed_" class="Lsys/_MetaPathFinder/find_module"/>-->
+<!--          <putfield class="LRoot" field="find_module" fieldType="LRoot" ref="_MetaPathFinder_typeshed_" value="find_module_typeshed_"/>-->
+<!--          <new def="find_spec_typeshed_" class="Lsys/_MetaPathFinder/find_spec"/>-->
+<!--          <putfield class="LRoot" field="find_spec" fieldType="LRoot" ref="_MetaPathFinder_typeshed_" value="find_spec_typeshed_"/>-->
+<!--          <return value="_MetaPathFinder_typeshed_"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="_flags" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;">-->
+<!--          <new def="_flags_typeshed_" class="Lsys/class/_flags"/>-->
+<!--          <new def="debug_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="debug" fieldType="LRoot" ref="_flags_typeshed_" value="debug_typeshed_"/>-->
+<!--          <new def="division_warning_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="division_warning" fieldType="LRoot" ref="_flags_typeshed_" value="division_warning_typeshed_"/>-->
+<!--          <new def="inspect_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="inspect" fieldType="LRoot" ref="_flags_typeshed_" value="inspect_typeshed_"/>-->
+<!--          <new def="interactive_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="interactive" fieldType="LRoot" ref="_flags_typeshed_" value="interactive_typeshed_"/>-->
+<!--          <new def="optimize_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="optimize" fieldType="LRoot" ref="_flags_typeshed_" value="optimize_typeshed_"/>-->
+<!--          <new def="dont_write_bytecode_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="dont_write_bytecode" fieldType="LRoot" ref="_flags_typeshed_" value="dont_write_bytecode_typeshed_"/>-->
+<!--          <new def="no_user_site_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="no_user_site" fieldType="LRoot" ref="_flags_typeshed_" value="no_user_site_typeshed_"/>-->
+<!--          <new def="no_site_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="no_site" fieldType="LRoot" ref="_flags_typeshed_" value="no_site_typeshed_"/>-->
+<!--          <new def="ignore_environment_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="ignore_environment" fieldType="LRoot" ref="_flags_typeshed_" value="ignore_environment_typeshed_"/>-->
+<!--          <new def="verbose_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="verbose" fieldType="LRoot" ref="_flags_typeshed_" value="verbose_typeshed_"/>-->
+<!--          <new def="bytes_warning_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="bytes_warning" fieldType="LRoot" ref="_flags_typeshed_" value="bytes_warning_typeshed_"/>-->
+<!--          <new def="quiet_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="quiet" fieldType="LRoot" ref="_flags_typeshed_" value="quiet_typeshed_"/>-->
+<!--          <new def="hash_randomization_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="hash_randomization" fieldType="LRoot" ref="_flags_typeshed_" value="hash_randomization_typeshed_"/>-->
+<!--          <new def="dev_mode_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="dev_mode" fieldType="LRoot" ref="_flags_typeshed_" value="dev_mode_typeshed_"/>-->
+<!--          <new def="utf8_mode_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="utf8_mode" fieldType="LRoot" ref="_flags_typeshed_" value="utf8_mode_typeshed_"/>-->
+<!--          <return value="_flags_typeshed_"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="_float_info" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;">-->
+<!--          <new def="_float_info_typeshed_" class="Lsys/class/_float_info"/>-->
+<!--          <new def="epsilon_typeshed_" class="D"/>-->
+<!--          <putfield class="LRoot" field="epsilon" fieldType="LRoot" ref="_float_info_typeshed_" value="epsilon_typeshed_"/>-->
+<!--          <new def="dig_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="dig" fieldType="LRoot" ref="_float_info_typeshed_" value="dig_typeshed_"/>-->
+<!--          <new def="mant_dig_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="mant_dig" fieldType="LRoot" ref="_float_info_typeshed_" value="mant_dig_typeshed_"/>-->
+<!--          <new def="max_typeshed_" class="D"/>-->
+<!--          <putfield class="LRoot" field="max" fieldType="LRoot" ref="_float_info_typeshed_" value="max_typeshed_"/>-->
+<!--          <new def="max_exp_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="max_exp" fieldType="LRoot" ref="_float_info_typeshed_" value="max_exp_typeshed_"/>-->
+<!--          <new def="max_10_exp_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="max_10_exp" fieldType="LRoot" ref="_float_info_typeshed_" value="max_10_exp_typeshed_"/>-->
+<!--          <new def="min_typeshed_" class="D"/>-->
+<!--          <putfield class="LRoot" field="min" fieldType="LRoot" ref="_float_info_typeshed_" value="min_typeshed_"/>-->
+<!--          <new def="min_exp_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="min_exp" fieldType="LRoot" ref="_float_info_typeshed_" value="min_exp_typeshed_"/>-->
+<!--          <new def="min_10_exp_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="min_10_exp" fieldType="LRoot" ref="_float_info_typeshed_" value="min_10_exp_typeshed_"/>-->
+<!--          <new def="radix_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="radix" fieldType="LRoot" ref="_float_info_typeshed_" value="radix_typeshed_"/>-->
+<!--          <new def="rounds_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="rounds" fieldType="LRoot" ref="_float_info_typeshed_" value="rounds_typeshed_"/>-->
+<!--          <return value="_float_info_typeshed_"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="_hash_info" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;">-->
+<!--          <new def="_hash_info_typeshed_" class="Lsys/class/_hash_info"/>-->
+<!--          <new def="width_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="width" fieldType="LRoot" ref="_hash_info_typeshed_" value="width_typeshed_"/>-->
+<!--          <new def="modulus_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="modulus" fieldType="LRoot" ref="_hash_info_typeshed_" value="modulus_typeshed_"/>-->
+<!--          <new def="inf_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="inf" fieldType="LRoot" ref="_hash_info_typeshed_" value="inf_typeshed_"/>-->
+<!--          <new def="nan_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="nan" fieldType="LRoot" ref="_hash_info_typeshed_" value="nan_typeshed_"/>-->
+<!--          <new def="imag_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="imag" fieldType="LRoot" ref="_hash_info_typeshed_" value="imag_typeshed_"/>-->
+<!--          <return value="_hash_info_typeshed_"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="_implementation" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;">-->
+<!--          <new def="_implementation_typeshed_" class="Lsys/class/_implementation"/>-->
+<!--          <new def="name_typeshed_" class="Lstring"/>-->
+<!--          <putfield class="LRoot" field="name" fieldType="LRoot" ref="_implementation_typeshed_" value="name_typeshed_"/>-->
+<!--          <new def="version_typeshed_" class="L_version_info"/>-->
+<!--          <putfield class="LRoot" field="version" fieldType="LRoot" ref="_implementation_typeshed_" value="version_typeshed_"/>-->
+<!--          <new def="hexversion_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="hexversion" fieldType="LRoot" ref="_implementation_typeshed_" value="hexversion_typeshed_"/>-->
+<!--          <new def="cache_tag_typeshed_" class="Lstring"/>-->
+<!--          <putfield class="LRoot" field="cache_tag" fieldType="LRoot" ref="_implementation_typeshed_" value="cache_tag_typeshed_"/>-->
+<!--          <new def="_multiarch_typeshed_" class="Lstring"/>-->
+<!--          <putfield class="LRoot" field="_multiarch" fieldType="LRoot" ref="_implementation_typeshed_" value="_multiarch_typeshed_"/>-->
+<!--          <return value="_implementation_typeshed_"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="_int_info" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;">-->
+<!--          <new def="_int_info_typeshed_" class="Lsys/class/_int_info"/>-->
+<!--          <new def="bits_per_digit_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="bits_per_digit" fieldType="LRoot" ref="_int_info_typeshed_" value="bits_per_digit_typeshed_"/>-->
+<!--          <new def="sizeof_digit_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="sizeof_digit" fieldType="LRoot" ref="_int_info_typeshed_" value="sizeof_digit_typeshed_"/>-->
+<!--          <return value="_int_info_typeshed_"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="_version_info" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;">-->
+<!--          <new def="_version_info_typeshed_" class="Lsys/class/_version_info"/>-->
+<!--          <new def="major_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="major" fieldType="LRoot" ref="_version_info_typeshed_" value="major_typeshed_"/>-->
+<!--          <new def="minor_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="minor" fieldType="LRoot" ref="_version_info_typeshed_" value="minor_typeshed_"/>-->
+<!--          <new def="micro_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="micro" fieldType="LRoot" ref="_version_info_typeshed_" value="micro_typeshed_"/>-->
+<!--          <new def="releaselevel_typeshed_" class="Lstring"/>-->
+<!--          <putfield class="LRoot" field="releaselevel" fieldType="LRoot" ref="_version_info_typeshed_" value="releaselevel_typeshed_"/>-->
+<!--          <new def="serial_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="serial" fieldType="LRoot" ref="_version_info_typeshed_" value="serial_typeshed_"/>-->
+<!--          <return value="_version_info_typeshed_"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="_WinVersion" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;">-->
+<!--          <new def="_WinVersion_typeshed_" class="Lsys/class/_WinVersion"/>-->
+<!--          <new def="major_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="major" fieldType="LRoot" ref="_WinVersion_typeshed_" value="major_typeshed_"/>-->
+<!--          <new def="minor_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="minor" fieldType="LRoot" ref="_WinVersion_typeshed_" value="minor_typeshed_"/>-->
+<!--          <new def="build_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="build" fieldType="LRoot" ref="_WinVersion_typeshed_" value="build_typeshed_"/>-->
+<!--          <new def="platform_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="platform" fieldType="LRoot" ref="_WinVersion_typeshed_" value="platform_typeshed_"/>-->
+<!--          <new def="service_pack_typeshed_" class="Lstring"/>-->
+<!--          <putfield class="LRoot" field="service_pack" fieldType="LRoot" ref="_WinVersion_typeshed_" value="service_pack_typeshed_"/>-->
+<!--          <new def="service_pack_minor_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="service_pack_minor" fieldType="LRoot" ref="_WinVersion_typeshed_" value="service_pack_minor_typeshed_"/>-->
+<!--          <new def="service_pack_major_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="service_pack_major" fieldType="LRoot" ref="_WinVersion_typeshed_" value="service_pack_major_typeshed_"/>-->
+<!--          <new def="suite_mast_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="suite_mast" fieldType="LRoot" ref="_WinVersion_typeshed_" value="suite_mast_typeshed_"/>-->
+<!--          <new def="product_type_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="product_type" fieldType="LRoot" ref="_WinVersion_typeshed_" value="product_type_typeshed_"/>-->
+<!--          <new def="platform_version_typeshed_" class="Ltuple"/>-->
+<!--          <putfield class="LRoot" field="platform_version" fieldType="LRoot" ref="_WinVersion_typeshed_" value="platform_version_typeshed_"/>-->
+<!--          <return value="_WinVersion_typeshed_"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="UnraisableHookArgs" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;">-->
+<!--          <new def="UnraisableHookArgs_typeshed_" class="Lsys/class/UnraisableHookArgs"/>-->
+<!--          <new def="exc_type_typeshed_" class="LType"/>-->
+<!--          <putfield class="LRoot" field="exc_type" fieldType="LRoot" ref="UnraisableHookArgs_typeshed_" value="exc_type_typeshed_"/>-->
+<!--          <new def="exc_value_typeshed_" class="LBaseException LNone"/>-->
+<!--          <putfield class="LRoot" field="exc_value" fieldType="LRoot" ref="UnraisableHookArgs_typeshed_" value="exc_value_typeshed_"/>-->
+<!--          <new def="exc_traceback_typeshed_" class="LTracebackType LNone"/>-->
+<!--          <putfield class="LRoot" field="exc_traceback" fieldType="LRoot" ref="UnraisableHookArgs_typeshed_" value="exc_traceback_typeshed_"/>-->
+<!--          <new def="err_msg_typeshed_" class="Lstring LNone"/>-->
+<!--          <putfield class="LRoot" field="err_msg" fieldType="LRoot" ref="UnraisableHookArgs_typeshed_" value="err_msg_typeshed_"/>-->
+<!--          <new def="object_typeshed_" class="L_object LNone"/>-->
+<!--          <putfield class="LRoot" field="object" fieldType="LRoot" ref="UnraisableHookArgs_typeshed_" value="object_typeshed_"/>-->
+<!--          <return value="UnraisableHookArgs_typeshed_"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="_asyncgen_hooks" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;">-->
+<!--          <new def="_asyncgen_hooks_typeshed_" class="Lsys/class/_asyncgen_hooks"/>-->
+<!--          <new def="firstiter_typeshed_" class="L_AsyncgenHook"/>-->
+<!--          <putfield class="LRoot" field="firstiter" fieldType="LRoot" ref="_asyncgen_hooks_typeshed_" value="firstiter_typeshed_"/>-->
+<!--          <new def="finalizer_typeshed_" class="L_AsyncgenHook"/>-->
+<!--          <putfield class="LRoot" field="finalizer" fieldType="LRoot" ref="_asyncgen_hooks_typeshed_" value="finalizer_typeshed_"/>-->
+<!--          <return value="_asyncgen_hooks_typeshed_"/>-->
+<!--        </method>-->
+<!--      </class>-->
+    </package>
+    <package name="sys/stderr">
+      <class name="write" allocatable="true">
+        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self filename" static="false">
+          <new def="_typeshed1" class="LNone"/>
+          <return value="_typeshed1"/>
+        </method>
+      </class>
+    </package>
+<!--    <package name="sys/_MetaPathFinder">-->
+<!--      <class name="find_module" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="3" paramNames="self fullname path" static="false">-->
+<!--          <new def="_typeshed0" class="LLoader LNone"/>-->
+<!--          <return value="_typeshed0"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="find_spec" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="4" paramNames="self fullname path target" static="false">-->
+<!--          <new def="_typeshed1" class="LModuleSpec LNone"/>-->
+<!--          <return value="_typeshed1"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--    </package>-->
+<!--    <package name="sys/_flags"/>-->
+<!--    <package name="sys/_float_info"/>-->
+<!--    <package name="sys/_hash_info"/>-->
+<!--    <package name="sys/_implementation"/>-->
+<!--    <package name="sys/_int_info"/>-->
+<!--    <package name="sys/_version_info"/>-->
+<!--    <package name="sys/_WinVersion"/>-->
+<!--    <package name="sys/UnraisableHookArgs"/>-->
+<!--    <package name="sys/_asyncgen_hooks"/>-->
+  </classloader>
+</summary-spec>

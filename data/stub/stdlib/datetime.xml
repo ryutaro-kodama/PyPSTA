@@ -1,0 +1,1112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE summary-spec>
+<summary-spec>
+  <classloader name="PythonLoader">
+    <class name="datetime" allocatable="true">
+      <method name="import" static="true" descriptor="()Ldatetime;">
+        <new def="obj_typeshed_" class="Ldatetime"/>
+<!--        <new def="MINYEAR_typeshed_" class="I"/>-->
+<!--        <putfield class="LRoot" field="MINYEAR" fieldType="LRoot" ref="obj_typeshed_" value="MINYEAR_typeshed_"/>-->
+<!--        <new def="MAXYEAR_typeshed_" class="I"/>-->
+<!--        <putfield class="LRoot" field="MAXYEAR" fieldType="LRoot" ref="obj_typeshed_" value="MAXYEAR_typeshed_"/>-->
+<!--        <new def="tzinfo_typeshed_" class="Ldatetime/class/tzinfo"/>-->
+<!--        <putfield class="LRoot" field="tzinfo" fieldType="LRoot" ref="obj_typeshed_" value="tzinfo_typeshed_"/>-->
+<!--        <new def="timezone_typeshed_" class="Ldatetime/class/timezone"/>-->
+<!--        <putfield class="LRoot" field="timezone" fieldType="LRoot" ref="obj_typeshed_" value="timezone_typeshed_"/>-->
+<!--        <new def="_IsoCalendarDate_typeshed_" class="Ldatetime/class/_IsoCalendarDate"/>-->
+<!--        <putfield class="LRoot" field="_IsoCalendarDate" fieldType="LRoot" ref="obj_typeshed_" value="_IsoCalendarDate_typeshed_"/>-->
+<!--        <new def="date_typeshed_" class="Ldatetime/class/date"/>-->
+<!--        <putfield class="LRoot" field="date" fieldType="LRoot" ref="obj_typeshed_" value="date_typeshed_"/>-->
+<!--        <new def="time_typeshed_" class="Ldatetime/class/time"/>-->
+<!--        <putfield class="LRoot" field="time" fieldType="LRoot" ref="obj_typeshed_" value="time_typeshed_"/>-->
+<!--        <new def="timedelta_typeshed_" class="Ldatetime/class/timedelta"/>-->
+<!--        <putfield class="LRoot" field="timedelta" fieldType="LRoot" ref="obj_typeshed_" value="timedelta_typeshed_"/>-->
+        <new def="datetime_typeshed_" class="Ldatetime/class/datetime"/>
+        <putfield class="LRoot" field="datetime" fieldType="LRoot" ref="obj_typeshed_" value="datetime_typeshed_"/>
+        <return value="obj_typeshed_"/>
+      </method>
+    </class>
+<!--    <package name="datetime/function"/>-->
+    <package name="datetime/class">
+<!--      <class name="tzinfo" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;">-->
+<!--          <new def="tzinfo_typeshed_" class="Ldatetime/class/tzinfo"/>-->
+<!--          <new def="tzname_typeshed_" class="Ldatetime/tzinfo/tzname"/>-->
+<!--          <putfield class="LRoot" field="tzname" fieldType="LRoot" ref="tzinfo_typeshed_" value="tzname_typeshed_"/>-->
+<!--          <new def="utcoffset_typeshed_" class="Ldatetime/tzinfo/utcoffset"/>-->
+<!--          <putfield class="LRoot" field="utcoffset" fieldType="LRoot" ref="tzinfo_typeshed_" value="utcoffset_typeshed_"/>-->
+<!--          <new def="dst_typeshed_" class="Ldatetime/tzinfo/dst"/>-->
+<!--          <putfield class="LRoot" field="dst" fieldType="LRoot" ref="tzinfo_typeshed_" value="dst_typeshed_"/>-->
+<!--          <new def="fromutc_typeshed_" class="Ldatetime/tzinfo/fromutc"/>-->
+<!--          <putfield class="LRoot" field="fromutc" fieldType="LRoot" ref="tzinfo_typeshed_" value="fromutc_typeshed_"/>-->
+<!--          <return value="tzinfo_typeshed_"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="timezone" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;">-->
+<!--          <new def="timezone_typeshed_" class="Ldatetime/class/timezone"/>-->
+<!--          <new def="utc_typeshed_" class="LClassVar"/>-->
+<!--          <putfield class="LRoot" field="utc" fieldType="LRoot" ref="timezone_typeshed_" value="utc_typeshed_"/>-->
+<!--          <new def="min_typeshed_" class="LClassVar"/>-->
+<!--          <putfield class="LRoot" field="min" fieldType="LRoot" ref="timezone_typeshed_" value="min_typeshed_"/>-->
+<!--          <new def="max_typeshed_" class="LClassVar"/>-->
+<!--          <putfield class="LRoot" field="max" fieldType="LRoot" ref="timezone_typeshed_" value="max_typeshed_"/>-->
+<!--          <new def="__init___typeshed_" class="Ldatetime/timezone/__init__"/>-->
+<!--          <putfield class="LRoot" field="__init__" fieldType="LRoot" ref="timezone_typeshed_" value="__init___typeshed_"/>-->
+<!--          <new def="__hash___typeshed_" class="Ldatetime/timezone/__hash__"/>-->
+<!--          <putfield class="LRoot" field="__hash__" fieldType="LRoot" ref="timezone_typeshed_" value="__hash___typeshed_"/>-->
+<!--          <return value="timezone_typeshed_"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="_IsoCalendarDate" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;">-->
+<!--          <new def="_IsoCalendarDate_typeshed_" class="Ldatetime/class/_IsoCalendarDate"/>-->
+<!--          <new def="year_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="year" fieldType="LRoot" ref="_IsoCalendarDate_typeshed_" value="year_typeshed_"/>-->
+<!--          <new def="week_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="week" fieldType="LRoot" ref="_IsoCalendarDate_typeshed_" value="week_typeshed_"/>-->
+<!--          <new def="weekday_typeshed_" class="I"/>-->
+<!--          <putfield class="LRoot" field="weekday" fieldType="LRoot" ref="_IsoCalendarDate_typeshed_" value="weekday_typeshed_"/>-->
+<!--          <return value="_IsoCalendarDate_typeshed_"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="date" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;">-->
+<!--          <new def="date_typeshed_" class="Ldatetime/class/date"/>-->
+<!--          <new def="min_typeshed_" class="LClassVar"/>-->
+<!--          <putfield class="LRoot" field="min" fieldType="LRoot" ref="date_typeshed_" value="min_typeshed_"/>-->
+<!--          <new def="max_typeshed_" class="LClassVar"/>-->
+<!--          <putfield class="LRoot" field="max" fieldType="LRoot" ref="date_typeshed_" value="max_typeshed_"/>-->
+<!--          <new def="resolution_typeshed_" class="LClassVar"/>-->
+<!--          <putfield class="LRoot" field="resolution" fieldType="LRoot" ref="date_typeshed_" value="resolution_typeshed_"/>-->
+<!--          <new def="__new___typeshed_" class="Ldatetime/date/__new__"/>-->
+<!--          <putfield class="LRoot" field="__new__" fieldType="LRoot" ref="date_typeshed_" value="__new___typeshed_"/>-->
+<!--          <new def="fromtimestamp_typeshed_" class="Ldatetime/date/fromtimestamp"/>-->
+<!--          <putfield class="LRoot" field="fromtimestamp" fieldType="LRoot" ref="date_typeshed_" value="fromtimestamp_typeshed_"/>-->
+<!--          <new def="today_typeshed_" class="Ldatetime/date/today"/>-->
+<!--          <putfield class="LRoot" field="today" fieldType="LRoot" ref="date_typeshed_" value="today_typeshed_"/>-->
+<!--          <new def="fromordinal_typeshed_" class="Ldatetime/date/fromordinal"/>-->
+<!--          <putfield class="LRoot" field="fromordinal" fieldType="LRoot" ref="date_typeshed_" value="fromordinal_typeshed_"/>-->
+<!--          <new def="fromisoformat_typeshed_" class="Ldatetime/date/fromisoformat"/>-->
+<!--          <putfield class="LRoot" field="fromisoformat" fieldType="LRoot" ref="date_typeshed_" value="fromisoformat_typeshed_"/>-->
+<!--          <new def="fromisocalendar_typeshed_" class="Ldatetime/date/fromisocalendar"/>-->
+<!--          <putfield class="LRoot" field="fromisocalendar" fieldType="LRoot" ref="date_typeshed_" value="fromisocalendar_typeshed_"/>-->
+<!--          <new def="year_typeshed_" class="Ldatetime/date/year"/>-->
+<!--          <putfield class="LRoot" field="year" fieldType="LRoot" ref="date_typeshed_" value="year_typeshed_"/>-->
+<!--          <new def="month_typeshed_" class="Ldatetime/date/month"/>-->
+<!--          <putfield class="LRoot" field="month" fieldType="LRoot" ref="date_typeshed_" value="month_typeshed_"/>-->
+<!--          <new def="day_typeshed_" class="Ldatetime/date/day"/>-->
+<!--          <putfield class="LRoot" field="day" fieldType="LRoot" ref="date_typeshed_" value="day_typeshed_"/>-->
+<!--          <new def="ctime_typeshed_" class="Ldatetime/date/ctime"/>-->
+<!--          <putfield class="LRoot" field="ctime" fieldType="LRoot" ref="date_typeshed_" value="ctime_typeshed_"/>-->
+<!--          <new def="strftime_typeshed_" class="Ldatetime/date/strftime"/>-->
+<!--          <putfield class="LRoot" field="strftime" fieldType="LRoot" ref="date_typeshed_" value="strftime_typeshed_"/>-->
+<!--          <new def="__format___typeshed_" class="Ldatetime/date/__format__"/>-->
+<!--          <putfield class="LRoot" field="__format__" fieldType="LRoot" ref="date_typeshed_" value="__format___typeshed_"/>-->
+<!--          <new def="isoformat_typeshed_" class="Ldatetime/date/isoformat"/>-->
+<!--          <putfield class="LRoot" field="isoformat" fieldType="LRoot" ref="date_typeshed_" value="isoformat_typeshed_"/>-->
+<!--          <new def="timetuple_typeshed_" class="Ldatetime/date/timetuple"/>-->
+<!--          <putfield class="LRoot" field="timetuple" fieldType="LRoot" ref="date_typeshed_" value="timetuple_typeshed_"/>-->
+<!--          <new def="toordinal_typeshed_" class="Ldatetime/date/toordinal"/>-->
+<!--          <putfield class="LRoot" field="toordinal" fieldType="LRoot" ref="date_typeshed_" value="toordinal_typeshed_"/>-->
+<!--          <new def="replace_typeshed_" class="Ldatetime/date/replace"/>-->
+<!--          <putfield class="LRoot" field="replace" fieldType="LRoot" ref="date_typeshed_" value="replace_typeshed_"/>-->
+<!--          <new def="__le___typeshed_" class="Ldatetime/date/__le__"/>-->
+<!--          <putfield class="LRoot" field="__le__" fieldType="LRoot" ref="date_typeshed_" value="__le___typeshed_"/>-->
+<!--          <new def="__lt___typeshed_" class="Ldatetime/date/__lt__"/>-->
+<!--          <putfield class="LRoot" field="__lt__" fieldType="LRoot" ref="date_typeshed_" value="__lt___typeshed_"/>-->
+<!--          <new def="__ge___typeshed_" class="Ldatetime/date/__ge__"/>-->
+<!--          <putfield class="LRoot" field="__ge__" fieldType="LRoot" ref="date_typeshed_" value="__ge___typeshed_"/>-->
+<!--          <new def="__gt___typeshed_" class="Ldatetime/date/__gt__"/>-->
+<!--          <putfield class="LRoot" field="__gt__" fieldType="LRoot" ref="date_typeshed_" value="__gt___typeshed_"/>-->
+<!--          <new def="__add___typeshed_" class="Ldatetime/date/__add__"/>-->
+<!--          <putfield class="LRoot" field="__add__" fieldType="LRoot" ref="date_typeshed_" value="__add___typeshed_"/>-->
+<!--          <new def="__radd___typeshed_" class="Ldatetime/date/__radd__"/>-->
+<!--          <putfield class="LRoot" field="__radd__" fieldType="LRoot" ref="date_typeshed_" value="__radd___typeshed_"/>-->
+<!--          <new def="__sub___typeshed_" class="Ldatetime/date/__sub__"/>-->
+<!--          <putfield class="LRoot" field="__sub__" fieldType="LRoot" ref="date_typeshed_" value="__sub___typeshed_"/>-->
+<!--          <new def="__hash___typeshed_" class="Ldatetime/date/__hash__"/>-->
+<!--          <putfield class="LRoot" field="__hash__" fieldType="LRoot" ref="date_typeshed_" value="__hash___typeshed_"/>-->
+<!--          <new def="weekday_typeshed_" class="Ldatetime/date/weekday"/>-->
+<!--          <putfield class="LRoot" field="weekday" fieldType="LRoot" ref="date_typeshed_" value="weekday_typeshed_"/>-->
+<!--          <new def="isoweekday_typeshed_" class="Ldatetime/date/isoweekday"/>-->
+<!--          <putfield class="LRoot" field="isoweekday" fieldType="LRoot" ref="date_typeshed_" value="isoweekday_typeshed_"/>-->
+<!--          <new def="isocalendar_typeshed_" class="Ldatetime/date/isocalendar"/>-->
+<!--          <putfield class="LRoot" field="isocalendar" fieldType="LRoot" ref="date_typeshed_" value="isocalendar_typeshed_"/>-->
+<!--          <return value="date_typeshed_"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="time" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;">-->
+<!--          <new def="time_typeshed_" class="Ldatetime/class/time"/>-->
+<!--          <new def="min_typeshed_" class="LClassVar"/>-->
+<!--          <putfield class="LRoot" field="min" fieldType="LRoot" ref="time_typeshed_" value="min_typeshed_"/>-->
+<!--          <new def="max_typeshed_" class="LClassVar"/>-->
+<!--          <putfield class="LRoot" field="max" fieldType="LRoot" ref="time_typeshed_" value="max_typeshed_"/>-->
+<!--          <new def="resolution_typeshed_" class="LClassVar"/>-->
+<!--          <putfield class="LRoot" field="resolution" fieldType="LRoot" ref="time_typeshed_" value="resolution_typeshed_"/>-->
+<!--          <new def="__new___typeshed_" class="Ldatetime/time/__new__"/>-->
+<!--          <putfield class="LRoot" field="__new__" fieldType="LRoot" ref="time_typeshed_" value="__new___typeshed_"/>-->
+<!--          <new def="hour_typeshed_" class="Ldatetime/time/hour"/>-->
+<!--          <putfield class="LRoot" field="hour" fieldType="LRoot" ref="time_typeshed_" value="hour_typeshed_"/>-->
+<!--          <new def="minute_typeshed_" class="Ldatetime/time/minute"/>-->
+<!--          <putfield class="LRoot" field="minute" fieldType="LRoot" ref="time_typeshed_" value="minute_typeshed_"/>-->
+<!--          <new def="second_typeshed_" class="Ldatetime/time/second"/>-->
+<!--          <putfield class="LRoot" field="second" fieldType="LRoot" ref="time_typeshed_" value="second_typeshed_"/>-->
+<!--          <new def="microsecond_typeshed_" class="Ldatetime/time/microsecond"/>-->
+<!--          <putfield class="LRoot" field="microsecond" fieldType="LRoot" ref="time_typeshed_" value="microsecond_typeshed_"/>-->
+<!--          <new def="tzinfo_typeshed_" class="Ldatetime/time/tzinfo"/>-->
+<!--          <putfield class="LRoot" field="tzinfo" fieldType="LRoot" ref="time_typeshed_" value="tzinfo_typeshed_"/>-->
+<!--          <new def="fold_typeshed_" class="Ldatetime/time/fold"/>-->
+<!--          <putfield class="LRoot" field="fold" fieldType="LRoot" ref="time_typeshed_" value="fold_typeshed_"/>-->
+<!--          <new def="__le___typeshed_" class="Ldatetime/time/__le__"/>-->
+<!--          <putfield class="LRoot" field="__le__" fieldType="LRoot" ref="time_typeshed_" value="__le___typeshed_"/>-->
+<!--          <new def="__lt___typeshed_" class="Ldatetime/time/__lt__"/>-->
+<!--          <putfield class="LRoot" field="__lt__" fieldType="LRoot" ref="time_typeshed_" value="__lt___typeshed_"/>-->
+<!--          <new def="__ge___typeshed_" class="Ldatetime/time/__ge__"/>-->
+<!--          <putfield class="LRoot" field="__ge__" fieldType="LRoot" ref="time_typeshed_" value="__ge___typeshed_"/>-->
+<!--          <new def="__gt___typeshed_" class="Ldatetime/time/__gt__"/>-->
+<!--          <putfield class="LRoot" field="__gt__" fieldType="LRoot" ref="time_typeshed_" value="__gt___typeshed_"/>-->
+<!--          <new def="__hash___typeshed_" class="Ldatetime/time/__hash__"/>-->
+<!--          <putfield class="LRoot" field="__hash__" fieldType="LRoot" ref="time_typeshed_" value="__hash___typeshed_"/>-->
+<!--          <new def="isoformat_typeshed_" class="Ldatetime/time/isoformat"/>-->
+<!--          <putfield class="LRoot" field="isoformat" fieldType="LRoot" ref="time_typeshed_" value="isoformat_typeshed_"/>-->
+<!--          <new def="fromisoformat_typeshed_" class="Ldatetime/time/fromisoformat"/>-->
+<!--          <putfield class="LRoot" field="fromisoformat" fieldType="LRoot" ref="time_typeshed_" value="fromisoformat_typeshed_"/>-->
+<!--          <new def="strftime_typeshed_" class="Ldatetime/time/strftime"/>-->
+<!--          <putfield class="LRoot" field="strftime" fieldType="LRoot" ref="time_typeshed_" value="strftime_typeshed_"/>-->
+<!--          <new def="__format___typeshed_" class="Ldatetime/time/__format__"/>-->
+<!--          <putfield class="LRoot" field="__format__" fieldType="LRoot" ref="time_typeshed_" value="__format___typeshed_"/>-->
+<!--          <new def="utcoffset_typeshed_" class="Ldatetime/time/utcoffset"/>-->
+<!--          <putfield class="LRoot" field="utcoffset" fieldType="LRoot" ref="time_typeshed_" value="utcoffset_typeshed_"/>-->
+<!--          <new def="tzname_typeshed_" class="Ldatetime/time/tzname"/>-->
+<!--          <putfield class="LRoot" field="tzname" fieldType="LRoot" ref="time_typeshed_" value="tzname_typeshed_"/>-->
+<!--          <new def="dst_typeshed_" class="Ldatetime/time/dst"/>-->
+<!--          <putfield class="LRoot" field="dst" fieldType="LRoot" ref="time_typeshed_" value="dst_typeshed_"/>-->
+<!--          <new def="replace_typeshed_" class="Ldatetime/time/replace"/>-->
+<!--          <putfield class="LRoot" field="replace" fieldType="LRoot" ref="time_typeshed_" value="replace_typeshed_"/>-->
+<!--          <return value="time_typeshed_"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="timedelta" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;">-->
+<!--          <new def="timedelta_typeshed_" class="Ldatetime/class/timedelta"/>-->
+<!--          <new def="min_typeshed_" class="LClassVar"/>-->
+<!--          <putfield class="LRoot" field="min" fieldType="LRoot" ref="timedelta_typeshed_" value="min_typeshed_"/>-->
+<!--          <new def="max_typeshed_" class="LClassVar"/>-->
+<!--          <putfield class="LRoot" field="max" fieldType="LRoot" ref="timedelta_typeshed_" value="max_typeshed_"/>-->
+<!--          <new def="resolution_typeshed_" class="LClassVar"/>-->
+<!--          <putfield class="LRoot" field="resolution" fieldType="LRoot" ref="timedelta_typeshed_" value="resolution_typeshed_"/>-->
+<!--          <new def="__new___typeshed_" class="Ldatetime/timedelta/__new__"/>-->
+<!--          <putfield class="LRoot" field="__new__" fieldType="LRoot" ref="timedelta_typeshed_" value="__new___typeshed_"/>-->
+<!--          <new def="days_typeshed_" class="Ldatetime/timedelta/days"/>-->
+<!--          <putfield class="LRoot" field="days" fieldType="LRoot" ref="timedelta_typeshed_" value="days_typeshed_"/>-->
+<!--          <new def="seconds_typeshed_" class="Ldatetime/timedelta/seconds"/>-->
+<!--          <putfield class="LRoot" field="seconds" fieldType="LRoot" ref="timedelta_typeshed_" value="seconds_typeshed_"/>-->
+<!--          <new def="microseconds_typeshed_" class="Ldatetime/timedelta/microseconds"/>-->
+<!--          <putfield class="LRoot" field="microseconds" fieldType="LRoot" ref="timedelta_typeshed_" value="microseconds_typeshed_"/>-->
+<!--          <new def="total_seconds_typeshed_" class="Ldatetime/timedelta/total_seconds"/>-->
+<!--          <putfield class="LRoot" field="total_seconds" fieldType="LRoot" ref="timedelta_typeshed_" value="total_seconds_typeshed_"/>-->
+<!--          <new def="__add___typeshed_" class="Ldatetime/timedelta/__add__"/>-->
+<!--          <putfield class="LRoot" field="__add__" fieldType="LRoot" ref="timedelta_typeshed_" value="__add___typeshed_"/>-->
+<!--          <new def="__radd___typeshed_" class="Ldatetime/timedelta/__radd__"/>-->
+<!--          <putfield class="LRoot" field="__radd__" fieldType="LRoot" ref="timedelta_typeshed_" value="__radd___typeshed_"/>-->
+<!--          <new def="__sub___typeshed_" class="Ldatetime/timedelta/__sub__"/>-->
+<!--          <putfield class="LRoot" field="__sub__" fieldType="LRoot" ref="timedelta_typeshed_" value="__sub___typeshed_"/>-->
+<!--          <new def="__rsub___typeshed_" class="Ldatetime/timedelta/__rsub__"/>-->
+<!--          <putfield class="LRoot" field="__rsub__" fieldType="LRoot" ref="timedelta_typeshed_" value="__rsub___typeshed_"/>-->
+<!--          <new def="__neg___typeshed_" class="Ldatetime/timedelta/__neg__"/>-->
+<!--          <putfield class="LRoot" field="__neg__" fieldType="LRoot" ref="timedelta_typeshed_" value="__neg___typeshed_"/>-->
+<!--          <new def="__pos___typeshed_" class="Ldatetime/timedelta/__pos__"/>-->
+<!--          <putfield class="LRoot" field="__pos__" fieldType="LRoot" ref="timedelta_typeshed_" value="__pos___typeshed_"/>-->
+<!--          <new def="__abs___typeshed_" class="Ldatetime/timedelta/__abs__"/>-->
+<!--          <putfield class="LRoot" field="__abs__" fieldType="LRoot" ref="timedelta_typeshed_" value="__abs___typeshed_"/>-->
+<!--          <new def="__mul___typeshed_" class="Ldatetime/timedelta/__mul__"/>-->
+<!--          <putfield class="LRoot" field="__mul__" fieldType="LRoot" ref="timedelta_typeshed_" value="__mul___typeshed_"/>-->
+<!--          <new def="__rmul___typeshed_" class="Ldatetime/timedelta/__rmul__"/>-->
+<!--          <putfield class="LRoot" field="__rmul__" fieldType="LRoot" ref="timedelta_typeshed_" value="__rmul___typeshed_"/>-->
+<!--          <new def="__floordiv___typeshed_" class="Ldatetime/timedelta/__floordiv__"/>-->
+<!--          <putfield class="LRoot" field="__floordiv__" fieldType="LRoot" ref="timedelta_typeshed_" value="__floordiv___typeshed_"/>-->
+<!--          <new def="__truediv___typeshed_" class="Ldatetime/timedelta/__truediv__"/>-->
+<!--          <putfield class="LRoot" field="__truediv__" fieldType="LRoot" ref="timedelta_typeshed_" value="__truediv___typeshed_"/>-->
+<!--          <new def="__mod___typeshed_" class="Ldatetime/timedelta/__mod__"/>-->
+<!--          <putfield class="LRoot" field="__mod__" fieldType="LRoot" ref="timedelta_typeshed_" value="__mod___typeshed_"/>-->
+<!--          <new def="__divmod___typeshed_" class="Ldatetime/timedelta/__divmod__"/>-->
+<!--          <putfield class="LRoot" field="__divmod__" fieldType="LRoot" ref="timedelta_typeshed_" value="__divmod___typeshed_"/>-->
+<!--          <new def="__le___typeshed_" class="Ldatetime/timedelta/__le__"/>-->
+<!--          <putfield class="LRoot" field="__le__" fieldType="LRoot" ref="timedelta_typeshed_" value="__le___typeshed_"/>-->
+<!--          <new def="__lt___typeshed_" class="Ldatetime/timedelta/__lt__"/>-->
+<!--          <putfield class="LRoot" field="__lt__" fieldType="LRoot" ref="timedelta_typeshed_" value="__lt___typeshed_"/>-->
+<!--          <new def="__ge___typeshed_" class="Ldatetime/timedelta/__ge__"/>-->
+<!--          <putfield class="LRoot" field="__ge__" fieldType="LRoot" ref="timedelta_typeshed_" value="__ge___typeshed_"/>-->
+<!--          <new def="__gt___typeshed_" class="Ldatetime/timedelta/__gt__"/>-->
+<!--          <putfield class="LRoot" field="__gt__" fieldType="LRoot" ref="timedelta_typeshed_" value="__gt___typeshed_"/>-->
+<!--          <new def="__bool___typeshed_" class="Ldatetime/timedelta/__bool__"/>-->
+<!--          <putfield class="LRoot" field="__bool__" fieldType="LRoot" ref="timedelta_typeshed_" value="__bool___typeshed_"/>-->
+<!--          <new def="__hash___typeshed_" class="Ldatetime/timedelta/__hash__"/>-->
+<!--          <putfield class="LRoot" field="__hash__" fieldType="LRoot" ref="timedelta_typeshed_" value="__hash___typeshed_"/>-->
+<!--          <return value="timedelta_typeshed_"/>-->
+<!--        </method>-->
+<!--      </class>-->
+      <class name="datetime" allocatable="true">
+        <method name="do" descriptor="()LRoot;">
+          <new def="datetime_typeshed_" class="Ldatetime/class/datetime"/>
+<!--          <new def="min_typeshed_" class="LClassVar"/>-->
+<!--          <putfield class="LRoot" field="min" fieldType="LRoot" ref="datetime_typeshed_" value="min_typeshed_"/>-->
+<!--          <new def="max_typeshed_" class="LClassVar"/>-->
+<!--          <putfield class="LRoot" field="max" fieldType="LRoot" ref="datetime_typeshed_" value="max_typeshed_"/>-->
+<!--          <new def="resolution_typeshed_" class="LClassVar"/>-->
+<!--          <putfield class="LRoot" field="resolution" fieldType="LRoot" ref="datetime_typeshed_" value="resolution_typeshed_"/>-->
+<!--          <new def="__new___typeshed_" class="Ldatetime/datetime/__new__"/>-->
+<!--          <putfield class="LRoot" field="__new__" fieldType="LRoot" ref="datetime_typeshed_" value="__new___typeshed_"/>-->
+<!--          <new def="year_typeshed_" class="Ldatetime/datetime/year"/>-->
+<!--          <putfield class="LRoot" field="year" fieldType="LRoot" ref="datetime_typeshed_" value="year_typeshed_"/>-->
+<!--          <new def="month_typeshed_" class="Ldatetime/datetime/month"/>-->
+<!--          <putfield class="LRoot" field="month" fieldType="LRoot" ref="datetime_typeshed_" value="month_typeshed_"/>-->
+<!--          <new def="day_typeshed_" class="Ldatetime/datetime/day"/>-->
+<!--          <putfield class="LRoot" field="day" fieldType="LRoot" ref="datetime_typeshed_" value="day_typeshed_"/>-->
+<!--          <new def="hour_typeshed_" class="Ldatetime/datetime/hour"/>-->
+<!--          <putfield class="LRoot" field="hour" fieldType="LRoot" ref="datetime_typeshed_" value="hour_typeshed_"/>-->
+<!--          <new def="minute_typeshed_" class="Ldatetime/datetime/minute"/>-->
+<!--          <putfield class="LRoot" field="minute" fieldType="LRoot" ref="datetime_typeshed_" value="minute_typeshed_"/>-->
+<!--          <new def="second_typeshed_" class="Ldatetime/datetime/second"/>-->
+<!--          <putfield class="LRoot" field="second" fieldType="LRoot" ref="datetime_typeshed_" value="second_typeshed_"/>-->
+<!--          <new def="microsecond_typeshed_" class="Ldatetime/datetime/microsecond"/>-->
+<!--          <putfield class="LRoot" field="microsecond" fieldType="LRoot" ref="datetime_typeshed_" value="microsecond_typeshed_"/>-->
+<!--          <new def="tzinfo_typeshed_" class="Ldatetime/datetime/tzinfo"/>-->
+<!--          <putfield class="LRoot" field="tzinfo" fieldType="LRoot" ref="datetime_typeshed_" value="tzinfo_typeshed_"/>-->
+<!--          <new def="fold_typeshed_" class="Ldatetime/datetime/fold"/>-->
+<!--          <putfield class="LRoot" field="fold" fieldType="LRoot" ref="datetime_typeshed_" value="fold_typeshed_"/>-->
+<!--          <new def="fromtimestamp_typeshed_" class="Ldatetime/datetime/fromtimestamp"/>-->
+<!--          <putfield class="LRoot" field="fromtimestamp" fieldType="LRoot" ref="datetime_typeshed_" value="fromtimestamp_typeshed_"/>-->
+<!--          <new def="utcfromtimestamp_typeshed_" class="Ldatetime/datetime/utcfromtimestamp"/>-->
+<!--          <putfield class="LRoot" field="utcfromtimestamp" fieldType="LRoot" ref="datetime_typeshed_" value="utcfromtimestamp_typeshed_"/>-->
+<!--          <new def="today_typeshed_" class="Ldatetime/datetime/today"/>-->
+<!--          <putfield class="LRoot" field="today" fieldType="LRoot" ref="datetime_typeshed_" value="today_typeshed_"/>-->
+<!--          <new def="fromordinal_typeshed_" class="Ldatetime/datetime/fromordinal"/>-->
+<!--          <putfield class="LRoot" field="fromordinal" fieldType="LRoot" ref="datetime_typeshed_" value="fromordinal_typeshed_"/>-->
+          <new def="now_typeshed_" class="Ldatetime/datetime/now"/>
+          <putfield class="LRoot" field="now" fieldType="LRoot" ref="datetime_typeshed_" value="now_typeshed_"/>
+<!--          <new def="utcnow_typeshed_" class="Ldatetime/datetime/utcnow"/>-->
+<!--          <putfield class="LRoot" field="utcnow" fieldType="LRoot" ref="datetime_typeshed_" value="utcnow_typeshed_"/>-->
+<!--          <new def="combine_typeshed_" class="Ldatetime/datetime/combine"/>-->
+<!--          <putfield class="LRoot" field="combine" fieldType="LRoot" ref="datetime_typeshed_" value="combine_typeshed_"/>-->
+<!--          <new def="fromisoformat_typeshed_" class="Ldatetime/datetime/fromisoformat"/>-->
+<!--          <putfield class="LRoot" field="fromisoformat" fieldType="LRoot" ref="datetime_typeshed_" value="fromisoformat_typeshed_"/>-->
+<!--          <new def="strftime_typeshed_" class="Ldatetime/datetime/strftime"/>-->
+<!--          <putfield class="LRoot" field="strftime" fieldType="LRoot" ref="datetime_typeshed_" value="strftime_typeshed_"/>-->
+<!--          <new def="__format___typeshed_" class="Ldatetime/datetime/__format__"/>-->
+<!--          <putfield class="LRoot" field="__format__" fieldType="LRoot" ref="datetime_typeshed_" value="__format___typeshed_"/>-->
+<!--          <new def="toordinal_typeshed_" class="Ldatetime/datetime/toordinal"/>-->
+<!--          <putfield class="LRoot" field="toordinal" fieldType="LRoot" ref="datetime_typeshed_" value="toordinal_typeshed_"/>-->
+<!--          <new def="timetuple_typeshed_" class="Ldatetime/datetime/timetuple"/>-->
+<!--          <putfield class="LRoot" field="timetuple" fieldType="LRoot" ref="datetime_typeshed_" value="timetuple_typeshed_"/>-->
+<!--          <new def="timestamp_typeshed_" class="Ldatetime/datetime/timestamp"/>-->
+<!--          <putfield class="LRoot" field="timestamp" fieldType="LRoot" ref="datetime_typeshed_" value="timestamp_typeshed_"/>-->
+<!--          <new def="utctimetuple_typeshed_" class="Ldatetime/datetime/utctimetuple"/>-->
+<!--          <putfield class="LRoot" field="utctimetuple" fieldType="LRoot" ref="datetime_typeshed_" value="utctimetuple_typeshed_"/>-->
+<!--          <new def="date_typeshed_" class="Ldatetime/datetime/date"/>-->
+<!--          <putfield class="LRoot" field="date" fieldType="LRoot" ref="datetime_typeshed_" value="date_typeshed_"/>-->
+<!--          <new def="time_typeshed_" class="Ldatetime/datetime/time"/>-->
+<!--          <putfield class="LRoot" field="time" fieldType="LRoot" ref="datetime_typeshed_" value="time_typeshed_"/>-->
+<!--          <new def="timetz_typeshed_" class="Ldatetime/datetime/timetz"/>-->
+<!--          <putfield class="LRoot" field="timetz" fieldType="LRoot" ref="datetime_typeshed_" value="timetz_typeshed_"/>-->
+<!--          <new def="replace_typeshed_" class="Ldatetime/datetime/replace"/>-->
+<!--          <putfield class="LRoot" field="replace" fieldType="LRoot" ref="datetime_typeshed_" value="replace_typeshed_"/>-->
+<!--          <new def="astimezone_typeshed_" class="Ldatetime/datetime/astimezone"/>-->
+<!--          <putfield class="LRoot" field="astimezone" fieldType="LRoot" ref="datetime_typeshed_" value="astimezone_typeshed_"/>-->
+<!--          <new def="ctime_typeshed_" class="Ldatetime/datetime/ctime"/>-->
+<!--          <putfield class="LRoot" field="ctime" fieldType="LRoot" ref="datetime_typeshed_" value="ctime_typeshed_"/>-->
+<!--          <new def="isoformat_typeshed_" class="Ldatetime/datetime/isoformat"/>-->
+<!--          <putfield class="LRoot" field="isoformat" fieldType="LRoot" ref="datetime_typeshed_" value="isoformat_typeshed_"/>-->
+<!--          <new def="strptime_typeshed_" class="Ldatetime/datetime/strptime"/>-->
+<!--          <putfield class="LRoot" field="strptime" fieldType="LRoot" ref="datetime_typeshed_" value="strptime_typeshed_"/>-->
+<!--          <new def="utcoffset_typeshed_" class="Ldatetime/datetime/utcoffset"/>-->
+<!--          <putfield class="LRoot" field="utcoffset" fieldType="LRoot" ref="datetime_typeshed_" value="utcoffset_typeshed_"/>-->
+<!--          <new def="tzname_typeshed_" class="Ldatetime/datetime/tzname"/>-->
+<!--          <putfield class="LRoot" field="tzname" fieldType="LRoot" ref="datetime_typeshed_" value="tzname_typeshed_"/>-->
+<!--          <new def="dst_typeshed_" class="Ldatetime/datetime/dst"/>-->
+<!--          <putfield class="LRoot" field="dst" fieldType="LRoot" ref="datetime_typeshed_" value="dst_typeshed_"/>-->
+<!--          <new def="__le___typeshed_" class="Ldatetime/datetime/__le__"/>-->
+<!--          <putfield class="LRoot" field="__le__" fieldType="LRoot" ref="datetime_typeshed_" value="__le___typeshed_"/>-->
+<!--          <new def="__lt___typeshed_" class="Ldatetime/datetime/__lt__"/>-->
+<!--          <putfield class="LRoot" field="__lt__" fieldType="LRoot" ref="datetime_typeshed_" value="__lt___typeshed_"/>-->
+<!--          <new def="__ge___typeshed_" class="Ldatetime/datetime/__ge__"/>-->
+<!--          <putfield class="LRoot" field="__ge__" fieldType="LRoot" ref="datetime_typeshed_" value="__ge___typeshed_"/>-->
+<!--          <new def="__gt___typeshed_" class="Ldatetime/datetime/__gt__"/>-->
+<!--          <putfield class="LRoot" field="__gt__" fieldType="LRoot" ref="datetime_typeshed_" value="__gt___typeshed_"/>-->
+<!--          <new def="__add___typeshed_" class="Ldatetime/datetime/__add__"/>-->
+<!--          <putfield class="LRoot" field="__add__" fieldType="LRoot" ref="datetime_typeshed_" value="__add___typeshed_"/>-->
+<!--          <new def="__radd___typeshed_" class="Ldatetime/datetime/__radd__"/>-->
+<!--          <putfield class="LRoot" field="__radd__" fieldType="LRoot" ref="datetime_typeshed_" value="__radd___typeshed_"/>-->
+<!--          <new def="__sub___typeshed_" class="Ldatetime/datetime/__sub__"/>-->
+<!--          <putfield class="LRoot" field="__sub__" fieldType="LRoot" ref="datetime_typeshed_" value="__sub___typeshed_"/>-->
+<!--          <new def="__hash___typeshed_" class="Ldatetime/datetime/__hash__"/>-->
+<!--          <putfield class="LRoot" field="__hash__" fieldType="LRoot" ref="datetime_typeshed_" value="__hash___typeshed_"/>-->
+<!--          <new def="weekday_typeshed_" class="Ldatetime/datetime/weekday"/>-->
+<!--          <putfield class="LRoot" field="weekday" fieldType="LRoot" ref="datetime_typeshed_" value="weekday_typeshed_"/>-->
+<!--          <new def="isoweekday_typeshed_" class="Ldatetime/datetime/isoweekday"/>-->
+<!--          <putfield class="LRoot" field="isoweekday" fieldType="LRoot" ref="datetime_typeshed_" value="isoweekday_typeshed_"/>-->
+<!--          <new def="isocalendar_typeshed_" class="Ldatetime/datetime/isocalendar"/>-->
+<!--          <putfield class="LRoot" field="isocalendar" fieldType="LRoot" ref="datetime_typeshed_" value="isocalendar_typeshed_"/>-->
+          <return value="datetime_typeshed_"/>
+        </method>
+      </class>
+    </package>
+<!--    <package name="datetime/tzinfo">-->
+<!--      <class name="tzname" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self dt" static="false">-->
+<!--          <new def="_typeshed0" class="Lstring LNone"/>-->
+<!--          <return value="_typeshed0"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="utcoffset" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self dt" static="false">-->
+<!--          <new def="_typeshed1" class="Ltimedelta LNone"/>-->
+<!--          <return value="_typeshed1"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="dst" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self dt" static="false">-->
+<!--          <new def="_typeshed2" class="Ltimedelta LNone"/>-->
+<!--          <return value="_typeshed2"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="fromutc" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self dt" static="false">-->
+<!--          <new def="_typeshed3" class="Ldatetime"/>-->
+<!--          <return value="_typeshed3"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--    </package>-->
+<!--    <package name="datetime/timezone">-->
+<!--      <class name="__init__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="3" paramNames="self offset name" static="false">-->
+<!--          <new def="_typeshed4" class="LNone"/>-->
+<!--          <return value="_typeshed4"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__hash__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed5" class="I"/>-->
+<!--          <return value="_typeshed5"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--    </package>-->
+<!--    <package name="datetime/_IsoCalendarDate"/>-->
+<!--    <package name="datetime/date">-->
+<!--      <class name="__new__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="4" paramNames="cls year month day" static="false">-->
+<!--          <new def="_typeshed6" class="L_S"/>-->
+<!--          <return value="_typeshed6"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="fromtimestamp" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="cls __timestamp" static="false">-->
+<!--          <new def="_typeshed7" class="L_S"/>-->
+<!--          <return value="_typeshed7"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="today" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="cls" static="false">-->
+<!--          <new def="_typeshed8" class="L_S"/>-->
+<!--          <return value="_typeshed8"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="fromordinal" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="cls n" static="false">-->
+<!--          <new def="_typeshed9" class="L_S"/>-->
+<!--          <return value="_typeshed9"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="fromisoformat" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="cls date_string" static="false">-->
+<!--          <new def="_typeshed10" class="L_S"/>-->
+<!--          <return value="_typeshed10"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="fromisocalendar" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="4" paramNames="cls year week day" static="false">-->
+<!--          <new def="_typeshed11" class="L_S"/>-->
+<!--          <return value="_typeshed11"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="year" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed12" class="I"/>-->
+<!--          <return value="_typeshed12"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="month" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed13" class="I"/>-->
+<!--          <return value="_typeshed13"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="day" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed14" class="I"/>-->
+<!--          <return value="_typeshed14"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="ctime" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed15" class="Lstring"/>-->
+<!--          <return value="_typeshed15"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="strftime" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self fmt" static="false">-->
+<!--          <new def="_typeshed16" class="Lstring"/>-->
+<!--          <return value="_typeshed16"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__format__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self fmt" static="false">-->
+<!--          <new def="_typeshed17" class="Lstring"/>-->
+<!--          <return value="_typeshed17"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="isoformat" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed18" class="Lstring"/>-->
+<!--          <return value="_typeshed18"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="timetuple" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed19" class="Lstruct_time"/>-->
+<!--          <return value="_typeshed19"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="toordinal" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed20" class="I"/>-->
+<!--          <return value="_typeshed20"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="replace" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="4" paramNames="self year month day" static="false">-->
+<!--          <new def="_typeshed21" class="Ldate"/>-->
+<!--          <return value="_typeshed21"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__le__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self other" static="false">-->
+<!--          <new def="_typeshed22" class="Z"/>-->
+<!--          <return value="_typeshed22"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__lt__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self other" static="false">-->
+<!--          <new def="_typeshed23" class="Z"/>-->
+<!--          <return value="_typeshed23"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__ge__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self other" static="false">-->
+<!--          <new def="_typeshed24" class="Z"/>-->
+<!--          <return value="_typeshed24"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__gt__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self other" static="false">-->
+<!--          <new def="_typeshed25" class="Z"/>-->
+<!--          <return value="_typeshed25"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__add__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self other" static="false">-->
+<!--          <new def="_typeshed26" class="L_S"/>-->
+<!--          <return value="_typeshed26"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__radd__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self other" static="false">-->
+<!--          <new def="_typeshed27" class="L_S"/>-->
+<!--          <return value="_typeshed27"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__sub__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self other" static="false">-->
+<!--          <new def="_typeshed28" class="Ldate"/>-->
+<!--          <return value="_typeshed28"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__hash__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed29" class="I"/>-->
+<!--          <return value="_typeshed29"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="weekday" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed30" class="I"/>-->
+<!--          <return value="_typeshed30"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="isoweekday" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed31" class="I"/>-->
+<!--          <return value="_typeshed31"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="isocalendar" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed32" class="L_IsoCalendarDate"/>-->
+<!--          <return value="_typeshed32"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--    </package>-->
+<!--    <package name="datetime/time">-->
+<!--      <class name="__new__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="7" paramNames="cls hour minute second microsecond tzinfo fold" static="false">-->
+<!--          <new def="_typeshed33" class="L_S"/>-->
+<!--          <return value="_typeshed33"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="hour" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed34" class="I"/>-->
+<!--          <return value="_typeshed34"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="minute" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed35" class="I"/>-->
+<!--          <return value="_typeshed35"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="second" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed36" class="I"/>-->
+<!--          <return value="_typeshed36"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="microsecond" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed37" class="I"/>-->
+<!--          <return value="_typeshed37"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="tzinfo" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed38" class="L_tzinfo LNone"/>-->
+<!--          <return value="_typeshed38"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="fold" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed39" class="I"/>-->
+<!--          <return value="_typeshed39"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__le__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self other" static="false">-->
+<!--          <new def="_typeshed40" class="Z"/>-->
+<!--          <return value="_typeshed40"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__lt__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self other" static="false">-->
+<!--          <new def="_typeshed41" class="Z"/>-->
+<!--          <return value="_typeshed41"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__ge__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self other" static="false">-->
+<!--          <new def="_typeshed42" class="Z"/>-->
+<!--          <return value="_typeshed42"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__gt__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self other" static="false">-->
+<!--          <new def="_typeshed43" class="Z"/>-->
+<!--          <return value="_typeshed43"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__hash__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed44" class="I"/>-->
+<!--          <return value="_typeshed44"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="isoformat" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self timespec" static="false">-->
+<!--          <new def="_typeshed45" class="Lstring"/>-->
+<!--          <return value="_typeshed45"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="fromisoformat" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="cls time_string" static="false">-->
+<!--          <new def="_typeshed46" class="L_S"/>-->
+<!--          <return value="_typeshed46"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="strftime" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self fmt" static="false">-->
+<!--          <new def="_typeshed47" class="Lstring"/>-->
+<!--          <return value="_typeshed47"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__format__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self fmt" static="false">-->
+<!--          <new def="_typeshed48" class="Lstring"/>-->
+<!--          <return value="_typeshed48"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="utcoffset" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed49" class="Ltimedelta LNone"/>-->
+<!--          <return value="_typeshed49"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="tzname" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed50" class="Lstring LNone"/>-->
+<!--          <return value="_typeshed50"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="dst" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed51" class="Ltimedelta LNone"/>-->
+<!--          <return value="_typeshed51"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="replace" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="7" paramNames="self hour minute second microsecond tzinfo fold" static="false">-->
+<!--          <new def="_typeshed52" class="Ltime"/>-->
+<!--          <return value="_typeshed52"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--    </package>-->
+<!--    <package name="datetime/timedelta">-->
+<!--      <class name="__new__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="8" paramNames="cls days seconds microseconds milliseconds minutes hours weeks" static="false">-->
+<!--          <new def="_typeshed53" class="L_S"/>-->
+<!--          <return value="_typeshed53"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="days" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed54" class="I"/>-->
+<!--          <return value="_typeshed54"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="seconds" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed55" class="I"/>-->
+<!--          <return value="_typeshed55"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="microseconds" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed56" class="I"/>-->
+<!--          <return value="_typeshed56"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="total_seconds" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed57" class="D"/>-->
+<!--          <return value="_typeshed57"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__add__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self other" static="false">-->
+<!--          <new def="_typeshed58" class="Ltimedelta"/>-->
+<!--          <return value="_typeshed58"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__radd__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self other" static="false">-->
+<!--          <new def="_typeshed59" class="Ltimedelta"/>-->
+<!--          <return value="_typeshed59"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__sub__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self other" static="false">-->
+<!--          <new def="_typeshed60" class="Ltimedelta"/>-->
+<!--          <return value="_typeshed60"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__rsub__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self other" static="false">-->
+<!--          <new def="_typeshed61" class="Ltimedelta"/>-->
+<!--          <return value="_typeshed61"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__neg__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed62" class="Ltimedelta"/>-->
+<!--          <return value="_typeshed62"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__pos__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed63" class="Ltimedelta"/>-->
+<!--          <return value="_typeshed63"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__abs__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed64" class="Ltimedelta"/>-->
+<!--          <return value="_typeshed64"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__mul__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self other" static="false">-->
+<!--          <new def="_typeshed65" class="Ltimedelta"/>-->
+<!--          <return value="_typeshed65"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__rmul__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self other" static="false">-->
+<!--          <new def="_typeshed66" class="Ltimedelta"/>-->
+<!--          <return value="_typeshed66"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__floordiv__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self other" static="false">-->
+<!--          <new def="_typeshed67" class="I"/>-->
+<!--          <return value="_typeshed67"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__truediv__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self other" static="false">-->
+<!--          <new def="_typeshed68" class="D"/>-->
+<!--          <return value="_typeshed68"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__mod__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self other" static="false">-->
+<!--          <new def="_typeshed69" class="Ltimedelta"/>-->
+<!--          <return value="_typeshed69"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__divmod__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self other" static="false">-->
+<!--          <new def="_typeshed70" class="Ltuple"/>-->
+<!--          <new def="_typeshed71" class="I"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed70" value="_typeshed71"/>-->
+<!--          <new def="_typeshed72" class="Ltimedelta"/>-->
+<!--          <putfield class="LRoot" field="1" fieldType="LRoot" ref="_typeshed70" value="_typeshed72"/>-->
+<!--          <return value="_typeshed70"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__le__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self other" static="false">-->
+<!--          <new def="_typeshed73" class="Z"/>-->
+<!--          <return value="_typeshed73"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__lt__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self other" static="false">-->
+<!--          <new def="_typeshed74" class="Z"/>-->
+<!--          <return value="_typeshed74"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__ge__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self other" static="false">-->
+<!--          <new def="_typeshed75" class="Z"/>-->
+<!--          <return value="_typeshed75"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__gt__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self other" static="false">-->
+<!--          <new def="_typeshed76" class="Z"/>-->
+<!--          <return value="_typeshed76"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__bool__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed77" class="Z"/>-->
+<!--          <return value="_typeshed77"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__hash__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed78" class="I"/>-->
+<!--          <return value="_typeshed78"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--    </package>-->
+    <package name="datetime/datetime">
+<!--      <class name="__new__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="10" paramNames="cls year month day hour minute second microsecond tzinfo fold" static="false">-->
+<!--          <new def="_typeshed79" class="L_S"/>-->
+<!--          <return value="_typeshed79"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="year" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed80" class="I"/>-->
+<!--          <return value="_typeshed80"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="month" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed81" class="I"/>-->
+<!--          <return value="_typeshed81"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="day" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed82" class="I"/>-->
+<!--          <return value="_typeshed82"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="hour" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed83" class="I"/>-->
+<!--          <return value="_typeshed83"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="minute" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed84" class="I"/>-->
+<!--          <return value="_typeshed84"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="second" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed85" class="I"/>-->
+<!--          <return value="_typeshed85"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="microsecond" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed86" class="I"/>-->
+<!--          <return value="_typeshed86"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="tzinfo" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed87" class="L_tzinfo LNone"/>-->
+<!--          <return value="_typeshed87"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="fold" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed88" class="I"/>-->
+<!--          <return value="_typeshed88"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="fromtimestamp" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="3" paramNames="cls t tz" static="false">-->
+<!--          <new def="_typeshed89" class="L_S"/>-->
+<!--          <return value="_typeshed89"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="utcfromtimestamp" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="cls t" static="false">-->
+<!--          <new def="_typeshed90" class="L_S"/>-->
+<!--          <return value="_typeshed90"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="today" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="cls" static="false">-->
+<!--          <new def="_typeshed91" class="L_S"/>-->
+<!--          <return value="_typeshed91"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="fromordinal" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="cls n" static="false">-->
+<!--          <new def="_typeshed92" class="L_S"/>-->
+<!--          <return value="_typeshed92"/>-->
+<!--        </method>-->
+<!--      </class>-->
+      <class name="now" allocatable="true">
+        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="cls tz" static="false">
+          <new def="_typeshed93" class="L_S"/>
+          <return value="_typeshed93"/>
+        </method>
+      </class>
+<!--      <class name="utcnow" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="cls" static="false">-->
+<!--          <new def="_typeshed94" class="L_S"/>-->
+<!--          <return value="_typeshed94"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="combine" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="4" paramNames="cls date time tzinfo" static="false">-->
+<!--          <new def="_typeshed95" class="Ldatetime"/>-->
+<!--          <return value="_typeshed95"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="fromisoformat" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="cls date_string" static="false">-->
+<!--          <new def="_typeshed96" class="L_S"/>-->
+<!--          <return value="_typeshed96"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="strftime" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self fmt" static="false">-->
+<!--          <new def="_typeshed97" class="Lstring"/>-->
+<!--          <return value="_typeshed97"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__format__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self fmt" static="false">-->
+<!--          <new def="_typeshed98" class="Lstring"/>-->
+<!--          <return value="_typeshed98"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="toordinal" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed99" class="I"/>-->
+<!--          <return value="_typeshed99"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="timetuple" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed100" class="Lstruct_time"/>-->
+<!--          <return value="_typeshed100"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="timestamp" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed101" class="D"/>-->
+<!--          <return value="_typeshed101"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="utctimetuple" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed102" class="Lstruct_time"/>-->
+<!--          <return value="_typeshed102"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="date" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed103" class="L_date"/>-->
+<!--          <return value="_typeshed103"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="time" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed104" class="L_time"/>-->
+<!--          <return value="_typeshed104"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="timetz" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed105" class="L_time"/>-->
+<!--          <return value="_typeshed105"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="replace" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="10" paramNames="self year month day hour minute second microsecond tzinfo fold" static="false">-->
+<!--          <new def="_typeshed106" class="Ldatetime"/>-->
+<!--          <return value="_typeshed106"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="astimezone" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self tz" static="false">-->
+<!--          <new def="_typeshed107" class="L_S"/>-->
+<!--          <return value="_typeshed107"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="ctime" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed108" class="Lstring"/>-->
+<!--          <return value="_typeshed108"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="isoformat" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="3" paramNames="self sep timespec" static="false">-->
+<!--          <new def="_typeshed109" class="Lstring"/>-->
+<!--          <return value="_typeshed109"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="strptime" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="3" paramNames="cls date_string format" static="false">-->
+<!--          <new def="_typeshed110" class="Ldatetime"/>-->
+<!--          <return value="_typeshed110"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="utcoffset" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed111" class="Ltimedelta LNone"/>-->
+<!--          <return value="_typeshed111"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="tzname" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed112" class="Lstring LNone"/>-->
+<!--          <return value="_typeshed112"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="dst" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed113" class="Ltimedelta LNone"/>-->
+<!--          <return value="_typeshed113"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__le__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self other" static="false">-->
+<!--          <new def="_typeshed114" class="Z"/>-->
+<!--          <return value="_typeshed114"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__lt__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self other" static="false">-->
+<!--          <new def="_typeshed115" class="Z"/>-->
+<!--          <return value="_typeshed115"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__ge__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self other" static="false">-->
+<!--          <new def="_typeshed116" class="Z"/>-->
+<!--          <return value="_typeshed116"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__gt__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self other" static="false">-->
+<!--          <new def="_typeshed117" class="Z"/>-->
+<!--          <return value="_typeshed117"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__add__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self other" static="false">-->
+<!--          <new def="_typeshed118" class="L_S"/>-->
+<!--          <return value="_typeshed118"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__radd__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self other" static="false">-->
+<!--          <new def="_typeshed119" class="L_S"/>-->
+<!--          <return value="_typeshed119"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__sub__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self other" static="false">-->
+<!--          <new def="_typeshed120" class="Ltimedelta"/>-->
+<!--          <return value="_typeshed120"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__hash__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed121" class="I"/>-->
+<!--          <return value="_typeshed121"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="weekday" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed122" class="I"/>-->
+<!--          <return value="_typeshed122"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="isoweekday" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed123" class="I"/>-->
+<!--          <return value="_typeshed123"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="isocalendar" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed124" class="L_IsoCalendarDate"/>-->
+<!--          <return value="_typeshed124"/>-->
+<!--        </method>-->
+<!--      </class>-->
+    </package>
+  </classloader>
+</summary-spec>

@@ -1,0 +1,845 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE summary-spec>
+<summary-spec>
+  <classloader name="PythonLoader">
+    <class name="io" allocatable="true">
+      <method name="import" static="true" descriptor="()Lio;">
+        <new def="obj_typeshed_" class="Lio"/>
+<!--        <new def="DEFAULT_BUFFER_SIZE_typeshed_" class="I"/>-->
+<!--        <putfield class="LRoot" field="DEFAULT_BUFFER_SIZE" fieldType="LRoot" ref="obj_typeshed_" value="DEFAULT_BUFFER_SIZE_typeshed_"/>-->
+<!--        <new def="SEEK_SET_typeshed_" class="I"/>-->
+<!--        <putfield class="LRoot" field="SEEK_SET" fieldType="LRoot" ref="obj_typeshed_" value="SEEK_SET_typeshed_"/>-->
+<!--        <new def="SEEK_CUR_typeshed_" class="I"/>-->
+<!--        <putfield class="LRoot" field="SEEK_CUR" fieldType="LRoot" ref="obj_typeshed_" value="SEEK_CUR_typeshed_"/>-->
+<!--        <new def="SEEK_END_typeshed_" class="I"/>-->
+<!--        <putfield class="LRoot" field="SEEK_END" fieldType="LRoot" ref="obj_typeshed_" value="SEEK_END_typeshed_"/>-->
+<!--        <new def="open_code_typeshed_" class="Lio/function/open_code"/>-->
+<!--        <putfield class="LRoot" field="open_code" fieldType="LRoot" ref="obj_typeshed_" value="open_code_typeshed_"/>-->
+<!--        <new def="UnsupportedOperation_typeshed_" class="Lio/class/UnsupportedOperation"/>-->
+<!--        <putfield class="LRoot" field="UnsupportedOperation" fieldType="LRoot" ref="obj_typeshed_" value="UnsupportedOperation_typeshed_"/>-->
+<!--        <new def="IOBase_typeshed_" class="Lio/class/IOBase"/>-->
+<!--        <putfield class="LRoot" field="IOBase" fieldType="LRoot" ref="obj_typeshed_" value="IOBase_typeshed_"/>-->
+<!--        <new def="RawIOBase_typeshed_" class="Lio/class/RawIOBase"/>-->
+<!--        <putfield class="LRoot" field="RawIOBase" fieldType="LRoot" ref="obj_typeshed_" value="RawIOBase_typeshed_"/>-->
+<!--        <new def="BufferedIOBase_typeshed_" class="Lio/class/BufferedIOBase"/>-->
+<!--        <putfield class="LRoot" field="BufferedIOBase" fieldType="LRoot" ref="obj_typeshed_" value="BufferedIOBase_typeshed_"/>-->
+<!--        <new def="FileIO_typeshed_" class="Lio/class/FileIO"/>-->
+<!--        <putfield class="LRoot" field="FileIO" fieldType="LRoot" ref="obj_typeshed_" value="FileIO_typeshed_"/>-->
+<!--        <new def="BytesIO_typeshed_" class="Lio/class/BytesIO"/>-->
+<!--        <putfield class="LRoot" field="BytesIO" fieldType="LRoot" ref="obj_typeshed_" value="BytesIO_typeshed_"/>-->
+<!--        <new def="BufferedReader_typeshed_" class="Lio/class/BufferedReader"/>-->
+<!--        <putfield class="LRoot" field="BufferedReader" fieldType="LRoot" ref="obj_typeshed_" value="BufferedReader_typeshed_"/>-->
+<!--        <new def="BufferedWriter_typeshed_" class="Lio/class/BufferedWriter"/>-->
+<!--        <putfield class="LRoot" field="BufferedWriter" fieldType="LRoot" ref="obj_typeshed_" value="BufferedWriter_typeshed_"/>-->
+<!--        <new def="BufferedRandom_typeshed_" class="Lio/class/BufferedRandom"/>-->
+<!--        <putfield class="LRoot" field="BufferedRandom" fieldType="LRoot" ref="obj_typeshed_" value="BufferedRandom_typeshed_"/>-->
+<!--        <new def="BufferedRWPair_typeshed_" class="Lio/class/BufferedRWPair"/>-->
+<!--        <putfield class="LRoot" field="BufferedRWPair" fieldType="LRoot" ref="obj_typeshed_" value="BufferedRWPair_typeshed_"/>-->
+<!--        <new def="TextIOBase_typeshed_" class="Lio/class/TextIOBase"/>-->
+<!--        <putfield class="LRoot" field="TextIOBase" fieldType="LRoot" ref="obj_typeshed_" value="TextIOBase_typeshed_"/>-->
+<!--        <new def="TextIOWrapper_typeshed_" class="Lio/class/TextIOWrapper"/>-->
+<!--        <putfield class="LRoot" field="TextIOWrapper" fieldType="LRoot" ref="obj_typeshed_" value="TextIOWrapper_typeshed_"/>-->
+        <new def="StringIO_typeshed_" class="Lio/class/StringIO"/>
+        <putfield class="LRoot" field="StringIO" fieldType="LRoot" ref="obj_typeshed_" value="StringIO_typeshed_"/>
+<!--        <new def="IncrementalNewlineDecoder_typeshed_" class="Lio/class/IncrementalNewlineDecoder"/>-->
+<!--        <putfield class="LRoot" field="IncrementalNewlineDecoder" fieldType="LRoot" ref="obj_typeshed_" value="IncrementalNewlineDecoder_typeshed_"/>-->
+        <return value="obj_typeshed_"/>
+      </method>
+    </class>
+<!--    <package name="io/function">-->
+<!--      <class name="open_code" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="path" static="false">-->
+<!--          <new def="_typeshed0" class="LIO"/>-->
+<!--          <new def="_typeshed1" class="Lbytes"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed0" value="_typeshed1"/>-->
+<!--          <return value="_typeshed0"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--    </package>-->
+    <package name="io/class">
+<!--      <class name="UnsupportedOperation" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;">-->
+<!--          <new def="UnsupportedOperation_typeshed_" class="Lio/class/UnsupportedOperation"/>-->
+<!--          <return value="UnsupportedOperation_typeshed_"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="IOBase" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;">-->
+<!--          <new def="IOBase_typeshed_" class="Lio/class/IOBase"/>-->
+<!--          <new def="__iter___typeshed_" class="Lio/IOBase/__iter__"/>-->
+<!--          <putfield class="LRoot" field="__iter__" fieldType="LRoot" ref="IOBase_typeshed_" value="__iter___typeshed_"/>-->
+<!--          <new def="__next___typeshed_" class="Lio/IOBase/__next__"/>-->
+<!--          <putfield class="LRoot" field="__next__" fieldType="LRoot" ref="IOBase_typeshed_" value="__next___typeshed_"/>-->
+<!--          <new def="__enter___typeshed_" class="Lio/IOBase/__enter__"/>-->
+<!--          <putfield class="LRoot" field="__enter__" fieldType="LRoot" ref="IOBase_typeshed_" value="__enter___typeshed_"/>-->
+<!--          <new def="__exit___typeshed_" class="Lio/IOBase/__exit__"/>-->
+<!--          <putfield class="LRoot" field="__exit__" fieldType="LRoot" ref="IOBase_typeshed_" value="__exit___typeshed_"/>-->
+<!--          <new def="close_typeshed_" class="Lio/IOBase/close"/>-->
+<!--          <putfield class="LRoot" field="close" fieldType="LRoot" ref="IOBase_typeshed_" value="close_typeshed_"/>-->
+<!--          <new def="fileno_typeshed_" class="Lio/IOBase/fileno"/>-->
+<!--          <putfield class="LRoot" field="fileno" fieldType="LRoot" ref="IOBase_typeshed_" value="fileno_typeshed_"/>-->
+<!--          <new def="flush_typeshed_" class="Lio/IOBase/flush"/>-->
+<!--          <putfield class="LRoot" field="flush" fieldType="LRoot" ref="IOBase_typeshed_" value="flush_typeshed_"/>-->
+<!--          <new def="isatty_typeshed_" class="Lio/IOBase/isatty"/>-->
+<!--          <putfield class="LRoot" field="isatty" fieldType="LRoot" ref="IOBase_typeshed_" value="isatty_typeshed_"/>-->
+<!--          <new def="readable_typeshed_" class="Lio/IOBase/readable"/>-->
+<!--          <putfield class="LRoot" field="readable" fieldType="LRoot" ref="IOBase_typeshed_" value="readable_typeshed_"/>-->
+<!--          <new def="read_typeshed_" class="LCallable"/>-->
+<!--          <putfield class="LRoot" field="read" fieldType="LRoot" ref="IOBase_typeshed_" value="read_typeshed_"/>-->
+<!--          <new def="readlines_typeshed_" class="Lio/IOBase/readlines"/>-->
+<!--          <putfield class="LRoot" field="readlines" fieldType="LRoot" ref="IOBase_typeshed_" value="readlines_typeshed_"/>-->
+<!--          <new def="seek_typeshed_" class="Lio/IOBase/seek"/>-->
+<!--          <putfield class="LRoot" field="seek" fieldType="LRoot" ref="IOBase_typeshed_" value="seek_typeshed_"/>-->
+<!--          <new def="seekable_typeshed_" class="Lio/IOBase/seekable"/>-->
+<!--          <putfield class="LRoot" field="seekable" fieldType="LRoot" ref="IOBase_typeshed_" value="seekable_typeshed_"/>-->
+<!--          <new def="tell_typeshed_" class="Lio/IOBase/tell"/>-->
+<!--          <putfield class="LRoot" field="tell" fieldType="LRoot" ref="IOBase_typeshed_" value="tell_typeshed_"/>-->
+<!--          <new def="truncate_typeshed_" class="Lio/IOBase/truncate"/>-->
+<!--          <putfield class="LRoot" field="truncate" fieldType="LRoot" ref="IOBase_typeshed_" value="truncate_typeshed_"/>-->
+<!--          <new def="writable_typeshed_" class="Lio/IOBase/writable"/>-->
+<!--          <putfield class="LRoot" field="writable" fieldType="LRoot" ref="IOBase_typeshed_" value="writable_typeshed_"/>-->
+<!--          <new def="write_typeshed_" class="LCallable"/>-->
+<!--          <putfield class="LRoot" field="write" fieldType="LRoot" ref="IOBase_typeshed_" value="write_typeshed_"/>-->
+<!--          <new def="writelines_typeshed_" class="Lio/IOBase/writelines"/>-->
+<!--          <putfield class="LRoot" field="writelines" fieldType="LRoot" ref="IOBase_typeshed_" value="writelines_typeshed_"/>-->
+<!--          <new def="readline_typeshed_" class="Lio/IOBase/readline"/>-->
+<!--          <putfield class="LRoot" field="readline" fieldType="LRoot" ref="IOBase_typeshed_" value="readline_typeshed_"/>-->
+<!--          <new def="__del___typeshed_" class="Lio/IOBase/__del__"/>-->
+<!--          <putfield class="LRoot" field="__del__" fieldType="LRoot" ref="IOBase_typeshed_" value="__del___typeshed_"/>-->
+<!--          <new def="closed_typeshed_" class="Lio/IOBase/closed"/>-->
+<!--          <putfield class="LRoot" field="closed" fieldType="LRoot" ref="IOBase_typeshed_" value="closed_typeshed_"/>-->
+<!--          <new def="_checkClosed_typeshed_" class="Lio/IOBase/_checkClosed"/>-->
+<!--          <putfield class="LRoot" field="_checkClosed" fieldType="LRoot" ref="IOBase_typeshed_" value="_checkClosed_typeshed_"/>-->
+<!--          <return value="IOBase_typeshed_"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="RawIOBase" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;">-->
+<!--          <new def="RawIOBase_typeshed_" class="Lio/class/RawIOBase"/>-->
+<!--          <new def="readall_typeshed_" class="Lio/RawIOBase/readall"/>-->
+<!--          <putfield class="LRoot" field="readall" fieldType="LRoot" ref="RawIOBase_typeshed_" value="readall_typeshed_"/>-->
+<!--          <new def="readinto_typeshed_" class="Lio/RawIOBase/readinto"/>-->
+<!--          <putfield class="LRoot" field="readinto" fieldType="LRoot" ref="RawIOBase_typeshed_" value="readinto_typeshed_"/>-->
+<!--          <new def="write_typeshed_" class="Lio/RawIOBase/write"/>-->
+<!--          <putfield class="LRoot" field="write" fieldType="LRoot" ref="RawIOBase_typeshed_" value="write_typeshed_"/>-->
+<!--          <new def="read_typeshed_" class="Lio/RawIOBase/read"/>-->
+<!--          <putfield class="LRoot" field="read" fieldType="LRoot" ref="RawIOBase_typeshed_" value="read_typeshed_"/>-->
+<!--          <return value="RawIOBase_typeshed_"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="BufferedIOBase" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;">-->
+<!--          <new def="BufferedIOBase_typeshed_" class="Lio/class/BufferedIOBase"/>-->
+<!--          <new def="raw_typeshed_" class="LRawIOBase"/>-->
+<!--          <putfield class="LRoot" field="raw" fieldType="LRoot" ref="BufferedIOBase_typeshed_" value="raw_typeshed_"/>-->
+<!--          <new def="detach_typeshed_" class="Lio/BufferedIOBase/detach"/>-->
+<!--          <putfield class="LRoot" field="detach" fieldType="LRoot" ref="BufferedIOBase_typeshed_" value="detach_typeshed_"/>-->
+<!--          <new def="readinto_typeshed_" class="Lio/BufferedIOBase/readinto"/>-->
+<!--          <putfield class="LRoot" field="readinto" fieldType="LRoot" ref="BufferedIOBase_typeshed_" value="readinto_typeshed_"/>-->
+<!--          <new def="write_typeshed_" class="Lio/BufferedIOBase/write"/>-->
+<!--          <putfield class="LRoot" field="write" fieldType="LRoot" ref="BufferedIOBase_typeshed_" value="write_typeshed_"/>-->
+<!--          <new def="readinto1_typeshed_" class="Lio/BufferedIOBase/readinto1"/>-->
+<!--          <putfield class="LRoot" field="readinto1" fieldType="LRoot" ref="BufferedIOBase_typeshed_" value="readinto1_typeshed_"/>-->
+<!--          <new def="read_typeshed_" class="Lio/BufferedIOBase/read"/>-->
+<!--          <putfield class="LRoot" field="read" fieldType="LRoot" ref="BufferedIOBase_typeshed_" value="read_typeshed_"/>-->
+<!--          <new def="read1_typeshed_" class="Lio/BufferedIOBase/read1"/>-->
+<!--          <putfield class="LRoot" field="read1" fieldType="LRoot" ref="BufferedIOBase_typeshed_" value="read1_typeshed_"/>-->
+<!--          <return value="BufferedIOBase_typeshed_"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="FileIO" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;">-->
+<!--          <new def="FileIO_typeshed_" class="Lio/class/FileIO"/>-->
+<!--          <new def="mode_typeshed_" class="Lstring"/>-->
+<!--          <putfield class="LRoot" field="mode" fieldType="LRoot" ref="FileIO_typeshed_" value="mode_typeshed_"/>-->
+<!--          <new def="name_typeshed_" class="LStrOrBytesPath I"/>-->
+<!--          <putfield class="LRoot" field="name" fieldType="LRoot" ref="FileIO_typeshed_" value="name_typeshed_"/>-->
+<!--          <new def="__init___typeshed_" class="Lio/FileIO/__init__"/>-->
+<!--          <putfield class="LRoot" field="__init__" fieldType="LRoot" ref="FileIO_typeshed_" value="__init___typeshed_"/>-->
+<!--          <new def="closefd_typeshed_" class="Lio/FileIO/closefd"/>-->
+<!--          <putfield class="LRoot" field="closefd" fieldType="LRoot" ref="FileIO_typeshed_" value="closefd_typeshed_"/>-->
+<!--          <new def="write_typeshed_" class="Lio/FileIO/write"/>-->
+<!--          <putfield class="LRoot" field="write" fieldType="LRoot" ref="FileIO_typeshed_" value="write_typeshed_"/>-->
+<!--          <new def="read_typeshed_" class="Lio/FileIO/read"/>-->
+<!--          <putfield class="LRoot" field="read" fieldType="LRoot" ref="FileIO_typeshed_" value="read_typeshed_"/>-->
+<!--          <new def="__enter___typeshed_" class="Lio/FileIO/__enter__"/>-->
+<!--          <putfield class="LRoot" field="__enter__" fieldType="LRoot" ref="FileIO_typeshed_" value="__enter___typeshed_"/>-->
+<!--          <return value="FileIO_typeshed_"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="BytesIO" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;">-->
+<!--          <new def="BytesIO_typeshed_" class="Lio/class/BytesIO"/>-->
+<!--          <new def="__init___typeshed_" class="Lio/BytesIO/__init__"/>-->
+<!--          <putfield class="LRoot" field="__init__" fieldType="LRoot" ref="BytesIO_typeshed_" value="__init___typeshed_"/>-->
+<!--          <new def="name_typeshed_" class="Lobject"/>-->
+<!--          <putfield class="LRoot" field="name" fieldType="LRoot" ref="BytesIO_typeshed_" value="name_typeshed_"/>-->
+<!--          <new def="__enter___typeshed_" class="Lio/BytesIO/__enter__"/>-->
+<!--          <putfield class="LRoot" field="__enter__" fieldType="LRoot" ref="BytesIO_typeshed_" value="__enter___typeshed_"/>-->
+<!--          <new def="getvalue_typeshed_" class="Lio/BytesIO/getvalue"/>-->
+<!--          <putfield class="LRoot" field="getvalue" fieldType="LRoot" ref="BytesIO_typeshed_" value="getvalue_typeshed_"/>-->
+<!--          <new def="getbuffer_typeshed_" class="Lio/BytesIO/getbuffer"/>-->
+<!--          <putfield class="LRoot" field="getbuffer" fieldType="LRoot" ref="BytesIO_typeshed_" value="getbuffer_typeshed_"/>-->
+<!--          <new def="read1_typeshed_" class="Lio/BytesIO/read1"/>-->
+<!--          <putfield class="LRoot" field="read1" fieldType="LRoot" ref="BytesIO_typeshed_" value="read1_typeshed_"/>-->
+<!--          <return value="BytesIO_typeshed_"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="BufferedReader" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;">-->
+<!--          <new def="BufferedReader_typeshed_" class="Lio/class/BufferedReader"/>-->
+<!--          <new def="__enter___typeshed_" class="Lio/BufferedReader/__enter__"/>-->
+<!--          <putfield class="LRoot" field="__enter__" fieldType="LRoot" ref="BufferedReader_typeshed_" value="__enter___typeshed_"/>-->
+<!--          <new def="__init___typeshed_" class="Lio/BufferedReader/__init__"/>-->
+<!--          <putfield class="LRoot" field="__init__" fieldType="LRoot" ref="BufferedReader_typeshed_" value="__init___typeshed_"/>-->
+<!--          <new def="peek_typeshed_" class="Lio/BufferedReader/peek"/>-->
+<!--          <putfield class="LRoot" field="peek" fieldType="LRoot" ref="BufferedReader_typeshed_" value="peek_typeshed_"/>-->
+<!--          <new def="read1_typeshed_" class="Lio/BufferedReader/read1"/>-->
+<!--          <putfield class="LRoot" field="read1" fieldType="LRoot" ref="BufferedReader_typeshed_" value="read1_typeshed_"/>-->
+<!--          <return value="BufferedReader_typeshed_"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="BufferedWriter" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;">-->
+<!--          <new def="BufferedWriter_typeshed_" class="Lio/class/BufferedWriter"/>-->
+<!--          <new def="__enter___typeshed_" class="Lio/BufferedWriter/__enter__"/>-->
+<!--          <putfield class="LRoot" field="__enter__" fieldType="LRoot" ref="BufferedWriter_typeshed_" value="__enter___typeshed_"/>-->
+<!--          <new def="__init___typeshed_" class="Lio/BufferedWriter/__init__"/>-->
+<!--          <putfield class="LRoot" field="__init__" fieldType="LRoot" ref="BufferedWriter_typeshed_" value="__init___typeshed_"/>-->
+<!--          <new def="write_typeshed_" class="Lio/BufferedWriter/write"/>-->
+<!--          <putfield class="LRoot" field="write" fieldType="LRoot" ref="BufferedWriter_typeshed_" value="write_typeshed_"/>-->
+<!--          <return value="BufferedWriter_typeshed_"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="BufferedRandom" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;">-->
+<!--          <new def="BufferedRandom_typeshed_" class="Lio/class/BufferedRandom"/>-->
+<!--          <new def="__enter___typeshed_" class="Lio/BufferedRandom/__enter__"/>-->
+<!--          <putfield class="LRoot" field="__enter__" fieldType="LRoot" ref="BufferedRandom_typeshed_" value="__enter___typeshed_"/>-->
+<!--          <new def="__init___typeshed_" class="Lio/BufferedRandom/__init__"/>-->
+<!--          <putfield class="LRoot" field="__init__" fieldType="LRoot" ref="BufferedRandom_typeshed_" value="__init___typeshed_"/>-->
+<!--          <new def="seek_typeshed_" class="Lio/BufferedRandom/seek"/>-->
+<!--          <putfield class="LRoot" field="seek" fieldType="LRoot" ref="BufferedRandom_typeshed_" value="seek_typeshed_"/>-->
+<!--          <new def="read1_typeshed_" class="Lio/BufferedRandom/read1"/>-->
+<!--          <putfield class="LRoot" field="read1" fieldType="LRoot" ref="BufferedRandom_typeshed_" value="read1_typeshed_"/>-->
+<!--          <return value="BufferedRandom_typeshed_"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="BufferedRWPair" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;">-->
+<!--          <new def="BufferedRWPair_typeshed_" class="Lio/class/BufferedRWPair"/>-->
+<!--          <new def="__init___typeshed_" class="Lio/BufferedRWPair/__init__"/>-->
+<!--          <putfield class="LRoot" field="__init__" fieldType="LRoot" ref="BufferedRWPair_typeshed_" value="__init___typeshed_"/>-->
+<!--          <new def="peek_typeshed_" class="Lio/BufferedRWPair/peek"/>-->
+<!--          <putfield class="LRoot" field="peek" fieldType="LRoot" ref="BufferedRWPair_typeshed_" value="peek_typeshed_"/>-->
+<!--          <return value="BufferedRWPair_typeshed_"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="TextIOBase" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;">-->
+<!--          <new def="TextIOBase_typeshed_" class="Lio/class/TextIOBase"/>-->
+<!--          <new def="encoding_typeshed_" class="Lstring"/>-->
+<!--          <putfield class="LRoot" field="encoding" fieldType="LRoot" ref="TextIOBase_typeshed_" value="encoding_typeshed_"/>-->
+<!--          <new def="errors_typeshed_" class="Lstring LNone"/>-->
+<!--          <putfield class="LRoot" field="errors" fieldType="LRoot" ref="TextIOBase_typeshed_" value="errors_typeshed_"/>-->
+<!--          <new def="newlines_typeshed_" class="Lstring LTuple LNone"/>-->
+<!--          <putfield class="LRoot" field="newlines" fieldType="LRoot" ref="TextIOBase_typeshed_" value="newlines_typeshed_"/>-->
+<!--          <new def="__iter___typeshed_" class="Lio/TextIOBase/__iter__"/>-->
+<!--          <putfield class="LRoot" field="__iter__" fieldType="LRoot" ref="TextIOBase_typeshed_" value="__iter___typeshed_"/>-->
+<!--          <new def="__next___typeshed_" class="Lio/TextIOBase/__next__"/>-->
+<!--          <putfield class="LRoot" field="__next__" fieldType="LRoot" ref="TextIOBase_typeshed_" value="__next___typeshed_"/>-->
+<!--          <new def="detach_typeshed_" class="Lio/TextIOBase/detach"/>-->
+<!--          <putfield class="LRoot" field="detach" fieldType="LRoot" ref="TextIOBase_typeshed_" value="detach_typeshed_"/>-->
+<!--          <new def="write_typeshed_" class="Lio/TextIOBase/write"/>-->
+<!--          <putfield class="LRoot" field="write" fieldType="LRoot" ref="TextIOBase_typeshed_" value="write_typeshed_"/>-->
+<!--          <new def="writelines_typeshed_" class="Lio/TextIOBase/writelines"/>-->
+<!--          <putfield class="LRoot" field="writelines" fieldType="LRoot" ref="TextIOBase_typeshed_" value="writelines_typeshed_"/>-->
+<!--          <new def="readline_typeshed_" class="Lio/TextIOBase/readline"/>-->
+<!--          <putfield class="LRoot" field="readline" fieldType="LRoot" ref="TextIOBase_typeshed_" value="readline_typeshed_"/>-->
+<!--          <new def="readlines_typeshed_" class="Lio/TextIOBase/readlines"/>-->
+<!--          <putfield class="LRoot" field="readlines" fieldType="LRoot" ref="TextIOBase_typeshed_" value="readlines_typeshed_"/>-->
+<!--          <new def="read_typeshed_" class="Lio/TextIOBase/read"/>-->
+<!--          <putfield class="LRoot" field="read" fieldType="LRoot" ref="TextIOBase_typeshed_" value="read_typeshed_"/>-->
+<!--          <new def="tell_typeshed_" class="Lio/TextIOBase/tell"/>-->
+<!--          <putfield class="LRoot" field="tell" fieldType="LRoot" ref="TextIOBase_typeshed_" value="tell_typeshed_"/>-->
+<!--          <return value="TextIOBase_typeshed_"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="TextIOWrapper" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;">-->
+<!--          <new def="TextIOWrapper_typeshed_" class="Lio/class/TextIOWrapper"/>-->
+<!--          <new def="__init___typeshed_" class="Lio/TextIOWrapper/__init__"/>-->
+<!--          <putfield class="LRoot" field="__init__" fieldType="LRoot" ref="TextIOWrapper_typeshed_" value="__init___typeshed_"/>-->
+<!--          <new def="buffer_typeshed_" class="Lio/TextIOWrapper/buffer"/>-->
+<!--          <putfield class="LRoot" field="buffer" fieldType="LRoot" ref="TextIOWrapper_typeshed_" value="buffer_typeshed_"/>-->
+<!--          <new def="closed_typeshed_" class="Lio/TextIOWrapper/closed"/>-->
+<!--          <putfield class="LRoot" field="closed" fieldType="LRoot" ref="TextIOWrapper_typeshed_" value="closed_typeshed_"/>-->
+<!--          <new def="line_buffering_typeshed_" class="Lio/TextIOWrapper/line_buffering"/>-->
+<!--          <putfield class="LRoot" field="line_buffering" fieldType="LRoot" ref="TextIOWrapper_typeshed_" value="line_buffering_typeshed_"/>-->
+<!--          <new def="write_through_typeshed_" class="Lio/TextIOWrapper/write_through"/>-->
+<!--          <putfield class="LRoot" field="write_through" fieldType="LRoot" ref="TextIOWrapper_typeshed_" value="write_through_typeshed_"/>-->
+<!--          <new def="reconfigure_typeshed_" class="Lio/TextIOWrapper/reconfigure"/>-->
+<!--          <putfield class="LRoot" field="reconfigure" fieldType="LRoot" ref="TextIOWrapper_typeshed_" value="reconfigure_typeshed_"/>-->
+<!--          <new def="__enter___typeshed_" class="Lio/TextIOWrapper/__enter__"/>-->
+<!--          <putfield class="LRoot" field="__enter__" fieldType="LRoot" ref="TextIOWrapper_typeshed_" value="__enter___typeshed_"/>-->
+<!--          <new def="__iter___typeshed_" class="Lio/TextIOWrapper/__iter__"/>-->
+<!--          <putfield class="LRoot" field="__iter__" fieldType="LRoot" ref="TextIOWrapper_typeshed_" value="__iter___typeshed_"/>-->
+<!--          <new def="__next___typeshed_" class="Lio/TextIOWrapper/__next__"/>-->
+<!--          <putfield class="LRoot" field="__next__" fieldType="LRoot" ref="TextIOWrapper_typeshed_" value="__next___typeshed_"/>-->
+<!--          <new def="writelines_typeshed_" class="Lio/TextIOWrapper/writelines"/>-->
+<!--          <putfield class="LRoot" field="writelines" fieldType="LRoot" ref="TextIOWrapper_typeshed_" value="writelines_typeshed_"/>-->
+<!--          <new def="readline_typeshed_" class="Lio/TextIOWrapper/readline"/>-->
+<!--          <putfield class="LRoot" field="readline" fieldType="LRoot" ref="TextIOWrapper_typeshed_" value="readline_typeshed_"/>-->
+<!--          <new def="readlines_typeshed_" class="Lio/TextIOWrapper/readlines"/>-->
+<!--          <putfield class="LRoot" field="readlines" fieldType="LRoot" ref="TextIOWrapper_typeshed_" value="readlines_typeshed_"/>-->
+<!--          <new def="seek_typeshed_" class="Lio/TextIOWrapper/seek"/>-->
+<!--          <putfield class="LRoot" field="seek" fieldType="LRoot" ref="TextIOWrapper_typeshed_" value="seek_typeshed_"/>-->
+<!--          <return value="TextIOWrapper_typeshed_"/>-->
+<!--        </method>-->
+<!--      </class>-->
+      <class name="StringIO" allocatable="true">
+        <method name="do" descriptor="()LRoot;">
+          <new def="StringIO_typeshed_" class="Lio/class/StringIO"/>
+<!--          <new def="__init___typeshed_" class="Lio/StringIO/__init__"/>-->
+<!--          <putfield class="LRoot" field="__init__" fieldType="LRoot" ref="StringIO_typeshed_" value="__init___typeshed_"/>-->
+<!--          <new def="name_typeshed_" class="Lobject"/>-->
+<!--          <putfield class="LRoot" field="name" fieldType="LRoot" ref="StringIO_typeshed_" value="name_typeshed_"/>-->
+          <new def="getvalue_typeshed_" class="Lio/StringIO/getvalue"/>
+          <putfield class="LRoot" field="getvalue" fieldType="LRoot" ref="StringIO_typeshed_" value="getvalue_typeshed_"/>
+          <return value="StringIO_typeshed_"/>
+        </method>
+      </class>
+<!--      <class name="IncrementalNewlineDecoder" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;">-->
+<!--          <new def="IncrementalNewlineDecoder_typeshed_" class="Lio/class/IncrementalNewlineDecoder"/>-->
+<!--          <new def="__init___typeshed_" class="Lio/IncrementalNewlineDecoder/__init__"/>-->
+<!--          <putfield class="LRoot" field="__init__" fieldType="LRoot" ref="IncrementalNewlineDecoder_typeshed_" value="__init___typeshed_"/>-->
+<!--          <new def="decode_typeshed_" class="Lio/IncrementalNewlineDecoder/decode"/>-->
+<!--          <putfield class="LRoot" field="decode" fieldType="LRoot" ref="IncrementalNewlineDecoder_typeshed_" value="decode_typeshed_"/>-->
+<!--          <new def="newlines_typeshed_" class="Lio/IncrementalNewlineDecoder/newlines"/>-->
+<!--          <putfield class="LRoot" field="newlines" fieldType="LRoot" ref="IncrementalNewlineDecoder_typeshed_" value="newlines_typeshed_"/>-->
+<!--          <return value="IncrementalNewlineDecoder_typeshed_"/>-->
+<!--        </method>-->
+<!--      </class>-->
+    </package>
+<!--    <package name="io/UnsupportedOperation"/>-->
+<!--    <package name="io/IOBase">-->
+<!--      <class name="__iter__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed2" class="LIterator"/>-->
+<!--          <new def="_typeshed3" class="Lbytes"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed2" value="_typeshed3"/>-->
+<!--          <return value="_typeshed2"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__next__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed4" class="Lbytes"/>-->
+<!--          <return value="_typeshed4"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__enter__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed5" class="LSelf"/>-->
+<!--          <return value="_typeshed5"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__exit__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="4" paramNames="self exc_type exc_val exc_tb" static="false">-->
+<!--          <new def="_typeshed6" class="Z LNone"/>-->
+<!--          <return value="_typeshed6"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="close" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed7" class="LNone"/>-->
+<!--          <return value="_typeshed7"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="fileno" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed8" class="I"/>-->
+<!--          <return value="_typeshed8"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="flush" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed9" class="LNone"/>-->
+<!--          <return value="_typeshed9"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="isatty" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed10" class="Z"/>-->
+<!--          <return value="_typeshed10"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="readable" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed11" class="Z"/>-->
+<!--          <return value="_typeshed11"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="readlines" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self __hint" static="false">-->
+<!--          <new def="_typeshed12" class="Llist"/>-->
+<!--          <new def="_typeshed13" class="Lbytes"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed12" value="_typeshed13"/>-->
+<!--          <return value="_typeshed12"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="seek" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="3" paramNames="self __offset __whence" static="false">-->
+<!--          <new def="_typeshed14" class="I"/>-->
+<!--          <return value="_typeshed14"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="seekable" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed15" class="Z"/>-->
+<!--          <return value="_typeshed15"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="tell" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed16" class="I"/>-->
+<!--          <return value="_typeshed16"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="truncate" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self __size" static="false">-->
+<!--          <new def="_typeshed17" class="I"/>-->
+<!--          <return value="_typeshed17"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="writable" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed18" class="Z"/>-->
+<!--          <return value="_typeshed18"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="writelines" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self __lines" static="false">-->
+<!--          <new def="_typeshed19" class="LNone"/>-->
+<!--          <return value="_typeshed19"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="readline" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self __size" static="false">-->
+<!--          <new def="_typeshed20" class="Lbytes"/>-->
+<!--          <return value="_typeshed20"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__del__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed21" class="LNone"/>-->
+<!--          <return value="_typeshed21"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="closed" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed22" class="Z"/>-->
+<!--          <return value="_typeshed22"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="_checkClosed" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self msg" static="false">-->
+<!--          <new def="_typeshed23" class="LNone"/>-->
+<!--          <return value="_typeshed23"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--    </package>-->
+<!--    <package name="io/RawIOBase">-->
+<!--      <class name="readall" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed24" class="Lbytes"/>-->
+<!--          <return value="_typeshed24"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="readinto" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self __buffer" static="false">-->
+<!--          <new def="_typeshed25" class="I LNone"/>-->
+<!--          <return value="_typeshed25"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="write" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self __b" static="false">-->
+<!--          <new def="_typeshed26" class="I LNone"/>-->
+<!--          <return value="_typeshed26"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="read" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self __size" static="false">-->
+<!--          <new def="_typeshed27" class="Lbytes LNone"/>-->
+<!--          <return value="_typeshed27"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--    </package>-->
+<!--    <package name="io/BufferedIOBase">-->
+<!--      <class name="detach" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed28" class="LRawIOBase"/>-->
+<!--          <return value="_typeshed28"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="readinto" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self __buffer" static="false">-->
+<!--          <new def="_typeshed29" class="I"/>-->
+<!--          <return value="_typeshed29"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="write" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self __buffer" static="false">-->
+<!--          <new def="_typeshed30" class="I"/>-->
+<!--          <return value="_typeshed30"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="readinto1" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self __buffer" static="false">-->
+<!--          <new def="_typeshed31" class="I"/>-->
+<!--          <return value="_typeshed31"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="read" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self __size" static="false">-->
+<!--          <new def="_typeshed32" class="Lbytes"/>-->
+<!--          <return value="_typeshed32"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="read1" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self __size" static="false">-->
+<!--          <new def="_typeshed33" class="Lbytes"/>-->
+<!--          <return value="_typeshed33"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--    </package>-->
+<!--    <package name="io/FileIO">-->
+<!--      <class name="__init__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="5" paramNames="self file mode closefd opener" static="false">-->
+<!--          <new def="_typeshed34" class="LNone"/>-->
+<!--          <return value="_typeshed34"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="closefd" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed35" class="Z"/>-->
+<!--          <return value="_typeshed35"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="write" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self __b" static="false">-->
+<!--          <new def="_typeshed36" class="I"/>-->
+<!--          <return value="_typeshed36"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="read" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self __size" static="false">-->
+<!--          <new def="_typeshed37" class="Lbytes"/>-->
+<!--          <return value="_typeshed37"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__enter__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed38" class="LSelf"/>-->
+<!--          <return value="_typeshed38"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--    </package>-->
+<!--    <package name="io/BytesIO">-->
+<!--      <class name="__init__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self initial_bytes" static="false">-->
+<!--          <new def="_typeshed39" class="LNone"/>-->
+<!--          <return value="_typeshed39"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__enter__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed40" class="LSelf"/>-->
+<!--          <return value="_typeshed40"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="getvalue" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed41" class="Lbytes"/>-->
+<!--          <return value="_typeshed41"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="getbuffer" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed42" class="Lmemoryview"/>-->
+<!--          <return value="_typeshed42"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="read1" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self __size" static="false">-->
+<!--          <new def="_typeshed43" class="Lbytes"/>-->
+<!--          <return value="_typeshed43"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--    </package>-->
+<!--    <package name="io/BufferedReader">-->
+<!--      <class name="__enter__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed44" class="LSelf"/>-->
+<!--          <return value="_typeshed44"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__init__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="3" paramNames="self raw buffer_size" static="false">-->
+<!--          <new def="_typeshed45" class="LNone"/>-->
+<!--          <return value="_typeshed45"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="peek" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self __size" static="false">-->
+<!--          <new def="_typeshed46" class="Lbytes"/>-->
+<!--          <return value="_typeshed46"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="read1" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self __size" static="false">-->
+<!--          <new def="_typeshed47" class="Lbytes"/>-->
+<!--          <return value="_typeshed47"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--    </package>-->
+<!--    <package name="io/BufferedWriter">-->
+<!--      <class name="__enter__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed48" class="LSelf"/>-->
+<!--          <return value="_typeshed48"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__init__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="3" paramNames="self raw buffer_size" static="false">-->
+<!--          <new def="_typeshed49" class="LNone"/>-->
+<!--          <return value="_typeshed49"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="write" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self __buffer" static="false">-->
+<!--          <new def="_typeshed50" class="I"/>-->
+<!--          <return value="_typeshed50"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--    </package>-->
+<!--    <package name="io/BufferedRandom">-->
+<!--      <class name="__enter__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed51" class="LSelf"/>-->
+<!--          <return value="_typeshed51"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__init__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="3" paramNames="self raw buffer_size" static="false">-->
+<!--          <new def="_typeshed52" class="LNone"/>-->
+<!--          <return value="_typeshed52"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="seek" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="3" paramNames="self __target __whence" static="false">-->
+<!--          <new def="_typeshed53" class="I"/>-->
+<!--          <return value="_typeshed53"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="read1" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self __size" static="false">-->
+<!--          <new def="_typeshed54" class="Lbytes"/>-->
+<!--          <return value="_typeshed54"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--    </package>-->
+<!--    <package name="io/BufferedRWPair">-->
+<!--      <class name="__init__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="4" paramNames="self reader writer buffer_size" static="false">-->
+<!--          <new def="_typeshed55" class="LNone"/>-->
+<!--          <return value="_typeshed55"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="peek" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self __size" static="false">-->
+<!--          <new def="_typeshed56" class="Lbytes"/>-->
+<!--          <return value="_typeshed56"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--    </package>-->
+<!--    <package name="io/TextIOBase">-->
+<!--      <class name="__iter__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed57" class="LIterator"/>-->
+<!--          <new def="_typeshed58" class="Lstring"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed57" value="_typeshed58"/>-->
+<!--          <return value="_typeshed57"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__next__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed59" class="Lstring"/>-->
+<!--          <return value="_typeshed59"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="detach" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed60" class="LBinaryIO"/>-->
+<!--          <return value="_typeshed60"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="write" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self __s" static="false">-->
+<!--          <new def="_typeshed61" class="I"/>-->
+<!--          <return value="_typeshed61"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="writelines" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self __lines" static="false">-->
+<!--          <new def="_typeshed62" class="LNone"/>-->
+<!--          <return value="_typeshed62"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="readline" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self __size" static="false">-->
+<!--          <new def="_typeshed63" class="Lstring"/>-->
+<!--          <return value="_typeshed63"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="readlines" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self __hint" static="false">-->
+<!--          <new def="_typeshed64" class="Llist"/>-->
+<!--          <new def="_typeshed65" class="Lstring"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed64" value="_typeshed65"/>-->
+<!--          <return value="_typeshed64"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="read" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self __size" static="false">-->
+<!--          <new def="_typeshed66" class="Lstring"/>-->
+<!--          <return value="_typeshed66"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="tell" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed67" class="I"/>-->
+<!--          <return value="_typeshed67"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--    </package>-->
+<!--    <package name="io/TextIOWrapper">-->
+<!--      <class name="__init__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="7" paramNames="self buffer encoding errors newline line_buffering write_through" static="false">-->
+<!--          <new def="_typeshed68" class="LNone"/>-->
+<!--          <return value="_typeshed68"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="buffer" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed69" class="LBinaryIO"/>-->
+<!--          <return value="_typeshed69"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="closed" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed70" class="Z"/>-->
+<!--          <return value="_typeshed70"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="line_buffering" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed71" class="Z"/>-->
+<!--          <return value="_typeshed71"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="write_through" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed72" class="Z"/>-->
+<!--          <return value="_typeshed72"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="reconfigure" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="6" paramNames="self encoding errors newline line_buffering write_through" static="false">-->
+<!--          <new def="_typeshed73" class="LNone"/>-->
+<!--          <return value="_typeshed73"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__enter__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed74" class="LSelf"/>-->
+<!--          <return value="_typeshed74"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__iter__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed75" class="LIterator"/>-->
+<!--          <new def="_typeshed76" class="Lstring"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed75" value="_typeshed76"/>-->
+<!--          <return value="_typeshed75"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="__next__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed77" class="Lstring"/>-->
+<!--          <return value="_typeshed77"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="writelines" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self __lines" static="false">-->
+<!--          <new def="_typeshed78" class="LNone"/>-->
+<!--          <return value="_typeshed78"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="readline" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self __size" static="false">-->
+<!--          <new def="_typeshed79" class="Lstring"/>-->
+<!--          <return value="_typeshed79"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="readlines" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="2" paramNames="self __hint" static="false">-->
+<!--          <new def="_typeshed80" class="Llist"/>-->
+<!--          <new def="_typeshed81" class="Lstring"/>-->
+<!--          <putfield class="LRoot" field="0" fieldType="LRoot" ref="_typeshed80" value="_typeshed81"/>-->
+<!--          <return value="_typeshed80"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="seek" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="3" paramNames="self __cookie __whence" static="false">-->
+<!--          <new def="_typeshed82" class="I"/>-->
+<!--          <return value="_typeshed82"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--    </package>-->
+    <package name="io/StringIO">
+      <class name="__init__" allocatable="true">
+        <method name="do" descriptor="()LRoot;" numArgs="3" paramNames="self initial_value newline" static="false">
+          <new def="_typeshed83" class="LNone"/>
+          <return value="_typeshed83"/>
+        </method>
+      </class>
+      <class name="getvalue" allocatable="true">
+        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">
+          <new def="_typeshed84" class="Lstring"/>
+          <return value="_typeshed84"/>
+        </method>
+      </class>
+    </package>
+<!--    <package name="io/IncrementalNewlineDecoder">-->
+<!--      <class name="__init__" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="4" paramNames="self decoder translate errors" static="false">-->
+<!--          <new def="_typeshed85" class="LNone"/>-->
+<!--          <return value="_typeshed85"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="decode" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="3" paramNames="self input final" static="false">-->
+<!--          <new def="_typeshed86" class="Lstring"/>-->
+<!--          <return value="_typeshed86"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--      <class name="newlines" allocatable="true">-->
+<!--        <method name="do" descriptor="()LRoot;" numArgs="1" paramNames="self" static="false">-->
+<!--          <new def="_typeshed87" class="Lstring LTuple LNone"/>-->
+<!--          <return value="_typeshed87"/>-->
+<!--        </method>-->
+<!--      </class>-->
+<!--    </package>-->
+  </classloader>
+</summary-spec>
